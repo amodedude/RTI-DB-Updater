@@ -1,0 +1,25 @@
+namespace RTI.DataBase.Model
+{
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("rtitest.water_data")]
+    public partial class water_data
+    {
+        [Key]
+        public int dataID { get; set; }
+
+        public int? cond { get; set; }
+
+        public int? temp { get; set; }
+
+        [StringLength(45)]
+        public string measurment_date { get; set; }
+
+        [StringLength(255)]
+        public string sourceid { get; set; }
+    }
+}

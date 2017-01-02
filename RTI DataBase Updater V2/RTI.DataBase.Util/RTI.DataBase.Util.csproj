@@ -49,9 +49,9 @@
     <Compile Include="Scheduler.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Configuration\Configuration.csproj">
+    <ProjectReference Include="..\RTI.DataBase.Configuration\RTI.DataBase.Configuration.csproj">
       <Project>{d54ebdc1-79d6-4e4d-bc94-4eb126fddb9c}</Project>
-      <Name>Configuration</Name>
+      <Name>RTI.DataBase.Configuration</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

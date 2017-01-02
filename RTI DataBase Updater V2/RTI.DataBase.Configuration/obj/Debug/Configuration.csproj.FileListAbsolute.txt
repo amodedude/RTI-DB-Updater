@@ -1,0 +1,4 @@
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\Configuration\bin\Debug\Configuration.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\Configuration\bin\Debug\Configuration.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\Configuration\obj\Debug\Configuration.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\Configuration\obj\Debug\Configuration.pdb
