@@ -20,7 +20,7 @@ namespace RTI.DataBase.Util
         static Logger()
         {
             _date = DateTime.UtcNow;
-            _logPath = Application.StartupPath;
+            _logPath = System.Windows.Forms.Application.StartupPath;
         }
 
         public static void WriteToLog(string message, Priority priority = Priority.Info, params object[] args)
