@@ -4,24 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RTI.DataBase.Updater.Config;
 
 namespace RTI.DataBase.Util
 {
-    public class Logger
+    public static class Logger
     {
-        string _logPath;
-        DateTime _date = new DateTime();
+        static string _logPath;
+        static DateTime _date = new DateTime();
 
         /// <summary>
         /// Initialize a new 
         /// Logging session.
         /// </summary>
-        public Logger()
+        static Logger()
         {
             _date = DateTime.UtcNow;
             _logPath = Application.StartupPath;
         }
+
+        public static void WriteToLog(string message, Priority priority = Priority.Info, params object[] args)
+        {
+            Priority logLevel = Log.Settings.LogLevel;
+            if (priority > logLevel)
+            {
+                Console.WriteLine(message,args);
+            }
+        }        
     }
-
-
 }

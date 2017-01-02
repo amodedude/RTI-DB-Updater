@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RTI.DataBase.Logger
+namespace RTI.DataBase.Util
 {
-    public class Class1
+    class Crypto
     {
     }
 }

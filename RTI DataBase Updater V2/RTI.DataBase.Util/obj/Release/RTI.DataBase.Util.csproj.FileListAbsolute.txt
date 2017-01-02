@@ -1,0 +1,7 @@
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Release\RTI.DataBase.Util.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Release\RTI.DataBase.Util.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Release\Configuration.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Release\Configuration.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\obj\Release\RTI.DataBase.Util.csprojResolveAssemblyReference.cache
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\obj\Release\RTI.DataBase.Util.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\obj\Release\RTI.DataBase.Util.pdb
