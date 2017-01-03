@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTI.DataBase.Util
 {
-    class WebClientWithTimeOut : WebClient
+    public class WebClientWithTimeOut : WebClient
     {
         public TimeSpan? Timeout { get; set; }
 

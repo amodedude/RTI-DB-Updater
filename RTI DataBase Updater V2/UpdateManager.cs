@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RTI.DataBase.Model;
+using System;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace RTI.DataBase.Updater
@@ -8,8 +10,14 @@ namespace RTI.DataBase.Updater
         internal void RunUpdate()
         {
             Console.WriteLine("Performing DB update...");
+
+            // Download all USGS Sources
             FileFetcher fetcher = new FileFetcher();
-            fetcher.fetchFiles();
+            HashSet<source> sources = fetcher.fetchFiles();
+
+            // Upload to RTI DataBase
+
+            
         }
     }
 }

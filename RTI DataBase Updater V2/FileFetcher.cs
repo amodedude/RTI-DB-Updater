@@ -11,72 +11,69 @@ using System.IO;
 
 namespace RTI.DataBase.Updater
 {
-    class FileFetcher
+    public class FileFetcher
     {
-        public bool download_finished = true;
-        int filesDownloaded = 0;
-        int numberOfFilesToDownload = 0;
-        List<string> failedSiteIDs = new List<string>();
-        HashSet<string> initializedDownloads = new HashSet<string>(); 
+        public FileFetcher()
+        {
+            _currentFolder = Path.Combine(Application.Settings.DownloadRepository, DateTime.Now.ToString("MMddyyyHHmmss"));
+        }
 
-        
+        public string CurrentFolder { get { return _currentFolder; } private set { } }
+        private string _currentFolder = string.Empty;
+        private int _filesDownloaded = 0;
+        private int _numberOfFilesToDownload = 0;
+        private HashSet<source> _initializedDownloads = new HashSet<source>();
+        private HashSet<source> _failedDownloads = new HashSet<source>();
+
         /// <summary>
         /// Download 
         /// USGS text files asynchronously. 
         /// </summary>
-        public void fetchFiles()
+        public HashSet<source> fetchFiles()
         {
             try
             {
                 // Get the list of sources from the RTI database
+                HashSet<source> goodFiles = new HashSet<source>();
                 Logger.WriteToLog("Fetching the list of sources from the RTI database.");
                 RTIDBModel RTIContext = new RTIDBModel();
-                var sourceList = RTIContext.sources.ToList();
-                int numberOfFilesToDownload = sourceList.Count() - 1;
-                 
-                // Begin Asynchronous downloading from the USGS
-                Parallel.ForEach(sourceList, new ParallelOptions { MaxDegreeOfParallelism = Application.Settings.MaxDegreeOfParallelism }, source =>
+                List<source> sourceList = RTIContext.sources.ToList();
+                _numberOfFilesToDownload = sourceList.Count() - 1;
+
+                if (!Application.Settings.UseLatestCachedFiles)
                 {
-                    InitilizeDownload(source);
-                });
+                    // Begin Asynchronous downloading from the USGS
+                    Parallel.ForEach(sourceList, new ParallelOptions { MaxDegreeOfParallelism = Application.Settings.MaxDegreeOfParallelism }, source =>
+                    {
+                        InitilizeDownload(source);
+                    });
 
+                    // Validate that file was downloaded
+                    foreach (source goodFile in _initializedDownloads)
+                        if (!File.Exists(Path.Combine(_currentFolder, goodFile.agency_id + ".txt")))
+                            _failedDownloads.Add(goodFile);
 
-                //foreach (var source in sourceList) // Loop through each USGS source 
-                //{
-                //    if (download_finished)
-                //    {
-                //        double percentage = ((double)filesDownloaded / numberOfFilesToDownload);
-                //        UserInterface.WriteToConsole("Total Progress:                                   {0:P}" +
-                //            "\n--------------------------------------------------------" +
-                //            "\nDownloaded {1} file(s) out of {2}", percentage, filesDownloaded, numberOfFilesToDownload);
+                    // Log failed downloads
+                    foreach (source badFile in _failedDownloads)
+                        Logger.WriteToLog($"Unable to download file with USGSID = {badFile.agency_id:N}, Name = {badFile.full_site_name}", Priority.Error);
 
-                //        // Get the USGSID
-                //        try
-                //        {
-                //            string USGSID = source.agency_id;
-                //            string file_name = USGSID + ".txt";
-                //            string folder_path = @"C:\Users\John\Desktop\RTI File Repository\";
-                //            string filePath = folder_path + file_name;
-                //            await download_file(USGSID, filePath); // Fetch the file
-                //            parseFile.ReadFile(filePath, USGSID); // Read the fetched file contents 
-                //        }
-                //        catch (Exception ex)
-                //        {
-                //            ApplicationLog.WriteMessageToLog("Error: " + ex.Message + " Inner" + ex.InnerException, true, true, true);
-                //            System.Diagnostics.Debugger.Break();
-                //            UserInterface.WriteToConsole("\nError: Unable to download file {0} of {1}.\n\nSite ID = {2:N}, \nName = {3}",
-                //                                          filesDownloaded + 1, numberOfFilesToDownload, source.agency_id, source.full_site_name);
-                //            failedSiteIDs.Add(source.agency_id);
-                //        }
-                //        finally
-                //        {
-                //            filesDownloaded++;
-                //        }
-                //    }
-                //}
+                    Logger.WriteToLog($"\r\nFile download(s) complete @{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")}\r\nInitializing upload process...");
+                    goodFiles = new HashSet<source>(_initializedDownloads.Where(r => !_failedDownloads.Contains(r)).ToArray());
+                }
+                else
+                {
+                    DirectoryInfo latest = new DirectoryInfo(Application.Settings.DownloadRepository).GetDirectories()
+                       .OrderByDescending(d => d.LastWriteTimeUtc).First();
 
+                    foreach (string file in Directory.EnumerateFiles(latest.FullName))
+                    {
+                        source source = sourceList.Where(s => s.agency_id == Path.GetFileNameWithoutExtension(file)).FirstOrDefault();
+                        if (source != null)
+                            goodFiles.Add(source);
+                    }
+                }
 
-                Logger.WriteToLog("\nFile download(s) complete!\n\nInitializing upload process...");
+                return goodFiles;
             }
             catch (Exception ex)
             {
@@ -95,26 +92,29 @@ namespace RTI.DataBase.Updater
             try
             {
                 string USGSID = source.agency_id;
-                if (!initializedDownloads.Contains(USGSID))
+                if (!_initializedDownloads.Contains(source))
                 {
-                    string file_name = USGSID + ".txt";
-                    string folder_path = Application.Settings.DownloadRepository;
-                    string filePath = Path.Combine(folder_path, file_name);
+                    string file_name = USGSID + ".txt";                        
+
+                    if (!Directory.Exists(_currentFolder))
+                        Directory.CreateDirectory(_currentFolder);
+
+                    string filePath = Path.Combine(_currentFolder, file_name);
                     download_file(USGSID, filePath); // Fetch the file
                                                      //parseFile.ReadFile(filePath, USGSID); // Read the fetched file contents 
-                    initializedDownloads.Add(USGSID);
+                    _initializedDownloads.Add(source);
                 }
             }
             catch (Exception ex)
             {
                 //System.Diagnostics.Debugger.Break();
-                Logger.WriteToLog($"\r\nError: Unable to download file {filesDownloaded + 1} of {numberOfFilesToDownload}.\r\nSite ID = {source.agency_id:N}, \r\nName = {source.full_site_name}");
-                Logger.WriteToLog("Error: " + ex.Message + "\r\nInner: " + ((ex?.InnerException == null) ? "" : ex.InnerException.Message));
-                failedSiteIDs.Add(source.agency_id);
+                Logger.WriteToLog($"\r\nError: Unable to download file {_filesDownloaded + 1} of {_numberOfFilesToDownload}.\r\nSite ID = {source.agency_id:N}, \r\nName = {source.full_site_name}");
+                Logger.WriteToLog("Error: " + ex.Message + "\r\nInner: " + ((ex?.InnerException == null) ? "\r\n" : ex.InnerException.Message+"\r\n"));
+                _failedDownloads.Add(source);
             }
             finally
             {
-                filesDownloaded++;
+                _filesDownloaded++;
             }
         }
 
@@ -129,17 +129,16 @@ namespace RTI.DataBase.Updater
         /// </returns>
         private void download_file(string USGSID, string filePath)
         {
-            Logger.WriteToLog("Downloading File with USGSID =  " + Convert.ToString(USGSID));
-            download_finished = false;
-            using (var client = new WebClient())
-            {
-                string USGS_URL = "http://nwis.waterdata.usgs.gov/nwis/uv?cb_00095=on&format=rdb&site_no=" + USGSID + "&period=1095";
-                Uri USGS_URI = new Uri(USGS_URL, UriKind.Absolute);
-                client.DownloadFile(USGS_URI, filePath);
-            }
-            download_finished = true;
+                Logger.WriteToLog("Downloading File with USGSID =  " + Convert.ToString(USGSID));
+                ServicePointManager.DefaultConnectionLimit = int.MaxValue;
+                using (WebClientWithTimeOut client = new WebClientWithTimeOut() { Timeout = TimeSpan.FromSeconds(Application.Settings.DownloadTimeOutSeconds) })
+                {
+                    string USGS_URL = "http://nwis.waterdata.usgs.gov/nwis/uv?cb_00095=on&format=rdb&site_no=" + USGSID + "&period=1095";
+                    Uri USGS_URI = new Uri(USGS_URL, UriKind.Absolute);
+                    client.DownloadFile(USGS_URI, filePath);
+                    client.Dispose();
+                    Thread.Sleep(3); 
+                }
         }
-
-
     }
 }

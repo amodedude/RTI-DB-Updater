@@ -22,5 +22,17 @@ namespace RTI.DataBase.Updater.Config
         {
             get { return (int)this["MaxDegreeOfParallelism"]; }
         }
+
+        [ConfigurationProperty("DownloadTimeOutSeconds", IsRequired = true)]
+        public int DownloadTimeOutSeconds
+        {
+            get { return (int)this["DownloadTimeOutSeconds"]; }
+        }
+
+        [ConfigurationProperty("UseLatestCachedFiles", IsRequired = true)]
+        public bool UseLatestCachedFiles
+        {
+            get { return (bool)this["UseLatestCachedFiles"]; }
+        }
     }
 }
