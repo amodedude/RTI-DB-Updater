@@ -8,7 +8,7 @@ namespace RTI.DataBase.Model
     public partial class RTIDBModel : DbContext
     {
         public RTIDBModel()
-            : base("name=RTIDBModel")
+            : base("name=RTIDBModel1")
         {
         }
 
@@ -107,10 +107,6 @@ namespace RTI.DataBase.Model
 
             modelBuilder.Entity<source>()
                 .Property(e => e.unique_site_name)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<water_data>()
-                .Property(e => e.measurment_date)
                 .IsUnicode(false);
 
             modelBuilder.Entity<water_data>()

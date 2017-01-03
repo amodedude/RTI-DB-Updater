@@ -6,7 +6,7 @@ namespace RTI.DataBase.Model
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("rtitest.water_data")]
+    [Table("rtidev.water_data")]
     public partial class water_data
     {
         [Key]
@@ -16,8 +16,7 @@ namespace RTI.DataBase.Model
 
         public int? temp { get; set; }
 
-        [StringLength(45)]
-        public string measurment_date { get; set; }
+        public DateTime? measurment_date { get; set; }
 
         [StringLength(255)]
         public string sourceid { get; set; }

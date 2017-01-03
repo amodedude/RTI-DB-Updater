@@ -6,7 +6,7 @@ namespace RTI.DataBase.Model
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("rtitest.sources")]
+    [Table("rtidev.sources")]
     public partial class source
     {
         [Key]
@@ -81,5 +81,7 @@ namespace RTI.DataBase.Model
 
         [StringLength(255)]
         public string unique_site_name { get; set; }
+
+        public int? has_data { get; set; }
     }
 }
