@@ -62,14 +62,19 @@ namespace RTI.DataBase.Updater
                 }
                 else
                 {
+                    Logger.WriteToLog("Using Latest Cached files, no files to download.");
                     DirectoryInfo latest = new DirectoryInfo(Application.Settings.DownloadRepository).GetDirectories()
                        .OrderByDescending(d => d.LastWriteTimeUtc).First();
-
-                    foreach (string file in Directory.EnumerateFiles(latest.FullName))
+                    if (latest != null && latest.Exists)
                     {
-                        source source = sourceList.Where(s => s.agency_id == Path.GetFileNameWithoutExtension(file)).FirstOrDefault();
-                        if (source != null)
-                            goodFiles.Add(source);
+                        Logger.WriteToLog($"Cache directory = {latest.FullName}");
+                        _currentFolder = latest.FullName;
+                        foreach (string file in Directory.EnumerateFiles(latest.FullName))
+                        {
+                            source source = sourceList.Where(s => s.agency_id == Path.GetFileNameWithoutExtension(file)).FirstOrDefault();
+                            if (source != null)
+                                goodFiles.Add(source);
+                        }
                     }
                 }
 

@@ -8,7 +8,7 @@ namespace RTI.DataBase.Model
     public partial class RTIDBModel : DbContext
     {
         public RTIDBModel()
-            : base("name=RTIDBModel1")
+            : base("name=RTIDBModel")
         {
         }
 
