@@ -1,0 +1,2 @@
+Info: Next Scheduled Run at 01/07/2017 02:34:52 PM (01/07/2017 07:34:52 UTC)
+Info: Fetching the list of sources from the RTI database.

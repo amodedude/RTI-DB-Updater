@@ -15,7 +15,7 @@ namespace RTI.DataBase.Util
     {
         public DateTime SchedulerInitializationDate { get { return _intializationDate; } private set { } }
         public DateTime LastRunDate { get { return _lastRunDate; } private set { } }
-        public DateTime NextRunDate { get { return _nextRunDate; } set { } }
+        public DateTime NextRunDate { get { return _nextRunDate; } private set { } }
         private DateTime _intializationDate = new DateTime();
         private DateTime _lastRunDate = new DateTime();
         private DateTime _nextRunDate = new DateTime();

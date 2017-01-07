@@ -13,16 +13,28 @@ namespace RTI.DataBase.Updater.Config
             get { return _settings; }
         }
 
+        [ConfigurationProperty("LogFolderLocation", IsRequired = true)]
+        public string LogFolderLocation
+        {
+            get { return (string)this["LogFolderLocation"]; }
+        }
+
+        [ConfigurationProperty("LogFileName", IsRequired = true)]
+        public string LogFileName
+        {
+            get { return (string)this["LogFileName"]; }
+        }
+
         [ConfigurationProperty("LogLevel", IsRequired = true)]
         public Priority LogLevel
         {
             get { return (Priority)this["LogLevel"]; }
         }
 
-        [ConfigurationProperty("WriteToFIle", IsRequired = true)]
-        public string WriteToFIle
+        [ConfigurationProperty("WriteToFile", IsRequired = true)]
+        public string WriteToFile
         {
-            get { return (string)this["WriteToFIle"]; }
+            get { return (string)this["WriteToFile"]; }
         }
 
         [ConfigurationProperty("WriteToDB", IsRequired = true)]

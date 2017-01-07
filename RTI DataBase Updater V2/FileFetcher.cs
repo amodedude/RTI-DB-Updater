@@ -11,9 +11,9 @@ using System.IO;
 
 namespace RTI.DataBase.Updater
 {
-    public class FileFetcher
+    internal class FileFetcher
     {
-        public FileFetcher()
+        internal FileFetcher()
         {
             _currentFolder = Path.Combine(Application.Settings.DownloadRepository, DateTime.Now.ToString("MMddyyyHHmmss"));
         }
@@ -29,7 +29,7 @@ namespace RTI.DataBase.Updater
         /// Download 
         /// USGS text files asynchronously. 
         /// </summary>
-        public HashSet<source> fetchFiles()
+        internal HashSet<source> fetchFiles()
         {
             try
             {
@@ -82,7 +82,7 @@ namespace RTI.DataBase.Updater
             }
             catch (Exception ex)
             {
-                Logger.WriteToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
+                Logger.WriteErrorToLog(ex, "A Fatal Error has occurred while fetching USGS source files."); 
                 //EmailService emailService = new EmailService();
                 //List<string> address = new List<string>();
                 //address.Add("amodedude@gmail.com");
