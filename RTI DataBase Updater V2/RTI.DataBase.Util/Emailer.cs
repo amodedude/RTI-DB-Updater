@@ -37,7 +37,6 @@ namespace RTI.DataBase.Util
             _Bcc = Email.Settings.Bcc.Split(',').ToList();
             _From = Email.Settings.From;
             _SendEmails = Email.Settings.SendEmails;
-            _SendOnStatusOk = Email.Settings.SendOnStatusOk;
             EmailAlertList = new List<Alert>();
         }
 
@@ -110,10 +109,8 @@ namespace RTI.DataBase.Util
                             "<td>" + Schedule.Settings.IntervalMinutes + "</td>";
                 }
                 HTML += "</tr>";
-
-                HTML += "<td>Email Interval(Min):</td>" +
-                        "<td>" + Email.Settings.EmailIntervalMin + "</td>";
                 HTML += "</table>";
+
                 //Application Settings table END
                 string emailsIncluded = (Email.Settings.AttachLogFile) ? ((Email.Settings.CompressAttachments) ? "Compressed " : "") + "WebMonitor error logs are attached." : "";
                 HTML += $@"<br /><br /><p><font color =""red"">Please contact your administrator immediately. {emailsIncluded}</font></p>";
@@ -140,15 +137,20 @@ namespace RTI.DataBase.Util
             {
                 
                 ConnectionStringsSection config =  Crypto.GetEncryptedConnectionStringsSection(System.Reflection.Assembly.GetEntryAssembly().Location);
-                var sections = config.ConnectionStrings;
+                ConnectionStringSettings connectionStringSection = config.ConnectionStrings["RTIEmailServer"];
+                string connection = connectionStringSection.ConnectionString;
+                List<string> connectionList = connection.Split(new char[] { '=', ';' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                Dictionary<string, string> connectionKVP = connectionList.Select((v, i) => new { value = v, index = i })
+                 .Where(o => o.index % 2 == 0)
+                 .ToDictionary(o => o.value, o => connectionList[o.index + 1]);
 
                 using (var client = new SmtpClient())
                 {
-                    client.Host = "smtp.Gmail.com";
+                    client.Host = connectionKVP["server"];
                     client.Port = 587;
                     client.EnableSsl = true;
                     client.UseDefaultCredentials = false;
-                    client.Credentials = new System.Net.NetworkCredential("rti.notificationservice", "R#cir720!");
+                    client.Credentials = new System.Net.NetworkCredential(connectionKVP["user id"], connectionKVP["password"]);
 
                     using (var message = new MailMessage())
                     {

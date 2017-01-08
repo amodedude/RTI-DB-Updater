@@ -2,6 +2,7 @@
 using System.Text;
 using System.Web.Security;
 using System.Configuration;
+using RTI.DataBase.Updater.Config;
 
 namespace RTI.DataBase.Util
 {
@@ -56,62 +57,31 @@ namespace RTI.DataBase.Util
             ConnectionStringsSection section =
                     config.GetSection("connectionStrings")
                     as ConnectionStringsSection;
-
+            
             EncryptConfigSection(config, section);
             return section;
         }
 
         /// <summary>
-        /// Encrypts a configuration section
+        /// Encrypts/Decrypts
+       ///  a configuration section
         /// in an exe.config file.
         /// </summary>
         /// <param name="config"></param>
         /// <param name="section"></param>
         internal static void EncryptConfigSection(System.Configuration.Configuration config, ConfigurationSection section)
         {
-            //Ensure config sections are always encrypted
-            if (!section.SectionInformation.IsProtected)
+            //Ensure configuration sections are always encrypted
+            if (!section.SectionInformation.IsProtected && Security.Settings.EncryptConnectionStrings)
             {
-                // Encrypt the section.
                 section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
-                // Save the current configuration.
                 config.Save();
             }
-        }
-
-        /// <summary>
-        /// Encrypts a string using the 
-        /// System.Web.MachineKey.Protect
-        /// class.
-        /// </summary>
-        /// <param name="text"></param>
-        /// <param name="purpose"></param>
-        /// <returns>Returns an encrypted byte array.</returns>
-        internal static byte[] Protect(string text, string key)
-        {
-            if (string.IsNullOrEmpty(text))
-                return null;
-
-            byte[] stream = Encoding.UTF8.GetBytes(text);
-            byte[] encodedValue = MachineKey.Protect(stream, key);
-            return encodedValue;
-        }
-
-        /// <summary>
-        /// This method decrypts an 
-        /// encrypted byte array using 
-        /// the specified encryption key.
-        /// </summary>
-        /// <param name="stream"></param>
-        /// <param name="purpose"></param>
-        /// <returns></returns>
-        internal static string Unprotect(byte[] stream, string key)
-        {
-            if (stream.Count() <= 0)
-                return null;
-
-            byte[] decodedValue = MachineKey.Unprotect(stream, key);
-            return Encoding.UTF8.GetString(decodedValue);
+            else
+            {
+                if (Security.Settings.EncyptionKey == "btS8GTXTk7N2xv2xjdBdJ8980pr9ejg7CBVDC5z5LgdVCxuyztMbtw3ramT3KpwZp" && !Security.Settings.EncryptConnectionStrings)
+                    section.SectionInformation.UnprotectSection();
+            }
         }
     }
 }

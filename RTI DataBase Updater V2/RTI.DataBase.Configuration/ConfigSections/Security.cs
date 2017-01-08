@@ -12,9 +12,9 @@ namespace RTI.DataBase.Updater.Config
         }
 
         [ConfigurationProperty("EncryptConnectionStrings", IsRequired = true)]
-        public string EncryptConnectionStrings
+        public bool EncryptConnectionStrings
         {
-            get { return (string)this["EncryptConnectionStrings"]; }
+            get { return (bool)this["EncryptConnectionStrings"]; }
         }
 
         [ConfigurationProperty("EncyptionKey", IsRequired = true)]
