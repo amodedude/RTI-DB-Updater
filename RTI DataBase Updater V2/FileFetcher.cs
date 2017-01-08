@@ -82,11 +82,7 @@ namespace RTI.DataBase.Updater
             }
             catch (Exception ex)
             {
-                Logger.WriteErrorToLog(ex, "A Fatal Error has occurred while fetching USGS source files."); 
-                //EmailService emailService = new EmailService();
-                //List<string> address = new List<string>();
-                //address.Add("amodedude@gmail.com");
-                //emailService.SendMail(address, "RTI Alert: Error in Database Updater Application", "An Error has occurred in the Database Updater Application FileFetcher. \n\nError: \n\n" + ex.ToString());
+                Logger.WriteErrorToLog(ex, "A Fatal Error has occurred while fetching USGS source files.", true); 
                 throw ex;
             }
         }

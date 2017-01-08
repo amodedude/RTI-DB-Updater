@@ -70,5 +70,11 @@ namespace RTI.DataBase.Updater.Config
         {
             get { return (bool)this["CompressAttachments"]; }
         }
+
+        [ConfigurationProperty("CompressedFileName", IsRequired = true)]
+        public string CompressedFileName
+        {
+            get { return (string)this["CompressedFileName"]; }
+        }
     }
 }

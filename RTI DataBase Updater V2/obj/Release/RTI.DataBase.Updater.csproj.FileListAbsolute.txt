@@ -1,12 +1,19 @@
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI DataBase Updater V2.exe.config
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI DataBase Updater V2.exe
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI DataBase Updater V2.pdb
-C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\Configuration.dll
-C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.Database.Model.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\EntityFramework.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\MySql.Data.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\MySql.Web.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.DataBase.Configuration.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.DataBase.Model.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.DataBase.Util.dll
-C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\Configuration.pdb
-C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.Database.Model.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.DataBase.Configuration.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.DataBase.Model.pdb
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\RTI.DataBase.Util.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\EntityFramework.xml
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\obj\Release\RTI.DataBase.Updater.csprojResolveAssemblyReference.cache
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\obj\Release\RTI DataBase Updater V2.exe
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\obj\Release\RTI DataBase Updater V2.pdb

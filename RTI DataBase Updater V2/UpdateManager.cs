@@ -11,14 +11,25 @@ namespace RTI.DataBase.Updater
     {
         internal void RunUpdate()
         {
-            Logger.WriteToLog("Performing DB update...");
+            try
+            {
+                Logger.WriteToLog("Performing DB update...");
 
-            // Download all USGS Sources
-            FileFetcher fetcher = new FileFetcher();
-            HashSet<source> sources = fetcher.fetchFiles();
+                // Download all USGS Sources
+                FileFetcher fetcher = new FileFetcher();
+                HashSet<source> sources = fetcher.fetchFiles();
 
-            // Upload to RTI DataBase
-            UploadFiles(sources, fetcher);
+                // Upload to RTI DataBase
+                UploadFiles(sources, fetcher);
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteErrorToLog(ex, "The Update Process has encountered a fatal error.", true);
+            }
+            finally
+            {
+                Emailer.FireEmailAlerts();
+            }
         }
 
         /// <summary>
