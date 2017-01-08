@@ -63,7 +63,7 @@ namespace RTI.DataBase.Util
         /// Write an Exception to 
         /// the error log. 
         /// </summary>
-        public static void WriteErrorToLog(Exception ex, string message = "", Priority priority = Priority.Error, [CallerMemberName]string method = "", [CallerLineNumber] int line  = -999, [CallerFilePath] string ClassPath = "")
+        public static void WriteErrorToLog(Exception ex, string message = "", bool addToEmail = false, Priority priority = Priority.Error, [CallerMemberName]string method = "", [CallerLineNumber] int line  = -999, [CallerFilePath] string ClassPath = "")
         {
             string msg = (!string.IsNullOrEmpty(message)) ? string.Join(": ", new string[] { "ErrorMessage", message }) : "";
             string exceptionMessage = ex?.Message ?? String.Empty;
@@ -82,6 +82,9 @@ namespace RTI.DataBase.Util
             int maxLineLength = error.Split(new string[] { "\r\n", Environment.NewLine }, StringSplitOptions.None).ToArray().OrderByDescending(a => a.Length).FirstOrDefault().Length;
             string headerFooter = new string('-', maxLineLength);
             error = Environment.NewLine +  headerFooter + Environment.NewLine + error + Environment.NewLine + headerFooter;
+
+            if (addToEmail)
+                Emailer.ProcessExcption(ex, error, priority);
 
             WriteToLog(error, priority);
         }
