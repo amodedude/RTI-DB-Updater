@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using RTI.DataBase.Util;
 using RTI.DataBase.Model;
 
-namespace RTI.DataBase.Updater
+namespace RTI.DataBase.UpdaterService
 {
     /// <summary>
     /// Handles reading of downloaded files. 

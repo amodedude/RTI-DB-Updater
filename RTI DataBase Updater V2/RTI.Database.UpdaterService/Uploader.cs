@@ -9,7 +9,7 @@ using System;
 using RTI.DataBase.Model;
 using RTI.DataBase.Util;
 
-namespace RTI.DataBase.Updater
+namespace RTI.DataBase.UpdaterService
 {
     /// <summary>
     /// Uploads retrieved data into the RTI database. 

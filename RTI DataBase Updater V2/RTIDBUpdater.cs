@@ -1,5 +1,4 @@
-﻿using RTI.DataBase.Util;
-using RTI.Database.UpdaterService;
+﻿using RTI.DataBase.UpdaterService;
 
 namespace RTI.DataBase.Updater
 {

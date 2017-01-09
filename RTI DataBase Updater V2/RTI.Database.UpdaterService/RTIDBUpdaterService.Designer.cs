@@ -1,6 +1,6 @@
-﻿namespace RTI.Database.UpdaterService
+﻿namespace RTI.DataBase.UpdaterService
 {
-    partial class Service1
+    partial class RTIDBUpdaterService
     {
         /// <summary> 
         /// Required designer variable.

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
-namespace RTI.DataBase.Updater
+namespace RTI.DataBase.UpdaterService
 {
     public class UpdateManager
     {

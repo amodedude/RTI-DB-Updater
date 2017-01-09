@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RTI.Database.UpdaterService
+namespace RTI.DataBase.UpdaterService
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace RTI.Database.UpdaterService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new RTIDBUpdaterService()
             };
             ServiceBase.Run(ServicesToRun);
         }

@@ -1,0 +1,95 @@
+Info: PJM Database Monitor initiated on 1/8/2017 @9:51 PM
+
+
+Info: Next Scheduled Run at 01/08/2017 09:51:24 PM (01/09/2017 02:51:24 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Using Latest Cached files, no files to download.
+Info: Cache directory = C:\Users\John\Desktop\RTI File Repository\01022017213704
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01018035.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01022017213704\01018035.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01021050.txt
+Info: 
+Database is up to date for source 01021050
+Info: No data uploaded, source is up to date for USGSID 01021050
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\010228955.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01022017213704\010228955.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01036390.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01022017213704\01036390.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01055100.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01022017213704\01055100.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01095220.txt
+Info: 
+Database is up to date for source 01095220
+Info: No data uploaded, source is up to date for USGSID 01095220
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104370.txt
+Info: 
+Database is up to date for source 01104370
+Info: No data uploaded, source is up to date for USGSID 01104370
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104405.txt
+Info: 
+Database is up to date for source 01104405
+Info: No data uploaded, source is up to date for USGSID 01104405
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104415.txt
+Info: 
+Database is up to date for source 01104415
+Info: No data uploaded, source is up to date for USGSID 01104415
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104420.txt
+Info: 
+Database is up to date for source 01104420
+Info: No data uploaded, source is up to date for USGSID 01104420
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104430.txt
+Info: 
+Database is up to date for source 01104430
+Info: No data uploaded, source is up to date for USGSID 01104430
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104453.txt
+Info: 
+Database is up to date for source 01104453
+Info: No data uploaded, source is up to date for USGSID 01104453
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104455.txt
+Info: 
+Database is up to date for source 01104455
+Info: No data uploaded, source is up to date for USGSID 01104455
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104460.txt
+Info: 
+Database is up to date for source 01104460
+Info: No data uploaded, source is up to date for USGSID 01104460
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104475.txt
+Info: 
+Database is up to date for source 01104475
+Info: No data uploaded, source is up to date for USGSID 01104475
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01104480.txt
+Info: 
+Database is up to date for source 01104480
+Info: No data uploaded, source is up to date for USGSID 01104480
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01111230.txt
+Info: 
+Database is up to date for source 01111230
+Info: No data uploaded, source is up to date for USGSID 01111230
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01115098.txt
+Info: 
+Database is up to date for source 01115098
+Info: No data uploaded, source is up to date for USGSID 01115098
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01022017213704\01115110.txt

@@ -9,7 +9,7 @@ using RTI.DataBase.Util;
 using RTI.DataBase.Model;
 using System.IO;
 
-namespace RTI.DataBase.Updater
+namespace RTI.DataBase.UpdaterService
 {
     internal class FileFetcher
     {
