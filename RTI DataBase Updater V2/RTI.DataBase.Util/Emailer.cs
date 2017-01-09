@@ -20,7 +20,6 @@ namespace RTI.DataBase.Util
         public static List<string> Cc { get { return _Cc; } private set { } }
         public static List<string> Bcc { get { return _Bcc; } private set { } }
         public static string From { get { return From; } private set { } }
-        public static bool SendOnStatusOk { get { return _SendOnStatusOk; } private set { } }
         public static bool SendEmails { get { return _SendEmails; } private set { } }
 
         private static List<string> _To;
@@ -28,7 +27,6 @@ namespace RTI.DataBase.Util
         private static List<string> _Bcc;
         private static string _From;
         private static bool _SendEmails;
-        private static bool _SendOnStatusOk;
 
         static Emailer()
         {
@@ -50,9 +48,12 @@ namespace RTI.DataBase.Util
         {
             if (_SendEmails)
             {
-                string emailSubject = (string.IsNullOrEmpty(subject)) ? (Email.Settings.Subject ?? "RTI Database Updater Error Alert.") : subject;
-                string body = BuildHTMLBody();
-                SendMail(emailSubject, body);
+                if (EmailAlertList.Count > 0 || Email.Settings.SendOnStatusOk)
+                {
+                    string emailSubject = (string.IsNullOrEmpty(subject)) ? (Email.Settings.Subject ?? "RTI Database Updater Error Alert.") : subject;
+                    string body = BuildHTMLBody();
+                    SendMail(emailSubject, body);
+                }
             }
         }
 
@@ -117,7 +118,7 @@ namespace RTI.DataBase.Util
             }
             else
             {
-                HTML += "<p>No server errors have been detected.</p>";
+                HTML += "<p>No errors have been detected.</p>";
             }
 
             return HTML;

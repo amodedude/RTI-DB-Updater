@@ -72,7 +72,7 @@ namespace RTI.DataBase.Updater
                         foreach (string file in Directory.EnumerateFiles(latest.FullName))
                         {
                             source source = sourceList.Where(s => s.agency_id == Path.GetFileNameWithoutExtension(file)).FirstOrDefault();
-                            if (source != null)
+                            if (source != null && !goodFiles.Contains(source))
                                 goodFiles.Add(source);
                         }
                     }

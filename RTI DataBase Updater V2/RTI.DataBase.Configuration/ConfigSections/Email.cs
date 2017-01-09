@@ -17,6 +17,12 @@ namespace RTI.DataBase.Updater.Config
             get { return (bool)this["SendEmails"]; }
         }
 
+        [ConfigurationProperty("SendOnStatusOk", IsRequired = true)]
+        public bool SendOnStatusOk
+        {
+            get { return (bool)this["SendOnStatusOk"]; }
+        }
+
         [ConfigurationProperty("Subject", IsRequired = true)]
         public string Subject
         {

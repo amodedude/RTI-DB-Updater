@@ -1,0 +1,5 @@
+Info: Next Scheduled Run at 01/08/2017 06:33:46 PM (01/08/2017 11:33:46 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Using Latest Cached files, no files to download.
+Info: Cache directory = C:\Users\John\Desktop\RTI File Repository\01022017213704

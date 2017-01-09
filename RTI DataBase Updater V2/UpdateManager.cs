@@ -7,9 +7,9 @@ using System.Threading;
 
 namespace RTI.DataBase.Updater
 {
-    internal class UpdateManager
+    public class UpdateManager
     {
-        internal void RunUpdate()
+        public void RunUpdate()
         {
             try
             {

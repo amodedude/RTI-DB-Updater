@@ -34,5 +34,11 @@ namespace RTI.DataBase.Updater.Config
         {
             get { return (bool)this["UseLatestCachedFiles"]; }
         }
+
+        [ConfigurationProperty("DebugMode", IsRequired = true)]
+        public bool DebugMode
+        {
+            get { return (bool)this["DebugMode"]; }
+        }
     }
 }
