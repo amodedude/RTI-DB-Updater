@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.Updater", "RTI.DataBase.Updater.csproj", "{E907B064-55F8-4426-AF01-752BF3F8FAF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.UpdaterConsoleApp", "RTI.DataBase.UpdaterConsoleApp.csproj", "{E907B064-55F8-4426-AF01-752BF3F8FAF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.Util", "RTI.DataBase.Util\RTI.DataBase.Util.csproj", "{E667F517-0825-4B1A-8079-6E735C00B4C5}"
 EndProject
@@ -13,11 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.Model", "RTI.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.Database.UpdaterService", "RTI.Database.UpdaterService\RTI.Database.UpdaterService.csproj", "{B66B98B1-E1ED-4281-B6CB-95F1B63D18AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.Interfaces", "..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj", "{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.Objects", "RTI.DataBase.Objects\RTI.DataBase.Objects.csproj", "{00A69495-A8E9-4124-B9CE-10EF979A2ACC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.UnitTests", "..\RTI.DataBase.UnitTests\RTI.DataBase.UnitTests.csproj", "{75AE9160-47A6-46FB-B5C0-20E443CDF076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.Interfaces", "RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj", "{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,6 @@ Global
 		{B66B98B1-E1ED-4281-B6CB-95F1B63D18AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B66B98B1-E1ED-4281-B6CB-95F1B63D18AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B66B98B1-E1ED-4281-B6CB-95F1B63D18AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00A69495-A8E9-4124-B9CE-10EF979A2ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00A69495-A8E9-4124-B9CE-10EF979A2ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00A69495-A8E9-4124-B9CE-10EF979A2ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{75AE9160-47A6-46FB-B5C0-20E443CDF076}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75AE9160-47A6-46FB-B5C0-20E443CDF076}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75AE9160-47A6-46FB-B5C0-20E443CDF076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

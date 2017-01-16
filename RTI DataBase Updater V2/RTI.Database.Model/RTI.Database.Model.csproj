@@ -64,10 +64,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\WaterDataConfiguration.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RTIDBModel.cs" />
-    <Compile Include="source.cs" />
-    <Compile Include="water_data.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\SourceRepository.cs" />
+    <Compile Include="Repositories\WaterDataRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ISourceRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IWaterDataRepository.cs" />
+    <Compile Include="Configuration\SourceConfiguration.cs" />
+    <Compile Include="RtiContext.cs" />
+    <Compile Include="Model\source.cs" />
+    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="Model\water_data.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using RTI.Database.UpdaterService.Download;
+using RTI.Database.UpdaterService.Parse;
 using RTI.DataBase.Interfaces;
 
 namespace RTI.DataBase.UpdaterService
@@ -23,7 +25,8 @@ namespace RTI.DataBase.UpdaterService
                 LogWriter.WriteMessageToLog("Performing DB update...");
 
                 // Download all USGS Sources
-                FileFetcher fetcher = new FileFetcher(LogWriter);
+                TextFileDownloader downloader = new TextFileDownloader(LogWriter);
+                FileFetcher fetcher = new FileFetcher(LogWriter, downloader);
                 HashSet<source> sources = fetcher.fetchFiles();
 
                 // Upload to RTI DataBase

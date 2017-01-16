@@ -66,8 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileFetcher.cs" />
-    <Compile Include="FileParser.cs" />
+    <Compile Include="Download\TextFileDownloader.cs" />
+    <Compile Include="Download\FileFetcher.cs" />
+    <Compile Include="Download\URIBuilder.cs" />
+    <Compile Include="Parse\FileParser.cs" />
     <Compile Include="RTIDBUpdaterService.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -77,20 +79,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UpdateManager.cs" />
-    <Compile Include="Uploader.cs" />
+    <Compile Include="Upload\Uploader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
-      <Project>{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}</Project>
-      <Name>RTI.DataBase.Interfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RTI.DataBase.Configuration\RTI.DataBase.Configuration.csproj">
       <Project>{d54ebdc1-79d6-4e4d-bc94-4eb126fddb9c}</Project>
       <Name>RTI.DataBase.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
+      <Project>{b2d950b1-7c8b-499a-af56-0de32ff873ff}</Project>
+      <Name>RTI.DataBase.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\RTI.DataBase.Model\RTI.DataBase.Model.csproj">
       <Project>{ec6c922c-a80b-4b24-8bd3-2941067b6217}</Project>
@@ -104,9 +106,6 @@
       <Project>{e667f517-0825-4b1a-8079-6e735c00b4c5}</Project>
       <Name>RTI.DataBase.Util</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

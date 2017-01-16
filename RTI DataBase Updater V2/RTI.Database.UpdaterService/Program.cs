@@ -10,7 +10,6 @@ namespace RTI.DataBase.UpdaterService
         /// </summary>
         static void Main()
         {
-            
             Logger logger = new Logger();
             Emailer emailer = new Emailer(logger);
             ServiceBase[] ServicesToRun;

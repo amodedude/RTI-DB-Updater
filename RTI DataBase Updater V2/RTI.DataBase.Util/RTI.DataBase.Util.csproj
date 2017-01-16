@@ -56,13 +56,13 @@
     <Compile Include="Scheduler.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
-      <Project>{b2d950b1-7c8b-499a-af56-0de32ff873ff}</Project>
-      <Name>RTI.DataBase.Interfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RTI.DataBase.Configuration\RTI.DataBase.Configuration.csproj">
       <Project>{d54ebdc1-79d6-4e4d-bc94-4eb126fddb9c}</Project>
       <Name>RTI.DataBase.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
+      <Project>{b2d950b1-7c8b-499a-af56-0de32ff873ff}</Project>
+      <Name>RTI.DataBase.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\RTI.DataBase.Objects\RTI.DataBase.Objects.csproj">
       <Project>{00a69495-a8e9-4124-b9ce-10ef979a2acc}</Project>

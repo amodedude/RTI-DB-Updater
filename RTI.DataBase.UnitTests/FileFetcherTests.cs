@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RTI.Database.UpdaterService.Download;
 using RTI.DataBase.Interfaces;
 using RTI.DataBase.Util;
 
@@ -19,8 +20,10 @@ namespace RTI.DataBase.UpdaterService.Tests
             // USGS station numbers are from 8 to 15 digits long
             string testUSGSID = "000123643";
             Logger logger = new Logger();
-            FileFetcher fileFetcher = new FileFetcher(logger);
-            return fileFetcher.BuildUri(testUSGSID);
+            TextFileDownloader downloader = new TextFileDownloader(logger);
+            FileFetcher fileFetcher = new FileFetcher(logger, downloader);
+            URIBuilder builder = new URIBuilder();
+            return builder.BuildUri(testUSGSID);
         }
     }
 }

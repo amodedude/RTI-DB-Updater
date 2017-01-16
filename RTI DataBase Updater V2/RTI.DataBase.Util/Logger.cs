@@ -43,7 +43,7 @@ namespace RTI.DataBase.Util
                 {
                     Directory.CreateDirectory(_logPath);
                 }
-                catch (UnauthorizedAccessException ex)
+                catch (UnauthorizedAccessException)
                 {
                     _logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "logs", dateString);
                     logFullPath = Path.Combine(_logPath, logFileName + ".txt");

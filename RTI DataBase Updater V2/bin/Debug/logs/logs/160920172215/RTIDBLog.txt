@@ -1,0 +1,6 @@
+Info: PJM Database Monitor initiated on 1/16/2017 @5:09 PM
+
+
+Info: Next Scheduled Run at 01/16/2017 05:09:15 PM (01/16/2017 10:09:15 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.

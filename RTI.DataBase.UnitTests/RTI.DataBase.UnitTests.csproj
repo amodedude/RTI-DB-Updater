@@ -59,6 +59,10 @@
       <Project>{d54ebdc1-79d6-4e4d-bc94-4eb126fddb9c}</Project>
       <Name>RTI.DataBase.Configuration</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
+      <Project>{b2d950b1-7c8b-499a-af56-0de32ff873ff}</Project>
+      <Name>RTI.DataBase.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RTI DataBase Updater V2\RTI.Database.UpdaterService\RTI.Database.UpdaterService.csproj">
       <Project>{B66B98B1-E1ED-4281-B6CB-95F1B63D18AF}</Project>
       <Name>RTI.Database.UpdaterService</Name>
@@ -66,10 +70,6 @@
     <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.Util\RTI.DataBase.Util.csproj">
       <Project>{E667F517-0825-4B1A-8079-6E735C00B4C5}</Project>
       <Name>RTI.DataBase.Util</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
-      <Project>{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}</Project>
-      <Name>RTI.DataBase.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
