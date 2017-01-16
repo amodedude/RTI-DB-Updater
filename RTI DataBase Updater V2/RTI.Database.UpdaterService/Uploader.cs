@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 using System.Threading;
 using System;
 using RTI.DataBase.Model;
-using RTI.DataBase.Util;
+using RTI.DataBase.Interfaces;
 
 namespace RTI.DataBase.UpdaterService
 {
@@ -16,8 +16,10 @@ namespace RTI.DataBase.UpdaterService
     /// </summary>
     class Uploader
     {
-        public bool Upload(List<water_data> data, string USGSID)
+        ILogger LogWriter;
+        public bool Upload(List<water_data> data, string USGSID, ILogger logger)
         {
+            LogWriter = logger;
             bool data_uploaded = false;
             bool isError = false;
             Stopwatch timer = new Stopwatch();
@@ -72,21 +74,21 @@ namespace RTI.DataBase.UpdaterService
                 {
                     isError = true;
                     Debugger.Break();
-                    Logger.WriteToLog("\nERROR: The system encountered an error, no data was uploaded for source " + USGSID);
-                    Logger.WriteToLog("ERROR: In Uploader(), There was an error connecting to the database, please check that your connection settings are valid.\n" + ex.Message);
+                    LogWriter.WriteMessageToLog("\nERROR: The system encountered an error, no data was uploaded for source " + USGSID);
+                    LogWriter.WriteMessageToLog("ERROR: In Uploader(), There was an error connecting to the database, please check that your connection settings are valid.\n" + ex.Message);
                 }             
             }
             timer.Stop();
 
             if (data_uploaded && !isError)
             {
-                Logger.WriteToLog($"\nUpload Complected in {timer.Elapsed.Milliseconds} ms.");
-                Logger.WriteToLog("Upload Complected in " + timer.Elapsed.Milliseconds.ToString() + " ms.\r\n");
+                LogWriter.WriteMessageToLog($"\nUpload Complected in {timer.Elapsed.Milliseconds} ms.");
+                LogWriter.WriteMessageToLog("Upload Complected in " + timer.Elapsed.Milliseconds.ToString() + " ms.\r\n");
             }
             else if(!isError && !data_uploaded)
             {
-                Logger.WriteToLog("\r\nDatabase is up to date for source " + USGSID);
-                Logger.WriteToLog("No data uploaded, source is up to date for USGSID " + USGSID + "\r\n");
+                LogWriter.WriteMessageToLog("\r\nDatabase is up to date for source " + USGSID);
+                LogWriter.WriteMessageToLog("No data uploaded, source is up to date for USGSID " + USGSID + "\r\n");
             }
             Thread.Sleep(1200);
             return data_uploaded;
@@ -119,7 +121,7 @@ namespace RTI.DataBase.UpdaterService
             catch(Exception ex)
             {
                 Debugger.Break();
-                Logger.WriteToLog("ERROR: In RetrieveLatestDate(), There was an error retrieving data from the database.\n" + ex.Message);
+                LogWriter.WriteMessageToLog("ERROR: In RetrieveLatestDate(), There was an error retrieving data from the database.\n" + ex.Message);
                 //EmailService emailAlert= new EmailService();
                 //List<string> address = new List<string>();
                 //address.Add("amodedude@gmail.com");

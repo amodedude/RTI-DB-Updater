@@ -1,0 +1,8 @@
+Info: PJM Database Monitor initiated on 1/9/2017 @10:49 PM
+
+
+Info: Next Scheduled Run at 01/09/2017 10:49:28 PM (01/10/2017 03:49:28 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Downloading File with USGSID =  4.03E+14
+Info: Downloading File with USGSID =  02043016

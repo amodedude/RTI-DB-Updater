@@ -1,9 +1,8 @@
 ﻿using System.Configuration;
+using RTI.DataBase.Objects;
 
 namespace RTI.DataBase.Updater.Config
 {
-    public enum Priority { All, Fatal, Error, Warning, Info };
-
     public class Log : ConfigurationSection
     {
         private static Log _settings = ConfigurationManager.GetSection("Log") as Log;

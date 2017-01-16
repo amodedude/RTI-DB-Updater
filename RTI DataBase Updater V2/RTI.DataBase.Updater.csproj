@@ -79,9 +79,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
+      <Project>{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}</Project>
+      <Name>RTI.DataBase.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="RTI.Database.UpdaterService\RTI.Database.UpdaterService.csproj">
       <Project>{b66b98b1-e1ed-4281-b6cb-95f1b63d18af}</Project>
       <Name>RTI.Database.UpdaterService</Name>
+    </ProjectReference>
+    <ProjectReference Include="RTI.DataBase.Util\RTI.DataBase.Util.csproj">
+      <Project>{e667f517-0825-4b1a-8079-6e735c00b4c5}</Project>
+      <Name>RTI.DataBase.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

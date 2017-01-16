@@ -4,12 +4,7 @@ namespace RTI.DataBase.Updater.Config
 {
     public class Security : ConfigurationSection
     {
-        private static Security _settings = ConfigurationManager.GetSection("Security") as Security;
-
-        public static Security Settings
-        {
-            get { return _settings; }
-        }
+        public static Security Settings { get; } = ConfigurationManager.GetSection("Security") as Security;
 
         [ConfigurationProperty("EncryptConnectionStrings", IsRequired = true)]
         public bool EncryptConnectionStrings

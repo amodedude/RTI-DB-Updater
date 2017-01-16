@@ -4,6 +4,8 @@ using System;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
+using RTI.DataBase.Interfaces;
+using RTI.DataBase.Objects;
 
 namespace RTI.DataBase.Util
 {
@@ -13,6 +15,7 @@ namespace RTI.DataBase.Util
     /// </summary>
     public class Scheduler
     {
+        private ILogger LogWriter;
         public DateTime SchedulerInitializationDate { get { return _intializationDate; } private set { } }
         public DateTime LastRunDate { get { return _lastRunDate; } private set { } }
         public DateTime NextRunDate { get { return _nextRunDate; } private set { } }
@@ -25,8 +28,9 @@ namespace RTI.DataBase.Util
         TimeSpan _runInterval;
         Action Job;
 
-        public Scheduler()
+        public Scheduler(ILogger logger)
         {
+            LogWriter = logger;
             _intializationDate = DateTime.UtcNow;
             _lastRunDate = _intializationDate;
         }
@@ -50,7 +54,7 @@ namespace RTI.DataBase.Util
                 TimeSpan dueTime = GetWaitSpan(runSpan, out _runInterval);
                 Timer timer;
                 _nextRunDate = DateTime.Now.Add(dueTime);
-                Logger.WriteToLog($"Next Scheduled Run at {_nextRunDate.ToString("MM/dd/yyyy hh:mm:ss tt")} ({_nextRunDate.ToUniversalTime().ToString("MM/dd/yyyy hh:mm:ss UTC")})", Priority.Info);
+                LogWriter.WriteMessageToLog($"Next Scheduled Run at {_nextRunDate.ToString("MM/dd/yyyy hh:mm:ss tt")} ({_nextRunDate.ToUniversalTime().ToString("MM/dd/yyyy hh:mm:ss UTC")})", Priority.Info);
 
                 if (!Schedule.Settings.RunOnce && _runInterval != TimeSpan.MaxValue)
                 {
@@ -94,11 +98,11 @@ namespace RTI.DataBase.Util
         {
             _jobComplete = true;
             _firstRun = false;
-            Logger.WriteToLog($"Job Completed at {DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")} ({DateTime.Now.ToUniversalTime().ToString("MM/dd/yyyy hh:mm:ss UTC")})", Priority.Info);
+            LogWriter.WriteMessageToLog($"Job Completed at {DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")} ({DateTime.Now.ToUniversalTime().ToString("MM/dd/yyyy hh:mm:ss UTC")})", Priority.Info);
             if (notifyNext)
             {
                 _nextRunDate = _lastRunDate.Add(_runInterval);
-                Logger.WriteToLog($"Next Scheduled Run at {_nextRunDate.ToString("MM/dd/yyyy hh:mm:ss tt")} ({_nextRunDate.ToUniversalTime().ToString("MM/dd/yyyy hh:mm:ss UTC")})", Priority.Info);
+                LogWriter.WriteMessageToLog($"Next Scheduled Run at {_nextRunDate.ToString("MM/dd/yyyy hh:mm:ss tt")} ({_nextRunDate.ToUniversalTime().ToString("MM/dd/yyyy hh:mm:ss UTC")})", Priority.Info);
             }
 
         }

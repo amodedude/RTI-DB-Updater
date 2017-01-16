@@ -7,19 +7,20 @@ using System.IO;
 using System.IO.Compression;
 using System.Net.Mime;
 using System.Configuration;
+using RTI.DataBase.Interfaces;
+using RTI.DataBase.Objects;
 
 namespace RTI.DataBase.Util
 {
     /// <summary>
     /// Sends email messages to recipients. 
     /// </summary>
-    public static class Emailer
+    public class Emailer : IEmailer
     {
-        public static List<Alert> EmailAlertList {get; set; }
-        public static List<string> To { get { return _To; } private set { } }
-        public static List<string> Cc { get { return _Cc; } private set { } }
-        public static List<string> Bcc { get { return _Bcc; } private set { } }
-        public static string From { get { return From; } private set { } }
+        public List<string> To { get { return _To; } private set { } }
+        public List<string> Cc { get { return _Cc; } private set { } }
+        public List<string> Bcc { get { return _Bcc; } private set { } }
+        public string From { get { return From; } private set { } }
         public static bool SendEmails { get { return _SendEmails; } private set { } }
 
         private static List<string> _To;
@@ -27,15 +28,16 @@ namespace RTI.DataBase.Util
         private static List<string> _Bcc;
         private static string _From;
         private static bool _SendEmails;
+        private ILogger LogWriter;
 
-        static Emailer()
+        public Emailer(ILogger logger)
         {
+            LogWriter = logger;
             _To = Email.Settings.To.Split(',').ToList();
             _Cc = Email.Settings.Cc.Split(',').ToList();
             _Bcc = Email.Settings.Bcc.Split(',').ToList();
             _From = Email.Settings.From;
             _SendEmails = Email.Settings.SendEmails;
-            EmailAlertList = new List<Alert>();
         }
 
 
@@ -44,11 +46,11 @@ namespace RTI.DataBase.Util
         /// </summary>
         /// <param name="subject"></param>
         /// <param name="body"></param>
-        public static void FireEmailAlerts(string subject = null)
+        public void FireEmailAlerts(string subject = null)
         {
             if (_SendEmails)
             {
-                if (EmailAlertList.Count > 0 || Email.Settings.SendOnStatusOk)
+                if (LogWriter.AlertList.Count() > 0 || Email.Settings.SendOnStatusOk)
                 {
                     string emailSubject = (string.IsNullOrEmpty(subject)) ? (Email.Settings.Subject ?? "RTI Database Updater Error Alert.") : subject;
                     string body = BuildHTMLBody();
@@ -62,20 +64,20 @@ namespace RTI.DataBase.Util
         /// from the EmailAlertList.
         /// </summary>
         /// <returns></returns>
-        private static string BuildHTMLBody()
+        private string BuildHTMLBody()
         {
             string HTML = string.Empty;
             HTML = string.Empty;
             HTML = "<h2><strong>RTI Database Updater Error Alert</strong></h2>";
 
-            if (EmailAlertList.Count > 0)
+            if (LogWriter.AlertList.Count() > 0)
             {
                 HTML += "<br /><p>The following errors have been detected:</p>";
 
                 // Detected Error(s) Table
                 HTML += @"<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""table-layout:fixed; width:2000; word-wrap:break-word;"">";
                 HTML += @"<thead><tr><th scope = ""col""> Priority </th><th scope = ""col""> Message </th><th scope = ""col""> Exception Message </th><th scope = ""col""> Inner Exception </th><th scope = ""col""> Stack Trace </th><th scope=""col""> Detection Timestamps </th></tr></thead><tbody>";
-                foreach (var alert in EmailAlertList)
+                foreach (var alert in LogWriter.AlertList)
                 {
                     HTML += "<tr>";
                     HTML += @"<td>" + alert.Priority + "</td>";
@@ -130,7 +132,7 @@ namespace RTI.DataBase.Util
         /// <param name="adressList"></param>
         /// <param name="subject"></param>
         /// <param name="body"></param>
-        private static void SendMail(string subject, string body)
+        private void SendMail(string subject, string body)
         {
             if (_To == null || _To.Count == 0)
                 throw new ArgumentException("Emailer.SendMail(), Bad Recipients List");
@@ -167,11 +169,11 @@ namespace RTI.DataBase.Util
                         {
                             if (!Email.Settings.CompressAttachments)
                             {
-                                message.Attachments.Add(new Attachment(Logger.LogFileFullPath));
+                                message.Attachments.Add(new Attachment(LogWriter.LogFileFullPath));
                                 client.Send(message);
                             }
                             else
-                                SendWithCompressedAttachments(Logger.LogFileFullPath, client, message);
+                                SendWithCompressedAttachments(LogWriter.LogFileFullPath, client, message);
                         }
                     }
                 }
@@ -185,7 +187,7 @@ namespace RTI.DataBase.Util
         /// <param name="fullName"></param>
         /// <param name="client"></param>
         /// <param name="message"></param>
-        private static void SendWithCompressedAttachments(string attachmentFilePath, SmtpClient client, MailMessage message)
+        private void SendWithCompressedAttachments(string attachmentFilePath, SmtpClient client, MailMessage message)
         {
             string line;
             Attachment attachment;
@@ -213,41 +215,5 @@ namespace RTI.DataBase.Util
                 }
             }
         }
-
-        /// <summary>
-        /// Returns a new Alert
-        /// using data from an Exception.
-        /// </summary>
-        /// <param name="ex"></param>
-        /// <param name="message"></param>
-        /// <param name="priority"></param>
-        /// <returns></returns>
-        public static void ProcessExcption(Exception ex, string message = null, Priority priority = Priority.Error)
-        {
-            Alert alert = new Alert();
-            alert.Priority = priority;
-            alert.Message = message ?? "";
-            alert.ExceptionMessage = ex?.Message ?? "";
-            alert.InnerExceptionMessage = ex?.InnerException?.Message ?? "";
-            alert.StackTrace = ex?.StackTrace ?? "";
-            alert.DetectionTimeStamp = DateTime.Now;
-            alert.Exception = ex;
-            EmailAlertList.Add(alert);
-        }
-    }
-
-    /// <summary>
-    /// Represents an 
-    /// EmailAlert type.
-    /// </summary>
-    public class Alert
-    {
-        public Priority Priority { get; set; }
-        public string Message { get; set; }
-        public string ExceptionMessage { get; set; }
-        public string InnerExceptionMessage { get; set; }
-        public string StackTrace { get; set; }
-        public DateTime DetectionTimeStamp { get; set; }
-        public Exception Exception { get; set; }
     }
 }

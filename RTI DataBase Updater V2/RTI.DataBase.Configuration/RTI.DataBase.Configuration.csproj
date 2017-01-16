@@ -44,10 +44,17 @@
   <ItemGroup>
     <Compile Include="ConfigSections\Application.cs" />
     <Compile Include="ConfigSections\Log.cs" />
+    <Compile Include="ConfigSections\USGS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ConfigSections\Email.cs" />
     <Compile Include="ConfigSections\Schedule.cs" />
     <Compile Include="ConfigSections\Security.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RTI.DataBase.Objects\RTI.DataBase.Objects.csproj">
+      <Project>{00A69495-A8E9-4124-B9CE-10EF979A2ACC}</Project>
+      <Name>RTI.DataBase.Objects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

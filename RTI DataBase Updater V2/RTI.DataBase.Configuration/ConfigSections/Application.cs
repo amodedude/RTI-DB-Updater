@@ -4,12 +4,7 @@ namespace RTI.DataBase.Updater.Config
 {
     public class Application : ConfigurationSection
     {
-        private static Application _settings = ConfigurationManager.GetSection("Application") as Application;
-
-        public static Application Settings
-        {
-            get { return _settings; }
-        }
+        public static Application Settings { get; } = ConfigurationManager.GetSection("Application") as Application;
 
         [ConfigurationProperty("DownloadRepository", IsRequired = true)]
         public string DownloadRepository

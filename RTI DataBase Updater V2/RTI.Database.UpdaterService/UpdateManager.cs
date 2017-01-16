@@ -1,22 +1,29 @@
 ﻿using RTI.DataBase.Model;
-using RTI.DataBase.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading;
+using RTI.DataBase.Interfaces;
 
 namespace RTI.DataBase.UpdaterService
 {
     public class UpdateManager
     {
+        private IEmailer Emailer;
+        private ILogger LogWriter;
+        public UpdateManager(ILogger logger, IEmailer emailer)
+        {
+            Emailer = emailer;
+            LogWriter = logger;
+        }
+
         public void RunUpdate()
         {
             try
             {
-                Logger.WriteToLog("Performing DB update...");
+                LogWriter.WriteMessageToLog("Performing DB update...");
 
                 // Download all USGS Sources
-                FileFetcher fetcher = new FileFetcher();
+                FileFetcher fetcher = new FileFetcher(LogWriter);
                 HashSet<source> sources = fetcher.fetchFiles();
 
                 // Upload to RTI DataBase
@@ -24,7 +31,7 @@ namespace RTI.DataBase.UpdaterService
             }
             catch (Exception ex)
             {
-                Logger.WriteErrorToLog(ex, "The Update Process has encountered a fatal error.", true);
+                LogWriter.WriteErrorToLog(ex, "The Update Process has encountered a fatal error.", true);
             }
             finally
             {
@@ -39,7 +46,7 @@ namespace RTI.DataBase.UpdaterService
         /// </summary>
         private void UploadFiles(HashSet<source> sources, FileFetcher fetcher)
         {
-            FileParser parser = new FileParser();
+            FileParser parser = new FileParser(LogWriter);
             foreach(source source in sources)
             {
                 string path = Path.Combine(fetcher.CurrentFolder, source.agency_id+".txt");

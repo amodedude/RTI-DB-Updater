@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using RTI.DataBase.Util;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTI.DataBase.UpdaterService
 {
@@ -14,10 +10,13 @@ namespace RTI.DataBase.UpdaterService
         /// </summary>
         static void Main()
         {
+            
+            Logger logger = new Logger();
+            Emailer emailer = new Emailer(logger);
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new RTIDBUpdaterService()
+                new RTIDBUpdaterService(logger, emailer)
             };
             ServiceBase.Run(ServicesToRun);
         }

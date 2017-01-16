@@ -4,12 +4,7 @@ namespace RTI.DataBase.Updater.Config
 {
     public class Email : ConfigurationSection
     {
-        private static Email _settings = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).GetSection("Email") as Email;
-
-        public static Email Settings
-        {
-            get { return _settings; }
-        }
+        public static Email Settings { get; } = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).GetSection("Email") as Email;
 
         [ConfigurationProperty("SendEmails", IsRequired = true)]
         public bool SendEmails

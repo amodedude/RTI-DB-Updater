@@ -1,0 +1,5 @@
+Info: PJM Database Monitor initiated on 1/16/2017 @10:02 AM
+
+
+Info: Next Scheduled Run at 01/16/2017 10:02:49 AM (01/16/2017 03:02:49 UTC)
+Info: Performing DB update...

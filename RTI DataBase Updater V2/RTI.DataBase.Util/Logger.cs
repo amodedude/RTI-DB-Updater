@@ -3,22 +3,26 @@ using System.Linq;
 using RTI.DataBase.Updater.Config;
 using System.IO;
 using System.Runtime.CompilerServices;
+using RTI.DataBase.Interfaces;
+using RTI.DataBase.Objects;
 
 namespace RTI.DataBase.Util
 {
-    public static class Logger
+    public class Logger : ILogger, IFileWriter, IExceptionProcessor
     {
-        public static string LogFileFullPath { get { return _logFullPath; } private set { } }
-        public static string LogFolder { get { return _logPath;  } private set { } }
+        public string LogFileFullPath { get { return _logFullPath; } private set { } }
+        public string LogFolder { get { return _logPath;  } private set { } }
+        EmailAlertList ILogger.AlertList { get { return AlertList; } }
         private static string _logPath;
         private static string _logFullPath;
         private static DateTime _date = new DateTime();
+        private EmailAlertList AlertList = new EmailAlertList();
 
         /// <summary>
         /// Initialize a new 
         /// Logging session.
         /// </summary>
-        static Logger()
+        public Logger()
         {
             _date = DateTime.UtcNow;
             string dateString = _date.ToString("ddmmyyyyHHss");
@@ -48,13 +52,13 @@ namespace RTI.DataBase.Util
         /// <param name="message"></param>
         /// <param name="priority"></param>
         /// <param name="args"></param>
-        public static void WriteToLog(string message, Priority priority = Priority.Info, params object[] args)
+        public void WriteMessageToLog(string message, Priority priority = Priority.Info, params object[] args)
         {
             Priority logLevel = Log.Settings.LogLevel;
             if (priority > logLevel)
             {
                 string msg = string.Join(": ", new string[] { priority.ToString(), message });
-                WriteToLogFile(msg);
+                WriteToFile(msg, _logFullPath);
                 Console.WriteLine(msg, args);
             }
         }
@@ -63,7 +67,7 @@ namespace RTI.DataBase.Util
         /// Write an Exception to 
         /// the error log. 
         /// </summary>
-        public static void WriteErrorToLog(Exception ex, string message = "", bool addToEmail = false, Priority priority = Priority.Error, [CallerMemberName]string method = "", [CallerLineNumber] int line  = -999, [CallerFilePath] string ClassPath = "")
+        public void WriteErrorToLog(Exception ex, string message = "", bool addToEmail = false, Priority priority = Priority.Error, [CallerMemberName]string method = "", [CallerLineNumber] int line  = -999, [CallerFilePath] string ClassPath = "")
         {
             string msg = (!string.IsNullOrEmpty(message)) ? string.Join(": ", new string[] { "ErrorMessage", message }) : "";
             string exceptionMessage = ex?.Message ?? String.Empty;
@@ -84,23 +88,54 @@ namespace RTI.DataBase.Util
             error = Environment.NewLine +  headerFooter + Environment.NewLine + error + Environment.NewLine + headerFooter;
 
             if (addToEmail)
-                Emailer.ProcessExcption(ex, error, priority);
+                ProcessExcption(ex, error, priority);
 
-            WriteToLog(error, priority);
+            WriteMessageToLog(error, priority);
         }
+
+        private static object lockObject = new object();
 
         /// <summary>
         /// Write text to the 
         /// log file.
         /// </summary>
         /// <param name="message"></param>
-        private static void WriteToLogFile(string message)
+        public void WriteToFile(string text, string filePath)
         {
-            if (!File.Exists(_logFullPath))
-                File.Create(_logFullPath);
+            if (!File.Exists(filePath))
+                File.Create(filePath).Close();
 
-            using (StreamWriter writer = new StreamWriter(_logFullPath, true))
-                writer.WriteLine(message);
-        }     
+            lock (lockObject)
+            {
+                using (StreamWriter writer = new StreamWriter(filePath, true))
+                    writer.WriteLine(text);
+            }
+        }
+
+        /// <summary>
+        /// Returns a new Alert
+        /// using data from an Exception.
+        /// </summary>
+        /// <param name="ex"></param>
+        /// <param name="message"></param>
+        /// <param name="priority"></param>
+        /// <returns></returns>
+        public void ProcessExcption(Exception ex, string message = null, Priority priority = Priority.Error)
+        {
+            Alert alert = new Alert();
+            alert.Priority = priority;
+            alert.Message = message ?? "";
+            alert.ExceptionMessage = ex?.Message ?? "";
+            alert.InnerExceptionMessage = ex?.InnerException?.Message ?? "";
+            alert.StackTrace = ex?.StackTrace ?? "";
+            alert.DetectionTimeStamp = DateTime.Now;
+            alert.Exception = ex;
+            AlertList.Add(alert);
+        }
+
+        public int Count()
+        {
+            return AlertList.Count();
+        }
     }
 }

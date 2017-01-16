@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
+using RTI.DataBase.Interfaces;
 using RTI.DataBase.Util;
 using RTI.DataBase.Model;
 
@@ -10,8 +11,13 @@ namespace RTI.DataBase.UpdaterService
     /// <summary>
     /// Handles reading of downloaded files. 
     /// </summary>
-    sealed class FileParser
+    public class FileParser
     {
+        ILogger LogWriter;
+        public FileParser(ILogger logger)
+        {
+            LogWriter = logger;
+        }
         /// <summary>
         /// Initializes the file read operation. 
         /// </summary>
@@ -31,7 +37,7 @@ namespace RTI.DataBase.UpdaterService
         {
             try
             {
-                Logger.WriteToLog("Opening File: " + filePath);
+                LogWriter.WriteMessageToLog("Opening File: " + filePath);
 
                 // Open the text file using a stream reader.
                 using (StreamReader sr = new StreamReader(filePath))
@@ -40,15 +46,15 @@ namespace RTI.DataBase.UpdaterService
                     var data = ExtractData(sr, filePath);
                     Uploader rtiUploader = new Uploader();
                     if(data.Count() > 0) // Only upload if there is data to be uploaded. 
-                        rtiUploader.Upload(data, USGSID);
+                        rtiUploader.Upload(data, USGSID, LogWriter);
                 }
            }
             catch (Exception ex)
             {
-                Logger.WriteToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
+                LogWriter.WriteMessageToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
                 System.Diagnostics.Debugger.Break();
-                Logger.WriteToLog("There was an error reading this file: ");
-                Logger.WriteToLog(ex.Message);
+                LogWriter.WriteMessageToLog("There was an error reading this file: ");
+                LogWriter.WriteMessageToLog(ex.Message);
             }
         }
 
@@ -128,7 +134,7 @@ namespace RTI.DataBase.UpdaterService
                             }
                             else
                             {
-                                Logger.WriteToLog("\nERROR: " + filePath + " is not formated properly. \nThis file and it's contents will not be parsed from line " + Convert.ToString(CurrentLineNumber) + ".");
+                                LogWriter.WriteMessageToLog("\nERROR: " + filePath + " is not formated properly. \nThis file and it's contents will not be parsed from line " + Convert.ToString(CurrentLineNumber) + ".");
                                 break; // Stop reading the file upon incorrect text format detection
                             }
                         }
@@ -138,7 +144,7 @@ namespace RTI.DataBase.UpdaterService
             }
             catch(Exception ex)
             {
-                Logger.WriteToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
+                LogWriter.WriteMessageToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
                 System.Diagnostics.Debugger.Break();
                 throw ex;
             }

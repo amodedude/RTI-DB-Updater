@@ -4,12 +4,7 @@ namespace RTI.DataBase.Updater.Config
 {
     public class Schedule : ConfigurationSection
     {
-        private static Schedule _settings = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).GetSection("Schedule") as Schedule;
-
-        public static Schedule Settings
-        {
-            get { return _settings; }
-        }
+        public static Schedule Settings { get; } = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).GetSection("Schedule") as Schedule;
 
         [ConfigurationProperty("Mode", IsRequired = true)]
         public string Mode
