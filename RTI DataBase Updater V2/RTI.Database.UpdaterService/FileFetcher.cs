@@ -13,12 +13,14 @@ using RTI.DataBase.Objects;
 
 namespace RTI.DataBase.UpdaterService
 {
-    internal class FileFetcher
+    public class FileFetcher
     {
-        internal FileFetcher(ILogger logger)
+        public FileFetcher(ILogger logger)
         {
             LogWriter = logger;
-            _currentFolder = Path.Combine(Application.Settings.DownloadRepository, DateTime.Now.ToString("MMddyyyHHmmss"));
+            string fileRepo = Application.Settings?.DownloadRepository ??
+                              (Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "RTI File Repository");
+            _currentFolder = Path.Combine(fileRepo, DateTime.Now.ToString("MMddyyyHHmmss"));
         }
 
         private ILogger LogWriter;
@@ -96,19 +98,22 @@ namespace RTI.DataBase.UpdaterService
             // Get the USGSID
             try
             {
-                string USGSID = source.agency_id;
-                if (!_initializedDownloads.Contains(source))
-                {
-                    string file_name = USGSID + ".txt";                        
+                var usgsid = source.agency_id;
 
-                    if (!Directory.Exists(_currentFolder))
-                        Directory.CreateDirectory(_currentFolder);
+                // Another worker thread has already initiated the download.
+                if (_initializedDownloads.Contains(source))
+                    return;
 
-                    string filePath = Path.Combine(_currentFolder, file_name);
-                    download_file(USGSID, filePath); // Fetch the file
-                                                     //parseFile.ReadFile(filePath, USGSID); // Read the fetched file contents 
-                    _initializedDownloads.Add(source);
-                }
+                var fileName = usgsid + ".txt";                        
+
+                if (!Directory.Exists(_currentFolder))
+                    Directory.CreateDirectory(_currentFolder);
+
+                var filePath = Path.Combine(_currentFolder, fileName);
+                var uri = BuildUri(usgsid);
+                download_file(uri, filePath); // Fetch the file
+                //parseFile.ReadFile(filePath, USGSID); // Read the fetched file contents 
+                _initializedDownloads.Add(source);
             }
             catch (Exception ex)
             {
@@ -123,6 +128,23 @@ namespace RTI.DataBase.UpdaterService
             }
         }
 
+        /// <summary>
+        /// Build the USGS URL
+        /// for a given USGS ID input.
+        /// </summary>
+        /// <param name="usgsid">IDs must be 8-15 digits long</param>
+        /// <returns></returns>
+        public string BuildUri(string usgsid)
+        {
+            var parameterList = new List<string>(USGS.Settings.ParameterCodes);
+            var paramCodes = $"cd_{string.Join("=1&cd_",(parameterList))}=1";
+            var fileFormat = $"format={USGS.Settings.FileFormatSpecifier.Trim()}";
+            var siteNumer = $"site_no={usgsid}";
+            var uri = USGS.Settings.ApiUri.TrimEnd('/') + '/' + USGS.Settings.OutputDataType.Trim() + '?'
+                ;
+            uri = string.Join("&", uri + paramCodes, fileFormat, siteNumer);
+            return uri;
+        }
 
         /// <summary>
         /// Downloads the USGS text files 
@@ -135,7 +157,7 @@ namespace RTI.DataBase.UpdaterService
         /// </returns>
         private void download_file(string usgsid, string filePath)
         {
-                LogWriter.WriteMessageToLog("Downloading File with USGSID =  " + Convert.ToString(usgsid));
+                LogWriter.WriteMessageToLog("Downloading File with USGSID =  " + usgsid);
                 ServicePointManager.DefaultConnectionLimit = int.MaxValue;
                 using (var client = new WebClientWithTimeOut() {
                     Timeout = TimeSpan.FromSeconds(Application.Settings.DownloadTimeOutSeconds) })

@@ -26,18 +26,31 @@ namespace RTI.DataBase.Util
         {
             _date = DateTime.UtcNow;
             string dateString = _date.ToString("ddmmyyyyHHss");
-            string logFileLocation = Log.Settings.LogFolderLocation;
-            string logFileName = Path.GetFileNameWithoutExtension(Log.Settings.LogFileName);
+            string logFileLocation = Log.Settings?.LogFolderLocation;
+            string logFileName = (logFileLocation != null) ? Path.GetFileNameWithoutExtension(Log.Settings?.LogFileName) : (Log.Settings?.LogFileName ?? "RTIDBUpdaterLog");
 
-            if (logFileLocation.ToLower() == "default")
-                _logPath = Path.Combine(System.Windows.Forms.Application.StartupPath, "logs", dateString);
+            string logFolder = Path.Combine(System.Windows.Forms.Application.StartupPath, "logs");
+            if (logFileLocation?.ToLower() == "default")
+                _logPath = Path.Combine(logFolder, "logs", dateString);
             else
-                _logPath = Path.Combine(logFileLocation, dateString);
+                _logPath = Path.Combine(logFileLocation ?? logFolder, dateString);
 
             string logFullPath = Path.Combine(_logPath, logFileName + ".txt");
 
             if (!Directory.Exists(_logPath))
-                Directory.CreateDirectory(_logPath);
+            {
+                try
+                {
+                    Directory.CreateDirectory(_logPath);
+                }
+                catch (UnauthorizedAccessException ex)
+                {
+                    _logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "logs", dateString);
+                    logFullPath = Path.Combine(_logPath, logFileName + ".txt");
+                    if(!Directory.Exists(_logPath))
+                        Directory.CreateDirectory(_logPath);
+                }
+            }
 
             if (!File.Exists(logFullPath))
                 File.Create(logFullPath).Close();
