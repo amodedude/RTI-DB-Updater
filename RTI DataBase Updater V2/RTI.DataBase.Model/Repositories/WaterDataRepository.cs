@@ -27,9 +27,10 @@ namespace RTI.DataBase.Model.Repositories
         /// <returns></returns>
         public water_data GetMostRecentWaterDataValue(string sourceId)
         {
-            return RtiContext.WaterData.Where(w => w.sourceid == sourceId)
+            var result = RtiContext.WaterData.Where(w => w.sourceid == sourceId)
                 .OrderByDescending(v => v.measurment_date)
                 .FirstOrDefault();
+            return result;
         }
 
         /// <summary>

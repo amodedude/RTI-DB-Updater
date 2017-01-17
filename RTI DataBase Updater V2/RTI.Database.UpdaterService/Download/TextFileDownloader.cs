@@ -14,13 +14,6 @@ namespace RTI.Database.UpdaterService.Download
 {
     public class TextFileDownloader : IDownloader
     {
-        private ILogger LogWriter;
-
-        public TextFileDownloader(ILogger logger)
-        {
-            LogWriter = logger;
-        }
-
         /// <summary>
         /// Downloads the USGS text files 
         /// containing conductivity information. 
@@ -32,12 +25,11 @@ namespace RTI.Database.UpdaterService.Download
         /// </returns>
         public void download_file(string uri, string filePath, bool useCompression)
         {
-            LogWriter.WriteMessageToLog("Downloading File from " + uri);
             ServicePointManager.DefaultConnectionLimit = int.MaxValue;
             using (
                 var client = new WebClientWithTimeOut()
                 {
-                    Timeout = TimeSpan.FromSeconds(Application.Settings.DownloadTimeOutSeconds),
+                    Timeout = TimeSpan.FromMilliseconds(Application.Settings.DownloadTimeOutMilliseconds),
                     GzipCompression = useCompression
                 })
             {

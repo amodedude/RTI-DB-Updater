@@ -18,10 +18,16 @@ namespace RTI.DataBase.Updater.Config
             get { return (int)this["MaxDegreeOfParallelism"]; }
         }
 
-        [ConfigurationProperty("DownloadTimeOutSeconds", IsRequired = true)]
-        public int DownloadTimeOutSeconds
+        [ConfigurationProperty("DownloadTimeOutMilliseconds", IsRequired = true)]
+        public int DownloadTimeOutMilliseconds
         {
-            get { return (int)this["DownloadTimeOutSeconds"]; }
+            get { return (int)this["DownloadTimeOutMilliseconds"]; }
+        }
+
+        [ConfigurationProperty("UploadTimeOutMilliseconds", IsRequired = true)]
+        public int UploadTimeOutMilliseconds
+        {
+            get { return (int)this["UploadTimeOutMilliseconds"]; }
         }
 
         [ConfigurationProperty("UseLatestCachedFiles", IsRequired = true)]

@@ -1,0 +1,12 @@
+Info: PJM Database Monitor initiated on 1/16/2017 @8:53 PM
+
+
+Info: Next Scheduled Run at 01/16/2017 08:53:42 PM (01/17/2017 01:53:42 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Using Latest Cached files, no files to download.
+Info: Cache directory = C:\Users\John\Desktop\RTI File Repository\01162017180708
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.

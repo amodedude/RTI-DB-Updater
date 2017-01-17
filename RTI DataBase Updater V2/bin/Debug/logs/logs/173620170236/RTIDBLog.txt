@@ -1,0 +1,2341 @@
+Info: PJM Database Monitor initiated on 1/16/2017 @9:36 PM
+
+
+Info: Next Scheduled Run at 01/16/2017 09:36:36 PM (01/17/2017 02:36:36 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Using Latest Cached files, no files to download.
+Info: Cache directory = C:\Users\John\Desktop\RTI File Repository\01162017180708
+Info: Initiating File upload process...
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01021050.txt
+Info: 
+Database is up to date for source 01021050
+Info: No data uploaded, source is up to date for USGSID 01021050
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\010228955.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\010228955.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01036390.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01036390.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01055100.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01055100.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01095220.txt
+Info: 
+Database is up to date for source 01095220
+Info: No data uploaded, source is up to date for USGSID 01095220
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104370.txt
+Info: 
+Database is up to date for source 01104370
+Info: No data uploaded, source is up to date for USGSID 01104370
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104405.txt
+Info: 
+Database is up to date for source 01104405
+Info: No data uploaded, source is up to date for USGSID 01104405
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104415.txt
+Info: 
+Database is up to date for source 01104415
+Info: No data uploaded, source is up to date for USGSID 01104415
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104420.txt
+Info: 
+Database is up to date for source 01104420
+Info: No data uploaded, source is up to date for USGSID 01104420
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104430.txt
+Info: 
+Database is up to date for source 01104430
+Info: No data uploaded, source is up to date for USGSID 01104430
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104453.txt
+Info: 
+Database is up to date for source 01104453
+Info: No data uploaded, source is up to date for USGSID 01104453
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104455.txt
+Info: 
+Database is up to date for source 01104455
+Info: No data uploaded, source is up to date for USGSID 01104455
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104460.txt
+Info: 
+Database is up to date for source 01104460
+Info: No data uploaded, source is up to date for USGSID 01104460
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104475.txt
+Info: 
+Database is up to date for source 01104475
+Info: No data uploaded, source is up to date for USGSID 01104475
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104480.txt
+Info: 
+Database is up to date for source 01104480
+Info: No data uploaded, source is up to date for USGSID 01104480
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01111230.txt
+Info: 
+Database is up to date for source 01111230
+Info: No data uploaded, source is up to date for USGSID 01111230
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115098.txt
+Info: 
+Database is up to date for source 01115098
+Info: No data uploaded, source is up to date for USGSID 01115098
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115110.txt
+Info: 
+Database is up to date for source 01115110
+Info: No data uploaded, source is up to date for USGSID 01115110
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115114.txt
+Info: 
+Database is up to date for source 01115114
+Info: No data uploaded, source is up to date for USGSID 01115114
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115120.txt
+Info: 
+Database is up to date for source 01115120
+Info: No data uploaded, source is up to date for USGSID 01115120
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115170.txt
+Info: 
+Database is up to date for source 01115170
+Info: No data uploaded, source is up to date for USGSID 01115170
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115183.txt
+Info: 
+Database is up to date for source 01115183
+Info: No data uploaded, source is up to date for USGSID 01115183
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115184.txt
+Info: 
+Database is up to date for source 01115184
+Info: No data uploaded, source is up to date for USGSID 01115184
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115187.txt
+Info: 
+Database is up to date for source 01115187
+Info: No data uploaded, source is up to date for USGSID 01115187
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115190.txt
+Info: 
+Database is up to date for source 01115190
+Info: No data uploaded, source is up to date for USGSID 01115190
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115265.txt
+Info: 
+Database is up to date for source 01115265
+Info: No data uploaded, source is up to date for USGSID 01115265
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115275.txt
+Info: 
+Database is up to date for source 01115275
+Info: No data uploaded, source is up to date for USGSID 01115275
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115276.txt
+Info: 
+Database is up to date for source 01115276
+Info: No data uploaded, source is up to date for USGSID 01115276
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115280.txt
+Info: 
+Database is up to date for source 01115280
+Info: No data uploaded, source is up to date for USGSID 01115280
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01115297.txt
+Info: 
+Database is up to date for source 01115297
+Info: No data uploaded, source is up to date for USGSID 01115297
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01139830.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01139830.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01139838.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01139838.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01160000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01160000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01184000.txt
+Info: 
+Database is up to date for source 01184000
+Info: No data uploaded, source is up to date for USGSID 01184000
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01193050.txt
+Info: 
+Database is up to date for source 01193050
+Info: No data uploaded, source is up to date for USGSID 01193050
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01194750.txt
+Info: 
+Database is up to date for source 01194750
+Info: No data uploaded, source is up to date for USGSID 01194750
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01194796.txt
+Info: 
+Database is up to date for source 01194796
+Info: No data uploaded, source is up to date for USGSID 01194796
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01209710.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01209710.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01302250.txt
+Info: 
+Database is up to date for source 01302250
+Info: No data uploaded, source is up to date for USGSID 01302250
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01302845.txt
+Info: 
+Database is up to date for source 01302845
+Info: No data uploaded, source is up to date for USGSID 01302845
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01304057.txt
+Info: 
+Database is up to date for source 01304057
+Info: No data uploaded, source is up to date for USGSID 01304057
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01304200.txt
+Info: 
+Database is up to date for source 01304200
+Info: No data uploaded, source is up to date for USGSID 01304200
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01304562.txt
+Info: 
+Database is up to date for source 01304562
+Info: No data uploaded, source is up to date for USGSID 01304562
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01310740.txt
+Info: 
+Database is up to date for source 01310740
+Info: No data uploaded, source is up to date for USGSID 01310740
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01311143.txt
+Info: 
+Database is up to date for source 01311143
+Info: No data uploaded, source is up to date for USGSID 01311143
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01311875.txt
+Info: 
+Database is up to date for source 01311875
+Info: No data uploaded, source is up to date for USGSID 01311875
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01367625.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01367625.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01367770.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01367770.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01367780.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01367780.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01367800.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01367800.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01372058.txt
+Info: 
+Database is up to date for source 01372058
+Info: No data uploaded, source is up to date for USGSID 01372058
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01374019.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01374019.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01376269.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01376269.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01376304.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01376304.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01378387.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01378387.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01378560.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01378560.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01378780.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01378780.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01379000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01379000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01379200.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01379200.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01379773.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01379773.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01381800.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01381800.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01382000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01382000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01382210.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01382210.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01382500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01382500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01388000.txt
+Info: 
+Database is up to date for source 01388000
+Info: No data uploaded, source is up to date for USGSID 01388000
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01388500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01388500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01389000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01389000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01389005.txt
+Info: 
+Database is up to date for source 01389005
+Info: No data uploaded, source is up to date for USGSID 01389005
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01389138.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01389138.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01389500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01389500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01391100.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01391100.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01391500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01391500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01391550.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01391550.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01394500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01394500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01395000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01395000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01396500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01396500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01396550.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01396550.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01396660.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01396660.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01397000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01397000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01398000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01398000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01399690.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01399690.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01399700.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01399700.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01400500.txt
+Info: 
+Database is up to date for source 01400500
+Info: No data uploaded, source is up to date for USGSID 01400500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01400510.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01400510.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01402000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01402000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01402900.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01402900.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01403385.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01403385.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01403900.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01403900.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01404100.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01404100.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01408000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408029.txt
+Info: 
+Database is up to date for source 01408029
+Info: No data uploaded, source is up to date for USGSID 01408029
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408155.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01408155.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408160.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01408160.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408167.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01408167.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01408500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408700.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01408700.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01408719.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01408719.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01409095.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01409095.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01409416.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01409416.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01409810.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01409810.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01410784.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01410784.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01411000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01411000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01411400.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01411400.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01411500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01411500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01411955.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01411955.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01412350.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01412350.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01427510.txt
+Info: 
+Database is up to date for source 01427510
+Info: No data uploaded, source is up to date for USGSID 01427510
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01433500.txt
+Info: 
+Database is up to date for source 01433500
+Info: No data uploaded, source is up to date for USGSID 01433500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01440000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01440000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01440090.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01440090.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01442760.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01442760.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01443250.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01443250.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01445160.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01445160.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01445900.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01445900.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01446700.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01446700.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01454700.txt
+Info: 
+Database is up to date for source 01454700
+Info: No data uploaded, source is up to date for USGSID 01454700
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01454720.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01454720.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01455120.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01455120.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01457400.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01457400.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460200.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01460200.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460300.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01460300.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460400.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01460400.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460440.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01460440.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460530.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01460530.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460565.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01460565.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460595.txt
+Info: 
+Database is up to date for source 01460595
+Info: No data uploaded, source is up to date for USGSID 01460595
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01460600.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01460600.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01463450.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01463450.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01463500.txt
+Info: 
+Database is up to date for source 01463500
+Info: No data uploaded, source is up to date for USGSID 01463500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01463850.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01463850.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01464040.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01464040.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01464515.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01464515.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01464527.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01464527.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01464529.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01464529.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01464578.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01464578.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01464600.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01464600.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01466500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01466500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01467016.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01467016.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01467029.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01467029.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01467200.txt
+Info: 
+Database is up to date for source 01467200
+Info: No data uploaded, source is up to date for USGSID 01467200
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01467359.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01467359.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01468500.txt
+Info: 
+Database is up to date for source 01468500
+Info: No data uploaded, source is up to date for USGSID 01468500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01470960.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01470960.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01472000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01472000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01472104.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01472104.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01472119.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01472119.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\014721254.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\014721254.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\014721259.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\014721259.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01473499.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01473499.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01473500.txt
+Info: 
+Database is up to date for source 01473500
+Info: No data uploaded, source is up to date for USGSID 01473500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01473675.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01473675.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01473780.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01473780.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01474500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01474500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01474703.txt
+Info: 
+Database is up to date for source 01474703
+Info: No data uploaded, source is up to date for USGSID 01474703
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01477050.txt
+Info: 
+Database is up to date for source 01477050
+Info: No data uploaded, source is up to date for USGSID 01477050
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01480065.txt
+Info: 
+Database is up to date for source 01480065
+Info: No data uploaded, source is up to date for USGSID 01480065
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01480617.txt
+Info: 
+Database is up to date for source 01480617
+Info: No data uploaded, source is up to date for USGSID 01480617
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01480870.txt
+Info: 
+Database is up to date for source 01480870
+Info: No data uploaded, source is up to date for USGSID 01480870
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01481000.txt
+Info: 
+Database is up to date for source 01481000
+Info: No data uploaded, source is up to date for USGSID 01481000
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01481500.txt
+Info: 
+Database is up to date for source 01481500
+Info: No data uploaded, source is up to date for USGSID 01481500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01482500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01482500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01482530.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01482530.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01482800.txt
+Info: 
+Database is up to date for source 01482800
+Info: No data uploaded, source is up to date for USGSID 01482800
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01483177.txt
+Info: 
+Database is up to date for source 01483177
+Info: No data uploaded, source is up to date for USGSID 01483177
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01484080.txt
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01484084.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01484084.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01484085.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01484085.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01484525.txt
+Info: 
+Database is up to date for source 01484525
+Info: No data uploaded, source is up to date for USGSID 01484525
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01484680.txt
+Info: 
+Database is up to date for source 01484680
+Info: No data uploaded, source is up to date for USGSID 01484680
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01487000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01487000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01487150.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01487150.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01490120.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01490120.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01490140.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01490140.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01491000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01491000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01493112.txt
+Info: 
+Database is up to date for source 01493112
+Info: No data uploaded, source is up to date for USGSID 01493112
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01515050.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01515050.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01516350.txt
+Info: 
+Database is up to date for source 01516350
+Info: No data uploaded, source is up to date for USGSID 01516350
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01534090.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01534090.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01540500.txt
+Info: 
+Database is up to date for source 01540500
+Info: No data uploaded, source is up to date for USGSID 01540500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01541490.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01541490.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01542500.txt
+Info: 
+Database is up to date for source 01542500
+Info: No data uploaded, source is up to date for USGSID 01542500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01544500.txt
+Info: 
+Database is up to date for source 01544500
+Info: No data uploaded, source is up to date for USGSID 01544500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01545500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01545500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01545800.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01545800.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01547950.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01547950.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01548303.txt
+Info: 
+Database is up to date for source 01548303
+Info: No data uploaded, source is up to date for USGSID 01548303
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01548413.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01548413.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01548418.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01548418.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01549700.txt
+Info: 
+Database is up to date for source 01549700
+Info: No data uploaded, source is up to date for USGSID 01549700
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01549755.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01549755.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01551500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01551500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01553115.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01553115.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01553500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01553500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01554010.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01554010.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01555275.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01555275.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01555400.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01555400.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01555710.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01555710.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01555725.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01555725.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01559795.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01559795.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01564997.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01564997.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01567000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01567000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01567150.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01567150.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01569980.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01569980.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01570064.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01570064.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01570076.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01570076.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01570078.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01570078.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01570450.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01570450.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01570500.txt
+Info: 
+Database is up to date for source 01570500
+Info: No data uploaded, source is up to date for USGSID 01570500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01571490.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01571490.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0157155010.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0157155010.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0157155014.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0157155014.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01571774.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01571774.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01571778.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01571778.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01571820.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01571820.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01571919.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01571919.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01572000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01572000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01572025.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01572025.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01572950.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01572950.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01573000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01573000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01573095.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01573095.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01573482.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01573482.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01573695.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01573695.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01576500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01576500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01576540.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01576540.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01577300.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01577300.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01579550.txt
+Info: 
+Database is up to date for source 01579550
+Info: No data uploaded, source is up to date for USGSID 01579550
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01581752.txt
+Info: 
+Database is up to date for source 01581752
+Info: No data uploaded, source is up to date for USGSID 01581752
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01595800.txt
+Info: 
+Database is up to date for source 01595800
+Info: No data uploaded, source is up to date for USGSID 01595800
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01608070.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01608070.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01608500.txt
+Info: 
+Database is up to date for source 01608500
+Info: No data uploaded, source is up to date for USGSID 01608500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01610400.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01610400.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01611500.txt
+Info: 
+Database is up to date for source 01611500
+Info: No data uploaded, source is up to date for USGSID 01611500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01613900.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01613900.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01614830.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01614830.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01615000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01615000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01616075.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01616075.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01616100.txt
+Info: 
+Database is up to date for source 01616100
+Info: No data uploaded, source is up to date for USGSID 01616100
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01621050.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01621050.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01622000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01622000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01625000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01625000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01626000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01626000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01626920.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01626920.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01627500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01627500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01629500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01629500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01630700.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01630700.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01631000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01631000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01632000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01632000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01632082.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01632082.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01632900.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01632900.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01633000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01633000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01634000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01634000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01634500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01634500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01635090.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01635090.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01635500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01635500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01636242.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01636242.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0163626650.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0163626650.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01636316.txt
+Info: 
+Database is up to date for source 01636316
+Info: No data uploaded, source is up to date for USGSID 01636316
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01636500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01636500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01643700.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01643700.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01644280.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01644280.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01645704.txt
+Info: 
+Database is up to date for source 01645704
+Info: No data uploaded, source is up to date for USGSID 01645704
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01645762.txt
+Info: 
+Database is up to date for source 01645762
+Info: No data uploaded, source is up to date for USGSID 01645762
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01646000.txt
+Info: 
+Database is up to date for source 01646000
+Info: No data uploaded, source is up to date for USGSID 01646000
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01646305.txt
+Info: 
+Database is up to date for source 01646305
+Info: No data uploaded, source is up to date for USGSID 01646305
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01646500.txt
+Info: 
+Database is up to date for source 01646500
+Info: No data uploaded, source is up to date for USGSID 01646500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01648010.txt
+Info: 
+Database is up to date for source 01648010
+Info: No data uploaded, source is up to date for USGSID 01648010
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01649190.txt
+Info: 
+Database is up to date for source 01649190
+Info: No data uploaded, source is up to date for USGSID 01649190
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01649500.txt
+Info: 
+Database is up to date for source 01649500
+Info: No data uploaded, source is up to date for USGSID 01649500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01650800.txt
+Info: 
+Database is up to date for source 01650800
+Info: No data uploaded, source is up to date for USGSID 01650800
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01651000.txt
+Info: 
+Database is up to date for source 01651000
+Info: No data uploaded, source is up to date for USGSID 01651000
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01651770.txt
+Info: 
+Database is up to date for source 01651770
+Info: No data uploaded, source is up to date for USGSID 01651770
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01651800.txt
+Info: 
+Database is up to date for source 01651800
+Info: No data uploaded, source is up to date for USGSID 01651800
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0165389205.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0165389205.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0165389480.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0165389480.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01654000.txt
+Info: 
+Database is up to date for source 01654000
+Info: No data uploaded, source is up to date for USGSID 01654000
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01654500.txt
+Info: 
+Database is up to date for source 01654500
+Info: No data uploaded, source is up to date for USGSID 01654500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01656000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01656000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01656903.txt
+Info: 
+Database is up to date for source 01656903
+Info: No data uploaded, source is up to date for USGSID 01656903
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01658000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01658000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01660400.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01660400.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01664000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01664000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01665500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01665500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01666500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01666500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01667500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01667500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01668000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01668000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0166818623.txt
+Info: 
+Database is up to date for source 0166818623
+Info: No data uploaded, source is up to date for USGSID 0166818623
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0166818985.txt
+Info: 
+Database is up to date for source 0166818985
+Info: No data uploaded, source is up to date for USGSID 0166818985
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01669000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01669000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01669520.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01669520.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01671020.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01671020.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01671100.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01671100.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01673000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01673000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01673638.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01673638.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01674000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01674000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02011400.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02011400.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02011500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02011500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02011800.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02011800.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02012500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02012500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02013000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02013000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02014000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02014000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02015700.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02015700.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02016000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02016000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02016500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02016500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02017500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02017500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02018000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02018000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02019500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02019500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02020500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02020500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02021500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02021500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02024000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02024000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02025500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02025500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02026000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02026000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02029000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02029000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02030000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02030000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02032640.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02032640.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02035000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02035000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02037000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02037000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02038830.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02038830.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02038880.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02038880.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02039500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02039500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02040000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02040000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02041000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02041000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02041650.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02041650.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02042222.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02042222.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02042500.txt
+Info: 
+Database is up to date for source 02042500
+Info: No data uploaded, source is up to date for USGSID 02042500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02043016.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02043016.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02043190.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02043190.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02043210.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02043210.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0204330010.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0204330010.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02043410.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02043410.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02043415.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02043415.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0204342510.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0204342510.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02043430.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02043430.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0204345010.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0204345010.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02043460.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02043460.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0204347500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0204347500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0204385315.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0204385315.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0204387900.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0204387900.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02044500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02044500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02045500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02045500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02047500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02047500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02051500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02051500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02052000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02052000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0205338780.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0205338780.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0205363590.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0205363590.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02053652.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02053652.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02053800.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02053800.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02054750.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02054750.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0205491522.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0205491522.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0205492550.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0205492550.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0205494935.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0205494935.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02055010.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02055010.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02055080.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02055080.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02056000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02056000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02059485.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02059485.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02059500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02059500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02060500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02060500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02061000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02061000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02061500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02061500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02064000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02064000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02065500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02065500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02066000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02066000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02070000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02070000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02073000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02073000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0207428225.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0207428225.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02074500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02074500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02075045.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02075045.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02077000.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02077000.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02079500.txt
+Info: 
+Database is up to date for source 02079500
+Info: No data uploaded, source is up to date for USGSID 02079500
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02079640.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02079640.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208062765.txt
+Info: 
+Database is up to date for source 0208062765
+Info: No data uploaded, source is up to date for USGSID 0208062765
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02081022.txt
+Info: 
+Database is up to date for source 02081022
+Info: No data uploaded, source is up to date for USGSID 02081022
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208102855.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208102855.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02081054.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02081054.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02081094.txt
+Info: 
+Database is up to date for source 02081094
+Info: No data uploaded, source is up to date for USGSID 02081094
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02081133.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02081133.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208114150.txt
+Info: 
+Database is up to date for source 0208114150
+Info: No data uploaded, source is up to date for USGSID 0208114150
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208115600.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208115600.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208117835.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208117835.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208117950.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208117950.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208117980.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208117980.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208118075.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208118075.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02083500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02083500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02084160.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02084160.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02084472.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02084472.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208450705.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208450705.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208453300.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208453300.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208454253.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208454253.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455145.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455145.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455155.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455155.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455165.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455165.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455175.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455175.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455195.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455195.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455205.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455205.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455220.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455220.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455500.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455500.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455560.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455560.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455600.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455600.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455615.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208455615.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\02084557.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\02084557.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208457125.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208457125.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208457150.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208457150.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208457700.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208457700.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208458825.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208458825.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208458850.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208458850.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208458890.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\0208458890.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\0208458892.txt

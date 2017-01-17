@@ -5,6 +5,8 @@ using System.Linq;
 using RTI.Database.UpdaterService.Upload;
 using RTI.DataBase.Interfaces;
 using RTI.DataBase.Model;
+using RTI.DataBase.Objects;
+using RTI.DataBase.Updater.Config;
 
 namespace RTI.Database.UpdaterService.Parse
 {
@@ -51,10 +53,7 @@ namespace RTI.Database.UpdaterService.Parse
            }
             catch (Exception ex)
             {
-                LogWriter.WriteMessageToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
-                System.Diagnostics.Debugger.Break();
-                LogWriter.WriteMessageToLog("There was an error reading this file: ");
-                LogWriter.WriteMessageToLog(ex.Message);
+                LogWriter.WriteErrorToLog(ex, $"There was an error reading file: {filePath}",true,Priority.Warning);
             }
         }
 
@@ -66,20 +65,20 @@ namespace RTI.Database.UpdaterService.Parse
         /// <param name="fileContents"></param>
         /// <returns></returns>
         private int dateCol = 0, condCol = 0, sourceCol = 0;
-        private List<water_data> ExtractData (StreamReader fileContents, string filePath)
+
+        private List<water_data> ExtractData(StreamReader fileContents, string filePath)
         {
-            Dictionary<DateTime, int> conductivity = new Dictionary<DateTime, int>();
-            DateTime currentdate;
             DateTime lastDate = new DateTime();
-            int cond;
-            List <water_data> data = new List<water_data>();
+            List<water_data> data = new List<water_data>();
             List<int> averageCond = new List<int>();
-            char[] delimiter = new char[] { '\t' };
+            char[] delimiter = new char[] {'\t'};
             int numHeaders = 2;
             bool isHeaderFound = false;
             bool isFirstRow = true;
+            int highestHeaderIndex = 0;
 
-            try {
+            try
+            {
                 // Read the file line by line 
                 while (!fileContents.EndOfStream)
                 {
@@ -88,10 +87,17 @@ namespace RTI.Database.UpdaterService.Parse
                     // Extract Data
                     if (!line.StartsWith("#"))
                     {
-                        if ((!line.Contains("agency_cd") || !line.Contains("site_no") || !line.Contains("datetime")) && isHeaderFound)
+                        if ((!line.Contains("agency_cd") || !line.Contains("site_no") || !line.Contains("datetime")) &&
+                            isHeaderFound)
                         {
                             var segments = line.Split(delimiter, StringSplitOptions.RemoveEmptyEntries);
+
+                            if(segments.Length-1 < highestHeaderIndex)
+                                continue;
+
+                            DateTime currentdate;
                             bool dateFormatOk = DateTime.TryParse(segments[dateCol], out currentdate);
+                            int cond;
                             bool condFormatOk = int.TryParse(segments[condCol], out cond);
                             averageCond.Add(cond);
 
@@ -122,19 +128,43 @@ namespace RTI.Database.UpdaterService.Parse
                         else
                         {
                             var header = line.Split(delimiter, StringSplitOptions.RemoveEmptyEntries);
-                            dateCol = header.Select((v, i) => new { Index = i, Value = v }).Where(p => p.Value == "datetime").Select(p => p.Index).ToList().DefaultIfEmpty(-999).FirstOrDefault();
-                            condCol = header.Select((v, i) => new { Index = i, Value = v }).Where(p => p.Value.Contains("00095") && !p.Value.Contains("cd")).Select(p => p.Index).ToList().DefaultIfEmpty(-999).FirstOrDefault();
-                            sourceCol = header.Select((v, i) => new { Index = i, Value = v }).Where(p => p.Value == "site_no").Select(p => p.Index).ToList().DefaultIfEmpty(-999).FirstOrDefault();
+                            string paramCode = string.Join("_", "00095", USGS.Settings.StatisticCode);
+                            dateCol =
+                                header.Select((v, i) => new {Index = i, Value = v})
+                                    .Where(p => p.Value == "datetime")
+                                    .Select(p => p.Index)
+                                    .ToList()
+                                    .DefaultIfEmpty(-999)
+                                    .FirstOrDefault();
+                            condCol =
+                                header.Select((v, i) => new {Index = i, Value = v})
+                                    .Where(p => p.Value.Contains(paramCode) && !p.Value.Contains("cd"))
+                                    .Select(p => p.Index)
+                                    .ToList()
+                                    .DefaultIfEmpty(-999)
+                                    .FirstOrDefault();
+                            sourceCol =
+                                header.Select((v, i) => new {Index = i, Value = v})
+                                    .Where(p => p.Value == "site_no")
+                                    .Select(p => p.Index)
+                                    .ToList()
+                                    .DefaultIfEmpty(-999)
+                                    .FirstOrDefault();
 
-                            if (dateCol != -999 && condCol != -999 && sourceCol != -999) // If -999, then parameters do not exist in this line. 
+                            if (dateCol != -999 && condCol != -999 && sourceCol != -999)
+                                // If -999, then parameters do not exist in this line. 
                             {
                                 isHeaderFound = true;
+                                highestHeaderIndex = new[] {dateCol, condCol, sourceCol}.Max();
+
                                 for (int i = 0; i < numHeaders - 1; i++)
                                     fileContents.ReadLine();
                             }
                             else
                             {
-                                LogWriter.WriteMessageToLog("\nERROR: " + filePath + " is not formated properly. \nThis file and it's contents will not be parsed from line " + Convert.ToString(CurrentLineNumber) + ".");
+                                LogWriter.WriteMessageToLog("\r\n"+filePath +
+                                                            $" is not formated properly. \r\nCould not find data for parameter code {paramCode}.\r\nThis file and it's contents will not be parsed from line " +
+                                                            Convert.ToString(CurrentLineNumber) + ".\r\n", Priority.Error);
                                 break; // Stop reading the file upon incorrect text format detection
                             }
                         }
@@ -142,7 +172,7 @@ namespace RTI.Database.UpdaterService.Parse
                 }
                 return data;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LogWriter.WriteMessageToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
                 System.Diagnostics.Debugger.Break();
@@ -150,8 +180,8 @@ namespace RTI.Database.UpdaterService.Parse
             }
             finally
             {
-                fileContents.Dispose();                
-            }    
+                fileContents.Dispose();
+            }
         }
 
         /// <summary>

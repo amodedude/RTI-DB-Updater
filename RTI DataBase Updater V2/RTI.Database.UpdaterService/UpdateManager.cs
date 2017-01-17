@@ -25,7 +25,7 @@ namespace RTI.DataBase.UpdaterService
                 LogWriter.WriteMessageToLog("Performing DB update...");
 
                 // Download all USGS Sources
-                TextFileDownloader downloader = new TextFileDownloader(LogWriter);
+                TextFileDownloader downloader = new TextFileDownloader();
                 FileFetcher fetcher = new FileFetcher(LogWriter, downloader);
                 HashSet<source> sources = fetcher.fetchFiles();
 
@@ -49,6 +49,7 @@ namespace RTI.DataBase.UpdaterService
         /// </summary>
         private void UploadFiles(HashSet<source> sources, FileFetcher fetcher)
         {
+            LogWriter.WriteMessageToLog("Initiating File upload process...\r\n");
             FileParser parser = new FileParser(LogWriter);
             foreach(source source in sources)
             {

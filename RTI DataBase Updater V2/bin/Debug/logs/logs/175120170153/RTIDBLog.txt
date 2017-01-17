@@ -1,0 +1,40 @@
+Info: PJM Database Monitor initiated on 1/16/2017 @8:51 PM
+
+
+Info: Next Scheduled Run at 01/16/2017 08:51:53 PM (01/17/2017 01:51:53 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Using Latest Cached files, no files to download.
+Info: Cache directory = C:\Users\John\Desktop\RTI File Repository\01162017180708
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01021050.txt
+Info: 
+Database is up to date for source 01021050
+Info: No data uploaded, source is up to date for USGSID 01021050
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\010228955.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01162017180708\010228955.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01036390.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01162017180708\01036390.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01055100.txt
+Info: 
+ERROR: C:\Users\John\Desktop\RTI File Repository\01162017180708\01055100.txt is not formated properly. 
+This file and it's contents will not be parsed from line 0.
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01095220.txt
+Info: 
+Database is up to date for source 01095220
+Info: No data uploaded, source is up to date for USGSID 01095220
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104370.txt
+Info: 
+Database is up to date for source 01104370
+Info: No data uploaded, source is up to date for USGSID 01104370
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01104405.txt

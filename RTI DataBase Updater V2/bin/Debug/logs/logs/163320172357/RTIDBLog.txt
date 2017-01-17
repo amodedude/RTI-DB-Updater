@@ -1,0 +1,9 @@
+Info: PJM Database Monitor initiated on 1/16/2017 @6:33 PM
+
+
+Info: Next Scheduled Run at 01/16/2017 06:33:57 PM (01/16/2017 11:33:57 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Using Latest Cached files, no files to download.
+Info: Cache directory = C:\Users\John\Desktop\RTI File Repository\01162017180708
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt

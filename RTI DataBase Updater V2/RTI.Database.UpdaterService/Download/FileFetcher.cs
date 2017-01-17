@@ -115,7 +115,7 @@ namespace RTI.Database.UpdaterService.Download
         private void InitilizeDownload(source source)
         {
             // Return if another thread has already initiated the download.
-            if (_initializedDownloads.Contains(source))
+            if (_initializedDownloads.Contains(source)|| source == null)
                 return;
 
             // Get the USGSID
@@ -131,7 +131,7 @@ namespace RTI.Database.UpdaterService.Download
                 var filePath = Path.Combine(_currentFolder, fileName);
                 var builder = new URIBuilder();
                 uri = builder.BuildUri(usgsid);
-                string header = null;
+                LogWriter.WriteMessageToLog("Downloading File from " + uri);
                 Downloader.download_file(uri, filePath, USGS.Settings.GzipCompression); // Fetch the file
                 _initializedDownloads.Add(source);
             }

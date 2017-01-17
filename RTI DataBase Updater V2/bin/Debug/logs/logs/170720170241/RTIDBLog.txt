@@ -1,0 +1,21 @@
+Info: PJM Database Monitor initiated on 1/16/2017 @9:07 PM
+
+
+Info: Next Scheduled Run at 01/16/2017 09:07:41 PM (01/17/2017 02:07:41 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Using Latest Cached files, no files to download.
+Info: Cache directory = C:\Users\John\Desktop\RTI File Repository\01162017180708
+Info: Initiating File upload process.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt
+Error: 
+C:\Users\John\Desktop\RTI File Repository\01162017180708\01018035.txt is not formated properly. 
+Could not find data for parameter code 00095_00003.
+This file and it's contents will not be parsed from line 0.
+
+Info: Opening File: C:\Users\John\Desktop\RTI File Repository\01162017180708\01021050.txt
+Info: 
+Database is up to date for source 01021050
+Info: No data uploaded, source is up to date for USGSID 01021050
+

@@ -38,7 +38,13 @@ namespace RTI.DataBase.Updater.Config
         {
             get { return (string)this["ParameterCodes"]; }
         }
-        
+
+        [ConfigurationProperty("StatisticCode", IsRequired = true)]
+        public string StatisticCode
+        {
+            get { return (string)this["StatisticCode"]; }
+        }
+
         [ConfigurationProperty("GzipCompression", IsRequired = true)]
         public bool GzipCompression
         {
