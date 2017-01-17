@@ -1,13 +1,8 @@
 ﻿using RTI.DataBase.Updater.Config;
 using RTI.DataBase.Util;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Linq;
 using System.ServiceProcess;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using RTI.DataBase.Interfaces;
@@ -33,7 +28,7 @@ namespace RTI.DataBase.UpdaterService
 
         public void OnStartConsole(string[] args)
         {
-            LogWriter.WriteMessageToLog("PJM Database Monitor initiated on " + DateTime.Now.ToShortDateString() + " @" + DateTime.Now.ToShortTimeString() + "\r\n\r\n");
+            LogWriter.WriteMessageToLog("RTI Database Updater initiated on " + DateTime.Now.ToShortDateString() + " @" + DateTime.Now.ToShortTimeString() + "\r\n\r\n");
             RunUpdater(quitToken);
         }
 
@@ -42,6 +37,8 @@ namespace RTI.DataBase.UpdaterService
             Scheduler scheduler = new Scheduler(LogWriter);
             UpdateManager manager = new UpdateManager(LogWriter, Emailer);
             scheduler.RunOnSchedule(() => manager.RunUpdate());
+            LogWriter.WriteMessageToLog("RTI Database Updater has completed on " + DateTime.Now.ToShortDateString() + " @" + DateTime.Now.ToShortTimeString());
+
         }
 
         protected override void OnStart(string[] args)
@@ -50,7 +47,7 @@ namespace RTI.DataBase.UpdaterService
             if (Application.Settings.DebugMode && !Debugger.IsAttached)
                 Debugger.Launch();
 
-            LogWriter.WriteMessageToLog("PJM Database Monitor initiated on " + DateTime.Now.ToShortDateString() + " @" + DateTime.Now.ToShortTimeString() + "\r\n\r\n");
+            LogWriter.WriteMessageToLog("RTI Database Updater initiated on " + DateTime.Now.ToShortDateString() + " @" + DateTime.Now.ToShortTimeString() + "\r\n\r\n");
             monitorTask = Task.Factory.StartNew(() => RunUpdater(quitToken), quitToken);
         }
 

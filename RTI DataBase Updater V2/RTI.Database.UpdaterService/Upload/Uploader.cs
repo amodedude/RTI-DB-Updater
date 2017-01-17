@@ -88,10 +88,17 @@ namespace RTI.Database.UpdaterService.Upload
             {
                 LogWriter.WriteMessageToLog($"Upload Complected in {timer.Elapsed.Milliseconds} ms.\r\n");
             }
-            else if(!isError && !data_uploaded)
+            else if (!isError && !data_uploaded)
             {
-                LogWriter.WriteMessageToLog("\r\nDatabase is up to date for source " + USGSID);
-                LogWriter.WriteMessageToLog("No data uploaded, source is up to date for USGSID " + USGSID + "\r\n");
+                if (Application.Settings.DebugMode)
+                {
+                    LogWriter.WriteMessageToLog($"Debug Mode is on - No data uploaded for source {USGSID}");
+                }
+                else
+                {
+                    LogWriter.WriteMessageToLog("\r\nDatabase is up to date for source " + USGSID);
+                    LogWriter.WriteMessageToLog("No data uploaded, source is up to date for USGSID " + USGSID + "\r\n");
+                }
             }
             Thread.Sleep(Application.Settings.UploadTimeOutMilliseconds);
             return data_uploaded;
@@ -105,11 +112,18 @@ namespace RTI.Database.UpdaterService.Upload
         /// <returns></returns>
         private bool ExecuteMySqlCommand(string commandString, MySqlConnection connection)
         {
-            using (MySqlCommand myCmd = new MySqlCommand(commandString, connection))
+            if (!Application.Settings.DebugMode)
             {
-                myCmd.CommandType = CommandType.Text;
-                myCmd.ExecuteNonQuery();
-                return true;
+                using (MySqlCommand myCmd = new MySqlCommand(commandString, connection))
+                {
+                    myCmd.CommandType = CommandType.Text;
+                    myCmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            else
+            {
+                return false;
             }
         }
     }

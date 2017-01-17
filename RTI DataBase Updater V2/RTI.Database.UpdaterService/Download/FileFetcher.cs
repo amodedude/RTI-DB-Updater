@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using RTI.DataBase.Interfaces;
 using RTI.DataBase.Model;
@@ -29,6 +30,7 @@ namespace RTI.Database.UpdaterService.Download
         private int _numberOfFilesToDownload = 0;
         private static HashSet<source> _initializedDownloads = new HashSet<source>();
         private static HashSet<source> _failedDownloads = new HashSet<source>();
+        private  static object lockObject = new object();
 
         /// <summary>
         /// Download 
@@ -133,18 +135,24 @@ namespace RTI.Database.UpdaterService.Download
                 uri = builder.BuildUri(usgsid);
                 LogWriter.WriteMessageToLog("Downloading File from " + uri);
                 Downloader.download_file(uri, filePath, USGS.Settings.GzipCompression); // Fetch the file
-                _initializedDownloads.Add(source);
+                lock (lockObject)
+                {
+                    _initializedDownloads.Add(source);
+                }
             }
             catch (Exception ex)
             {
                 //System.Diagnostics.Debugger.Break();
                 LogWriter.WriteMessageToLog($"\r\nError: Unable to download file {_filesDownloaded + 1} of {_numberOfFilesToDownload}.\r\nSite ID = {source.agency_id:N}\r\nName = {source.full_site_name}\r\nURI = {uri}");
                 LogWriter.WriteMessageToLog("Error: " + ex.Message + "\r\nInner: " + ((ex?.InnerException == null) ? "\r\n" : ex.InnerException.Message+"\r\n"));
-                _failedDownloads.Add(source);
+                lock (lockObject)
+                {
+                    _failedDownloads.Add(source);
+                }
             }
             finally
             {
-                _filesDownloaded++;
+                Interlocked.Increment(ref _filesDownloaded);
             }
         }
     }
