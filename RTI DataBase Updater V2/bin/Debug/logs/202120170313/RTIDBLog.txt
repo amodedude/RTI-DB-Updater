@@ -1,0 +1,23 @@
+Info: RTI Database Updater initiated on 1/19/2017 @10:21 PM
+
+
+Info: Next Scheduled Run at 01/19/2017 10:21:13 PM (01/20/2017 03:21:13 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=253644081013001
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=9.24E+13
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=442727110064501
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=422128121530600
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=344203077182001
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=394634105465800
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=301124081395901
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=15036000
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=394533079581501
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=422042121513100
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=344139077211207
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=9.24E+13
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=442726110064101
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=253357080594100
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=15011894
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=301104089253400
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=9.24E+13

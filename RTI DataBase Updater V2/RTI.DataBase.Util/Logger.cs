@@ -31,7 +31,7 @@ namespace RTI.DataBase.Util
 
             string logFolder = Path.Combine(System.Windows.Forms.Application.StartupPath, "logs");
             if (logFileLocation?.ToLower() == "default")
-                _logPath = Path.Combine(logFolder, "logs", dateString);
+                _logPath = Path.Combine(logFolder, dateString);
             else
                 _logPath = Path.Combine(logFileLocation ?? logFolder, dateString);
 

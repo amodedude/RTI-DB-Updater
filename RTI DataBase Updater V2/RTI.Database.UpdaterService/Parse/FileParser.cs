@@ -176,7 +176,7 @@ namespace RTI.Database.UpdaterService.Parse
             {
                 LogWriter.WriteMessageToLog("Error: " + ex.Message + " Inner" + ex.InnerException);
                 System.Diagnostics.Debugger.Break();
-                throw ex;
+                throw;
             }
             finally
             {

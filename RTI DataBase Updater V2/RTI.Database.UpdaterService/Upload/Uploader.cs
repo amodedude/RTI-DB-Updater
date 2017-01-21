@@ -34,9 +34,9 @@ namespace RTI.Database.UpdaterService.Upload
             //ConnectionString = result.First().ToString().TrimEnd('"').TrimStart('"');
             
             // Manually commit to the database (no EF due to speed issues)
-            using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+            try
             {
-                try
+                using (MySqlConnection connection = new MySqlConnection(ConnectionString))
                 {
                     connection.Open();
                     List<string> Rows = new List<string>();
@@ -52,36 +52,45 @@ namespace RTI.Database.UpdaterService.Upload
                     {
                         foreach (var chunk in splitData)
                         {
-                            StringBuilder sCommand = new StringBuilder("INSERT INTO water_data (cond, temp, measurment_date, sourceid) VALUES ");
+                            StringBuilder sCommand =
+                                new StringBuilder(
+                                    "INSERT INTO water_data (cond, temp, measurment_date, sourceid) VALUES ");
                             foreach (var date in chunk)
                             {
-                                if(date.measurment_date > latestDatabaseDate)
-                                    Rows.Add(string.Format("({0}, {1}, '{2}', '{3}')", 
+                                if (date.measurment_date > latestDatabaseDate)
+                                    Rows.Add(string.Format("({0}, {1}, '{2}', '{3}')",
                                         MySqlHelper.EscapeString(date.cond.ToString()),
-                                        MySqlHelper.EscapeString("NULL"), 
-                                        MySqlHelper.EscapeString(date.measurment_date.GetValueOrDefault().ToString("yyyy-MM-dd HH':'mm':'ss", 
-                                        System.Globalization.CultureInfo.InvariantCulture)), 
+                                        MySqlHelper.EscapeString("NULL"),
+                                        MySqlHelper.EscapeString(
+                                            date.measurment_date.GetValueOrDefault().ToString("yyyy-MM-dd HH':'mm':'ss",
+                                                System.Globalization.CultureInfo.InvariantCulture)),
                                         MySqlHelper.EscapeString(date.sourceid)));
                             }
-                            if (Rows.Count > 0) 
+                            if (Rows.Count > 0)
                             {
                                 sCommand.Append(string.Join(",", Rows));
                                 sCommand.Append(" ON DUPLICATE KEY UPDATE dataID = dataID;");
                                 data_uploaded = ExecuteMySqlCommand(sCommand.ToString(), connection);
-                                ExecuteMySqlCommand($"UPDATE rtidev.sources s set s.has_data = 1 where s.agency_id = {USGSID};", connection);
+                                ExecuteMySqlCommand(
+                                    $"UPDATE rtidev.sources s set s.has_data = 1 where s.agency_id = {USGSID};",
+                                    connection);
                             }
                         }
                     }
                     connection.Close();
                 }
-                catch(MySqlException ex)
-                {
-                    isError = true;
-                    Debugger.Break();
-                    LogWriter.WriteMessageToLog("\r\nERROR: The system encountered an error, no data was uploaded for source " + USGSID);
-                    LogWriter.WriteMessageToLog("ERROR: In Uploader(), There was an error connecting to the database, please check that your connection settings are valid.\n" + ex.Message);
-                }             
             }
+            catch (MySqlException ex)
+            {
+                isError = true;
+                Debugger.Break();
+                LogWriter.WriteMessageToLog(
+                    "\r\nERROR: The system encountered an error, no data was uploaded for source " + USGSID);
+                LogWriter.WriteMessageToLog(
+                    "ERROR: In Uploader(), There was an error connecting to the database, please check that your connection settings are valid.\n" +
+                    ex.Message);
+            }
+
             timer.Stop();
 
             if (data_uploaded && !isError)

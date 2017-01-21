@@ -85,7 +85,7 @@ namespace RTI.Database.UpdaterService.Download
             catch (Exception ex)
             {
                 LogWriter.WriteErrorToLog(ex, "A Fatal Error has occurred while fetching USGS source files.", true); 
-                throw ex;
+                throw;
             }
         }
 

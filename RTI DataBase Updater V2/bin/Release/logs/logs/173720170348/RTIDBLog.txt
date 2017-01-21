@@ -1,0 +1,13 @@
+Info: RTI Database Updater initiated on 1/16/2017 @10:37 PM
+
+
+Info: Next Scheduled Run at 01/16/2017 10:37:48 PM (01/17/2017 03:37:48 UTC)
+Info: Performing DB update...
+Info: Fetching the list of sources from the RTI database.
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=9.24E+13
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=394634105465800
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=253644081013001
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=344203077182001
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=422128121530600
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=301124081395901
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=442727110064501

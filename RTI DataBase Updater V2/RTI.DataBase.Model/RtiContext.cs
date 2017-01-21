@@ -6,8 +6,9 @@ namespace RTI.DataBase.Model
     public class RtiContext : DbContext
     {
         public RtiContext()
-            : base("name=RTIDBModel")
+            : base(System.Configuration.ConfigurationManager.ConnectionStrings["RTIDBModel"].Name)
         {
+            Database.SetInitializer<RtiContext>(null);
             this.Configuration.LazyLoadingEnabled = false;
         }
 

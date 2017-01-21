@@ -138,7 +138,6 @@ namespace RTI.DataBase.Util
                 throw new ArgumentException("Emailer.SendMail(), Bad Recipients List");
             else
             {
-                
                 ConnectionStringsSection config =  Crypto.GetEncryptedConnectionStringsSection(System.Reflection.Assembly.GetEntryAssembly().Location);
                 ConnectionStringSettings connectionStringSection = config.ConnectionStrings["RTIEmailServer"];
                 string connection = connectionStringSection.ConnectionString;
