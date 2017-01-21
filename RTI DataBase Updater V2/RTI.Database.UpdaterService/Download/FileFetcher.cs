@@ -142,11 +142,15 @@ namespace RTI.Database.UpdaterService.Download
             }
             catch (Exception ex)
             {
-                //System.Diagnostics.Debugger.Break();
-                LogWriter.WriteMessageToLog($"\r\nError: Unable to download file {_filesDownloaded + 1} of {_numberOfFilesToDownload}.\r\nSite ID = {source.agency_id:N}\r\nName = {source.full_site_name}\r\nURI = {uri}");
-                LogWriter.WriteMessageToLog("Error: " + ex.Message + "\r\nInner: " + ((ex?.InnerException == null) ? "\r\n" : ex.InnerException.Message+"\r\n"));
                 lock (lockObject)
                 {
+                    //System.Diagnostics.Debugger.Break();
+                    LogWriter.WriteMessageToLog(
+                        $"\r\nError: Unable to download file {_filesDownloaded + 1} of {_numberOfFilesToDownload}.\r\nSite ID = {source.agency_id:N}\r\nName = {source.full_site_name}\r\nURI = {uri}");
+                    LogWriter.WriteMessageToLog("Error: " + ex.Message + "\r\nInner: " +
+                                                ((ex?.InnerException == null)
+                                                    ? "\r\n"
+                                                    : ex.InnerException.Message + "\r\n"));
                     _failedDownloads.Add(source);
                 }
             }
