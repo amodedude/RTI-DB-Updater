@@ -6,6 +6,7 @@ using System.ServiceProcess;
 using System.Threading;
 using System.Threading.Tasks;
 using RTI.DataBase.Interfaces;
+using RTI.DataBase.Interfaces.Util;
 
 namespace RTI.DataBase.UpdaterService
 {

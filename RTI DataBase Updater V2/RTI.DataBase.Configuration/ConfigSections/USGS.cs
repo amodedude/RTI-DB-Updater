@@ -50,5 +50,17 @@ namespace RTI.DataBase.Updater.Config
         {
             get { return (bool)this["GzipCompression"]; }
         }
+
+        [ConfigurationProperty("DateFormat", IsRequired = true)]
+        public string DateFormat
+        {
+            get { return (string)this["DateFormat"]; }
+        }
+
+        [ConfigurationProperty("ColumnMappingXrefHasHeader", IsRequired = true)]
+        public bool ColumnMappingXrefHasHeader
+        {
+            get { return (bool)this["ColumnMappingXrefHasHeader"]; }
+        }
     }
 }

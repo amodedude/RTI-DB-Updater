@@ -10,3 +10,4 @@ C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\obj\Release\RTI.DataBase.Model.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\obj\Release\RTI.DataBase.Model.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\obj\Release\RTI.DataBase.Model.csprojResolveAssemblyReference.cache

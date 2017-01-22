@@ -1,0 +1,53 @@
+Info: RTI Database Updater initiated on 1/21/2017 @11:19 PM
+
+
+Info: Next Scheduled Run at 01/21/2017 11:19:09 PM (01/22/2017 04:19:09 UTC)
+Info: Performing DB update...
+Info: Fetching the current list of sources from the RTI database.
+Error: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: A Fatal Error has occurred while fetching USGS source files.
+ExceptionMessage: An error occurred accessing the database. This usually means that the connection to the database failed. Check that the connection string is correct and that the appropriate DbContext constructor is being used to specify it or find it in the application's config file. See http://go.microsoft.com/fwlink/?LinkId=386386 for information on DbContext and connections. See the inner exception for details of the failure.
+InnerExceptionMessage: The provider did not return a ProviderManifestToken string.
+StackTrace:    at System.Data.Entity.Utilities.DbProviderServicesExtensions.GetProviderManifestTokenChecked(DbProviderServices providerServices, DbConnection connection)
+   at System.Data.Entity.Infrastructure.DefaultManifestTokenResolver.<>c__DisplayClass1.<ResolveManifestToken>b__0(Tuple`3 k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at System.Data.Entity.Infrastructure.DefaultManifestTokenResolver.ResolveManifestToken(DbConnection connection)
+   at System.Data.Entity.Utilities.DbConnectionExtensions.GetProviderInfo(DbConnection connection, DbProviderManifest& providerManifest)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.OrderByDescending[TSource,TKey](IQueryable`1 source, Expression`1 keySelector)
+   at RTI.DataBase.Model.Repositories.SourceRepository.GetAllSources() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\Repositories\SourceRepository.cs:line 28
+   at RTI.Database.UpdaterService.Download.WaterDataFileFetcher.FetchFiles() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 59
+CallingMember: @Class 'WaterDataFileFetcher.cs', Line Number 98 Method FetchFiles()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Error: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: The Update Process has encountered a fatal error.
+ExceptionMessage: An error occurred accessing the database. This usually means that the connection to the database failed. Check that the connection string is correct and that the appropriate DbContext constructor is being used to specify it or find it in the application's config file. See http://go.microsoft.com/fwlink/?LinkId=386386 for information on DbContext and connections. See the inner exception for details of the failure.
+InnerExceptionMessage: The provider did not return a ProviderManifestToken string.
+StackTrace:    at System.Data.Entity.Utilities.DbProviderServicesExtensions.GetProviderManifestTokenChecked(DbProviderServices providerServices, DbConnection connection)
+   at System.Data.Entity.Infrastructure.DefaultManifestTokenResolver.<>c__DisplayClass1.<ResolveManifestToken>b__0(Tuple`3 k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at System.Data.Entity.Infrastructure.DefaultManifestTokenResolver.ResolveManifestToken(DbConnection connection)
+   at System.Data.Entity.Utilities.DbConnectionExtensions.GetProviderInfo(DbConnection connection, DbProviderManifest& providerManifest)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.OrderByDescending[TSource,TKey](IQueryable`1 source, Expression`1 keySelector)
+   at RTI.DataBase.Model.Repositories.SourceRepository.GetAllSources() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\Repositories\SourceRepository.cs:line 28
+   at RTI.Database.UpdaterService.Download.WaterDataFileFetcher.FetchFiles() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 100
+   at RTI.DataBase.UpdaterService.UpdateManager.RunUpdate() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\UpdateManager.cs:line 33
+CallingMember: @Class 'UpdateManager.cs', Line Number 45 Method RunUpdate()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -2,9 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using RTI.Database.UpdaterService.Download;
 using RTI.Database.UpdaterService.Parse;
 using RTI.DataBase.Interfaces;
+using RTI.DataBase.Interfaces.Util;
+using RTI.DataBase.Objects;
+using RTI.DataBase.Updater.Config;
 
 namespace RTI.DataBase.UpdaterService
 {
@@ -22,15 +26,31 @@ namespace RTI.DataBase.UpdaterService
         {
             try
             {
-                LogWriter.WriteMessageToLog("Performing DB update...");
-
-                // Download all USGS Sources
                 TextFileDownloader downloader = new TextFileDownloader();
-                FileFetcher fetcher = new FileFetcher(LogWriter, downloader);
-                HashSet<source> sources = fetcher.fetchFiles();
+                string currentFolder = null;
 
-                // Upload to RTI DataBase
-                UploadFiles(sources, fetcher);
+                if (Application.Settings.PerformWaterConductivityUpdate)
+                {
+                    LogWriter.WriteMessageToLog("Performing Water Conductivity Data DB update...");
+                    // Download USGS water data
+                    WaterDataFileFetcher fetcher = new WaterDataFileFetcher(LogWriter, downloader);
+                    SourceCollection sources = fetcher.FetchFiles();
+
+
+                    // Upload water data to RTI DataBase
+                    LogWriter.WriteMessageToLog("Initializing water data upload process...");
+                    UploadFiles(sources, fetcher);
+                    currentFolder = fetcher.CurrentFolder;
+                }
+
+                if (Application.Settings.PerformWaterSourcesListUpdate)
+                {
+                    LogWriter.WriteMessageToLog("Performing Sources List DB update...");
+                    // Download USGS sources data
+                    SourcesFileFetcher sourcesFetcher = new SourcesFileFetcher(LogWriter, downloader,
+                        currentFolder);
+                    sourcesFetcher.FetchFiles();
+                }
             }
             catch (Exception ex)
             {
@@ -38,7 +58,7 @@ namespace RTI.DataBase.UpdaterService
             }
             finally
             {
-                Emailer.FireEmailAlerts();
+                SentEmails();   
             }
         }
 
@@ -47,15 +67,27 @@ namespace RTI.DataBase.UpdaterService
         /// data for each water 
         /// source.
         /// </summary>
-        private void UploadFiles(HashSet<source> sources, FileFetcher fetcher)
+        private void UploadFiles(SourceCollection sources, WaterDataFileFetcher fetcher)
         {
             LogWriter.WriteMessageToLog("Initiating File upload process...\r\n");
-            FileParser parser = new FileParser(LogWriter);
+            WaterDataFileParser parser = new WaterDataFileParser(LogWriter);
             foreach(source source in sources)
             {
                 string path = Path.Combine(fetcher.CurrentFolder, source.agency_id+".txt");
                 if(File.Exists(path))
                     parser.ReadFile(path, source.agency_id);
+            }
+        }
+
+        private void SentEmails()
+        {
+            try
+            {
+                Emailer.FireEmailAlerts();
+            }
+            catch (Exception ex)
+            {
+                LogWriter.WriteErrorToLog(ex, "Unable to send emails.");
             }
         }
     }

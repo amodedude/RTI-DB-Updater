@@ -66,10 +66,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Download\SourcesFileFetcher.cs" />
+    <Compile Include="Download\SourcesURIBuilder.cs" />
     <Compile Include="Download\TextFileDownloader.cs" />
-    <Compile Include="Download\FileFetcher.cs" />
-    <Compile Include="Download\URIBuilder.cs" />
-    <Compile Include="Parse\FileParser.cs" />
+    <Compile Include="Download\WaterDataFileFetcher.cs" />
+    <Compile Include="Download\WaterDataURIBuilder.cs" />
+    <Compile Include="Parse\SourcesFileParser.cs" />
+    <Compile Include="Parse\WaterDataFileParser.cs" />
     <Compile Include="RTIDBUpdaterService.cs">
       <SubType>Component</SubType>
     </Compile>

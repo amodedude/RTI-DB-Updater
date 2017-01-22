@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using RTI.DataBase.Interfaces;
+using RTI.DataBase.Interfaces.Download;
 using RTI.DataBase.Updater.Config;
 using RTI.DataBase.Util;
 

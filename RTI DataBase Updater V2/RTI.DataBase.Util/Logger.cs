@@ -4,6 +4,7 @@ using RTI.DataBase.Updater.Config;
 using System.IO;
 using System.Runtime.CompilerServices;
 using RTI.DataBase.Interfaces;
+using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Objects;
 
 namespace RTI.DataBase.Util

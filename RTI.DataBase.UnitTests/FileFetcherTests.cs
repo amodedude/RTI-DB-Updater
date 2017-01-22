@@ -21,8 +21,8 @@ namespace RTI.DataBase.UpdaterService.Tests
             string testUSGSID = "000123643";
             Logger logger = new Logger();
             TextFileDownloader downloader = new TextFileDownloader();
-            FileFetcher fileFetcher = new FileFetcher(logger, downloader);
-            URIBuilder builder = new URIBuilder();
+            WaterDataFileFetcher fileFetcher = new WaterDataFileFetcher(logger, downloader);
+            WaterDataURIBuilder builder = new WaterDataURIBuilder();
             return builder.BuildUri(testUSGSID);
         }
     }

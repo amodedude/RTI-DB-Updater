@@ -1,0 +1,5 @@
+Info: RTI Database Updater initiated on 1/21/2017 @11:27 PM
+
+
+Info: Next Scheduled Run at 01/21/2017 11:27:02 PM (01/22/2017 04:27:02 UTC)
+Info: Performing DB update...

@@ -1,0 +1,52 @@
+Info: RTI Database Updater initiated on 1/21/2017 @11:25 PM
+
+
+Info: Next Scheduled Run at 01/21/2017 11:25:31 PM (01/22/2017 04:25:31 UTC)
+Info: Performing DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=301124081395901
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=9.24E+13
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=442727110064501
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=394634105465800
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=253644081013001
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=344203077182001
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=422128121530600
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=15036000
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=821150305
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=442726110064101
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=394533079581501
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=422042121513100
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=344139077211207
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=253357080594100
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=15011894
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=301104089253400
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=7288650
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=442725110063501
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=344139077211204
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=394337079544201
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=253047080555600
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=421935121530600
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=13213000
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=5062500
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=15011880
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=301001089442600
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=344037077253901
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=441226069502201
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=394220106431500
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=421933121550000
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=253044080555900
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=5059300
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=13212500
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=15011870
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=3437400
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=435103070191701
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=300910089374820
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=252820080505401
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=421838121513900
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=5053000
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=13207500
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=14317450
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=343641077290103
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=393647105425317
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=423335121564300
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=300722089150100

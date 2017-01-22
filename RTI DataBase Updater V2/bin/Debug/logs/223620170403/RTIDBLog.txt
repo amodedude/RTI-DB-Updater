@@ -1,0 +1,18 @@
+Info: RTI Database Updater initiated on 1/21/2017 @11:36 PM
+
+
+Info: Next Scheduled Run at 01/21/2017 11:36:03 PM (01/22/2017 04:36:03 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Error: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: The Update Process has encountered a fatal error.
+ExceptionMessage: An exception occurred during a WebClient request.
+InnerExceptionMessage: The process cannot access the file 'C:\Users\John\Desktop\RTI File Repository\01212017233616USGSSourcesList.txt' because it is being used by another process.
+StackTrace:    at System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   at RTI.Database.UpdaterService.Download.TextFileDownloader.download_file(String uri, String filePath, Boolean useCompression)
+   at RTI.Database.UpdaterService.Download.SourcesFileFetcher.DownloadSoucesFile()
+   at RTI.Database.UpdaterService.Download.SourcesFileFetcher.FetchFiles()
+   at RTI.DataBase.UpdaterService.UpdateManager.RunUpdate()
+CallingMember: @Class 'UpdateManager.cs', Line Number 57 Method RunUpdate()
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

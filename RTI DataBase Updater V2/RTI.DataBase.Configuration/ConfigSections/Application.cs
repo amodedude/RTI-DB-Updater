@@ -41,5 +41,17 @@ namespace RTI.DataBase.Updater.Config
         {
             get { return (bool)this["DebugMode"]; }
         }
+
+        [ConfigurationProperty("PerformWaterConductivityUpdate", IsRequired = true)]
+        public bool PerformWaterConductivityUpdate
+        {
+            get { return (bool)this["PerformWaterConductivityUpdate"]; }
+        }
+
+        [ConfigurationProperty("PerformWaterSourcesListUpdate", IsRequired = true)]
+        public bool PerformWaterSourcesListUpdate
+        {
+            get { return (bool)this["PerformWaterSourcesListUpdate"]; }
+        }
     }
 }
