@@ -95,7 +95,5 @@ namespace RTI.Database.UpdaterService.Parse
 
             return mapping;
         }
-
-        
     }
 }

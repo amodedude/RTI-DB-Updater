@@ -129,7 +129,7 @@ namespace RTI.Database.UpdaterService.Parse
                         else
                         {
                             var header = line.Split(delimiter, StringSplitOptions.RemoveEmptyEntries);
-                            string paramCode = string.Join("_", "00095", USGS.Settings.StatisticCode);
+                            string paramCode = string.Join("_", "00095", UsgsApi.Settings.StatisticCode);
                             dateCol =
                                 header.Select((v, i) => new {Index = i, Value = v})
                                     .Where(p => p.Value == "datetime")

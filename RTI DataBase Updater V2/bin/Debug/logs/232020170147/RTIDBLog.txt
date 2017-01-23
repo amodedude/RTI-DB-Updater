@@ -1,0 +1,16 @@
+Info: RTI Database Updater initiated on 1/22/2017 @8:20 PM
+
+
+Info: Next Scheduled Run at 01/22/2017 08:20:47 PM (01/23/2017 01:20:47 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: Unable to make HttpRequest to http://nominatim.openstreetmap.org/reverse.php?&lat=fakeout!&lon=-67.88848060&format=json&zoom=10&adressdetails=1
+Error: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ExceptionMessage: The remote server returned an error: (400) Bad Request.
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at RTI.Database.UpdaterService.Download.HttpRequestDownloader.make_request(String uri) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\HttpRequestDownloader.cs:line 42
+CallingMember: @Class 'HttpRequestDownloader.cs', Line Number 49 Method make_request()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

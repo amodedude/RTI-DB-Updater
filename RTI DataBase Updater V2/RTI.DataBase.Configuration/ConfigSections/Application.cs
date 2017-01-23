@@ -36,6 +36,12 @@ namespace RTI.DataBase.Updater.Config
             get { return (bool)this["UseLatestCachedFiles"]; }
         }
 
+        [ConfigurationProperty("ApiRequestUserAgent", IsRequired = true)]
+        public string ApiRequestUserAgent
+        {
+            get { return (string)this["ApiRequestUserAgent"]; }
+        }
+
         [ConfigurationProperty("DebugMode", IsRequired = true)]
         public bool DebugMode
         {

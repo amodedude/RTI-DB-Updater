@@ -15,7 +15,7 @@ namespace RTI.Database.UpdaterService.Download
 {
     public class WaterDataFileFetcher : IFileFetcher
     {
-        public WaterDataFileFetcher(ILogger logger, IDownloader downloader, string dir = null)
+        public WaterDataFileFetcher(ILogger logger, IFileDownloader downloader, string dir = null)
         {
             LogWriter = logger;
             Downloader = downloader;
@@ -32,7 +32,7 @@ namespace RTI.Database.UpdaterService.Download
         }
 
         private readonly ILogger LogWriter;
-        private readonly IDownloader Downloader;
+        private readonly IFileDownloader Downloader;
         public string CurrentFolder { get { return _currentFolder; } private set { } }
         private string _currentFolder = string.Empty;
         private int _filesDownloaded = 0;
@@ -152,7 +152,7 @@ namespace RTI.Database.UpdaterService.Download
                 var builder = new WaterDataURIBuilder();
                 uri = builder.BuildUri(usgsid);
                 LogWriter.WriteMessageToLog("Downloading File from " + uri);
-                Downloader.download_file(uri, filePath, USGS.Settings.GzipCompression); // Fetch the file
+                Downloader.download_file(uri, filePath, UsgsApi.Settings.GzipCompression); // Fetch the file
                 lock (lockObject)
                 {
                     _initializedDownloads.Add(source);

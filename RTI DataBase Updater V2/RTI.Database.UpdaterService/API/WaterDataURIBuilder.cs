@@ -14,11 +14,11 @@ namespace RTI.Database.UpdaterService.Download
         /// <returns></returns>
         public string BuildUri(string usgsid)
         {
-            var parameterList = new List<string>(USGS.Settings.ParameterCodes);
+            var parameterList = new List<string>(UsgsApi.Settings.ParameterCodes);
             var paramCodes = $"cd_{string.Join("=1&cd_", (parameterList))}=1";
-            var fileFormat = $"format={USGS.Settings.FileFormatSpecifier.Trim()}";
+            var fileFormat = $"format={UsgsApi.Settings.FileFormatSpecifier.Trim()}";
             var siteNumer = $"site_no={usgsid}";
-            var uri = USGS.Settings.ApiUri.TrimEnd('/') + '/' + USGS.Settings.OutputDataType.Trim() + '?'
+            var uri = UsgsApi.Settings.ApiUri.TrimEnd('/') + '/' + UsgsApi.Settings.OutputDataType.Trim() + '?'
                 ;
             uri = string.Join("&", uri + paramCodes, fileFormat, siteNumer);
             return uri;

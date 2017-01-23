@@ -17,10 +17,10 @@ namespace RTI.Database.UpdaterService.Download
         {
             var columnCodeList = GetColumnCodes();
             var format = "format=sitefile_output";
-            var dateFormat = USGS.Settings.DateFormat;
-            var fileFormat = $"sitefile_output_format={USGS.Settings.FileFormatSpecifier.Trim()}";
-            var outType = USGS.Settings.OutputDataType.Trim();
-            var uri = USGS.Settings.ApiUri.TrimEnd('/') + $"/{outType}?refferred_module={outType}";
+            var dateFormat = UsgsApi.Settings.DateFormat;
+            var fileFormat = $"sitefile_output_format={UsgsApi.Settings.FileFormatSpecifier.Trim()}";
+            var outType = UsgsApi.Settings.OutputDataType.Trim();
+            var uri = UsgsApi.Settings.ApiUri.TrimEnd('/') + $"/{outType}?refferred_module={outType}";
             var columnCodes = string.Join("&", columnCodeList.ToArray());
             uri = string.Join("&", uri, fileFormat, format, dateFormat, $"index_pmcode_{paramCode}=1", "group_key = NONE", columnCodes);
             return uri;
@@ -36,7 +36,7 @@ namespace RTI.Database.UpdaterService.Download
         {
             FileUtil util = new FileUtil();
             List<string> codesList = new List<string>();
-            var columnCodeList = util.CsvStringColumnReader(RTI.DataBase.Objects.Properties.Resources.ColumnMappingXref, 0, USGS.Settings.ColumnMappingXrefHasHeader);
+            var columnCodeList = util.CsvStringColumnReader(RTI.DataBase.Objects.Properties.Resources.ColumnMappingXref, 0, UsgsApi.Settings.ColumnMappingXrefHasHeader);
 
             foreach (var row in columnCodeList)
                 codesList.Add("column_name=" + row);

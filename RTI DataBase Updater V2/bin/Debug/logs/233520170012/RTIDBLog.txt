@@ -1,0 +1,20 @@
+Info: RTI Database Updater initiated on 1/22/2017 @7:35 PM
+
+
+Info: Next Scheduled Run at 01/22/2017 07:35:12 PM (01/23/2017 12:35:12 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Error: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: The Update Process has encountered a fatal error.
+ExceptionMessage: The remote server returned an error: (429) Too Many Requests.
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at RTI.Database.UpdaterService.Download.HttpRequestDownloader.make_request(String uri) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\HttpRequestDownloader.cs:line 27
+   at RTI.Database.UpdaterService.ReverseGeoCoder.GetGeoReverseGeocodeData(String lat, String lng) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\ReverseGeoCoder.cs:line 56
+   at RTI.Database.UpdaterService.ReverseGeoCoder.AddGeoCode(source src) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\ReverseGeoCoder.cs:line 45
+   at RTI.Database.UpdaterService.ReverseGeoCoder.AppendGeoCodeData(SourceCollection sources) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\ReverseGeoCoder.cs:line 28
+   at RTI.Database.UpdaterService.Download.SourcesFileFetcher.FetchFiles() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\SourcesFileFetcher.cs:line 82
+   at RTI.DataBase.UpdaterService.UpdateManager.RunUpdate() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\UpdateManager.cs:line 52
+CallingMember: @Class 'UpdateManager.cs', Line Number 57 Method RunUpdate()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

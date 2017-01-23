@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace RTI.DataBase.Updater.Config
 {
-    public class USGS : ConfigurationSection
+    public class UsgsApi : ConfigurationSection
     {
-        public static USGS Settings { get; } = ConfigurationManager.GetSection("USGS") as USGS;
+        public static UsgsApi Settings { get; } = ConfigurationManager.GetSection("UsgsApi") as UsgsApi;
 
         [ConfigurationProperty("ApiURI", IsRequired = true)]
         public string ApiUri

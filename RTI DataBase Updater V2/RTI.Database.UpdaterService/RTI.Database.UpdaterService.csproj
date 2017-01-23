@@ -53,6 +53,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.5\MySql.Web.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
@@ -66,13 +70,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\GeoCodeURIBuilder.cs" />
+    <Compile Include="Download\JsonRequestDownloader.cs" />
     <Compile Include="Download\SourcesFileFetcher.cs" />
-    <Compile Include="Download\SourcesURIBuilder.cs" />
+    <Compile Include="API\SourcesURIBuilder.cs" />
     <Compile Include="Download\TextFileDownloader.cs" />
     <Compile Include="Download\WaterDataFileFetcher.cs" />
-    <Compile Include="Download\WaterDataURIBuilder.cs" />
+    <Compile Include="API\WaterDataURIBuilder.cs" />
     <Compile Include="Parse\SourcesFileParser.cs" />
     <Compile Include="Parse\WaterDataFileParser.cs" />
+    <Compile Include="ReverseGeoCoder.cs" />
     <Compile Include="RTIDBUpdaterService.cs">
       <SubType>Component</SubType>
     </Compile>

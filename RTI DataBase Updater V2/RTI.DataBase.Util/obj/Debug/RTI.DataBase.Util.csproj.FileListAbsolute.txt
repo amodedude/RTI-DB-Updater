@@ -4,11 +4,13 @@ C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\b
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\RTI.DataBase.Interfaces.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\RTI.DataBase.Objects.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\RTI.DataBase.Model.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\Newtonsoft.Json.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\EntityFramework.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\RTI.DataBase.Configuration.pdb
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\RTI.DataBase.Interfaces.pdb
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\RTI.DataBase.Objects.pdb
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\RTI.DataBase.Model.pdb
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\Newtonsoft.Json.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\bin\Debug\EntityFramework.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\obj\Debug\RTI.DataBase.Util.csprojResolveAssemblyReference.cache
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\obj\Debug\RTI.DataBase.Util.dll

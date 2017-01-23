@@ -13,7 +13,7 @@ using RTI.DataBase.Util;
 
 namespace RTI.Database.UpdaterService.Download
 {
-    public class TextFileDownloader : IDownloader
+    public class TextFileDownloader : IFileDownloader
     {
         /// <summary>
         /// Downloads the USGS text files 

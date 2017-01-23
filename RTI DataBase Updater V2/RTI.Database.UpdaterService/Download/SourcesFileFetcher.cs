@@ -15,7 +15,7 @@ namespace RTI.Database.UpdaterService.Download
 {
     public class SourcesFileFetcher : IFileFetcher
     {
-        public SourcesFileFetcher(ILogger logger, IDownloader downloader, string dir = null)
+        public SourcesFileFetcher(ILogger logger, IFileDownloader downloader, string dir = null)
         {
             LogWriter = logger;
             Downloader = downloader;
@@ -35,7 +35,7 @@ namespace RTI.Database.UpdaterService.Download
         }
 
         private readonly ILogger LogWriter;
-        private readonly IDownloader Downloader;
+        private readonly IFileDownloader Downloader;
 
         public string CurrentFolder
         {
@@ -43,9 +43,9 @@ namespace RTI.Database.UpdaterService.Download
             private set { }
         }
 
-        private readonly string _currentFolder = string.Empty;
-        private readonly string _sourcesFolder = string.Empty;
-        private string _sourcesFile = string.Empty;
+        private readonly string _currentFolder;
+        private readonly string _sourcesFolder;
+        private readonly string _sourcesFile;
 
         /// <summary>
         /// Fetch an updated 
@@ -75,12 +75,23 @@ namespace RTI.Database.UpdaterService.Download
             // Read the downloaded file
             SourcesFileParser parser = new SourcesFileParser();
             SourceCollection downladedSources = new SourceCollection(parser.ReadFile(_sourcesFile));
-
-            // Return all sources that don't already exist in the database.
+            if(downladedSources.Count > 0)
+                downladedSources.RemoveAt(0);
             var newSourcesList = new SourceCollection(downladedSources.Where(s => !sourceList.Contains(s)));
+
+            //Append Reverse Geo-code data
+            ReverseGeoCoder geoCoder = new ReverseGeoCoder(LogWriter);
+            newSourcesList = new SourceCollection(geoCoder.AppendGeoCodeData(newSourcesList));
+
             return newSourcesList;
         }
 
+
+        /// <summary>
+        /// Download the USGS 
+        /// sources file.
+        /// </summary>
+        /// <returns></returns>
         private bool DownloadSoucesFile()
         {
             SourcesURIBuilder builder = new SourcesURIBuilder();

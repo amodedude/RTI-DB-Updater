@@ -6,6 +6,7 @@ C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.Update
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\MySql.Data.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\MySql.Web.dll
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\Newtonsoft.Json.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\RTI.DataBase.Configuration.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\RTI.DataBase.Interfaces.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\RTI.DataBase.Model.dll
@@ -18,6 +19,7 @@ C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.Update
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\RTI.DataBase.Util.pdb
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\EntityFramework.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\bin\Debug\Newtonsoft.Json.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\obj\Debug\RTI.Database.UpdaterService.csprojResolveAssemblyReference.cache
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\obj\Debug\RTI.Database.UpdaterService.exe
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\obj\Debug\RTI.Database.UpdaterService.pdb

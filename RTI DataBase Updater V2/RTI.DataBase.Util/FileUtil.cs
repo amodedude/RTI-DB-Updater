@@ -101,7 +101,7 @@ namespace RTI.DataBase.Util
         {
             Dictionary<string, string> columnMapping = new Dictionary<string, string>();
             string mappingFile = Objects.Properties.Resources.ColumnMappingXref;
-            List<string[]> contents = CsvStringReader(mappingFile, USGS.Settings.ColumnMappingXrefHasHeader);
+            List<string[]> contents = CsvStringReader(mappingFile, UsgsApi.Settings.ColumnMappingXrefHasHeader);
 
             foreach (string[] row in contents)
             {
