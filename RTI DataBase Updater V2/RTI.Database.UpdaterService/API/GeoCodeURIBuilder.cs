@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using RTI.DataBase.Interfaces.Download;
 using RTI.DataBase.Updater.Config;
 
-namespace RTI.Database.UpdaterService.API
+namespace RTI.DataBase.UpdaterService.API
 {
     public class GeoCodeURIBuilder : IUriBuilder
     {
@@ -23,7 +23,7 @@ namespace RTI.Database.UpdaterService.API
             string uri = GeoCodeApi.Settings.ApiUri;
             string format = GeoCodeApi.Settings.Format;
             string zoom = GeoCodeApi.Settings.Zoom.ToString();
-            string requestPath = string.Join("&", uri, "lat="+_lat, "lon="+_lng, "format="+format, "zoom="+zoom, "adressdetails=1");
+            string requestPath = string.Join("&", uri, "lat="+_lat, "lon="+_lng, "format="+format, "zoom="+zoom, "Addressdetails=1");
 
             return requestPath;
         }

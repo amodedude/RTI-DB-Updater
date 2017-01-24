@@ -97,7 +97,8 @@ namespace RTI.DataBase.Objects.Properties {
         ///tz_cd,
         ///local_time_fg,
         ///reliability_cd,
-        ///gw_file_cd,        /// [rest of string was truncated]&quot;;.
+        ///gw_file_cd,
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         public static string ColumnMappingXref {
             get {

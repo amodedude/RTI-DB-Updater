@@ -7,7 +7,7 @@ using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Objects.Json;
 using RTI.DataBase.Updater.Config;
 
-namespace RTI.Database.UpdaterService.Download
+namespace RTI.DataBase.UpdaterService.Download
 {
     class JsonRequestDownloader
     {
@@ -37,7 +37,7 @@ namespace RTI.Database.UpdaterService.Download
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
                 request.UserAgent = User;
                 WebResponse resp = request.GetResponse();
-                StreamReader sr = new System.IO.StreamReader(resp.GetResponseStream());
+                StreamReader sr = new StreamReader(resp.GetResponseStream());
                 return sr.ReadToEnd().Trim();
             }
             catch (Exception ex)

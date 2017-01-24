@@ -1,0 +1,7 @@
+Info: RTI Database Updater initiated on 1/23/2017 @8:05 PM
+
+
+Info: Next Scheduled Run at 01/23/2017 08:05:55 PM (01/24/2017 01:05:55 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.

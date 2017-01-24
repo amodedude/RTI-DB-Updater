@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using RTI.Database.UpdaterService.Upload;
+using RTI.DataBase.UpdaterService.Upload;
 using RTI.DataBase.Interfaces;
 using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Model;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
 
-namespace RTI.Database.UpdaterService.Parse
+namespace RTI.DataBase.UpdaterService.Parse
 {
     /// <summary>
     /// Handles reading of downloaded files. 

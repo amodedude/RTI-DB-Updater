@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RTI.Database.UpdaterService.Download;
+using RTI.DataBase.UpdaterService.Download;
 using RTI.DataBase.Interfaces;
 using RTI.DataBase.Util;
 

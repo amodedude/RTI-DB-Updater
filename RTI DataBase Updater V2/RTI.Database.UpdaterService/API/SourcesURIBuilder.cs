@@ -9,7 +9,7 @@ using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
 using RTI.DataBase.Util;
 
-namespace RTI.Database.UpdaterService.Download
+namespace RTI.DataBase.UpdaterService.Download
 { 
     public class SourcesURIBuilder : IUriBuilder
     {

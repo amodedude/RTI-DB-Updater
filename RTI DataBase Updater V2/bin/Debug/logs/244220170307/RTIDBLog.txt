@@ -1,0 +1,18 @@
+Info: RTI Database Updater initiated on 1/23/2017 @10:42 PM
+
+
+Info: Next Scheduled Run at 01/23/2017 10:42:07 PM (01/24/2017 03:42:07 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: Retrieving data for source USGS-01015010, ST. JOHN RIVER NEAR HAMLIN, MAINE
+Info: Retrieving data for source USGS-01017960, Meduxnekeag R above S Br Medux. R nr Houlton, ME
+Info: Retrieving data for source USGS-01018000, Meduxnekeag River near Houlton, Maine
+Info: Retrieving data for source USGS-01021200, Dennys River at Dennysville, Maine
+Info: Retrieving data for source USGS-01049265, Kennebec River at North Sidney, Maine
+Info: Retrieving data for source USGS-01056000, GULF ISLAND POND NEAR LEWISTON, ME
+Info: Retrieving data for source USGS-01059010, ANDROSCOGGIN RIVER BL DRESSERS RIPS NR AUBURN, ME
+Info: Retrieving data for source USGS-01064140, PRESUMPSCOT RIVER NEAR WEST FALMOUTH, ME
+Info: Retrieving data for source USGS-01073389, Pawtuckaway Lake near Nottingham, NH
+Info: Retrieving data for source USGS-01080000, LAKE WINNIPESAUKEE AT WEIRS BEACH, NH
+Info: Retrieving data for source USGS-01095375, QUINAPOXET RIVER AT CANADA MILLS NEAR HOLDEN, MA

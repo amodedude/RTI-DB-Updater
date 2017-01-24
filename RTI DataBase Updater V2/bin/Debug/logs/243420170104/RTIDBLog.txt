@@ -1,0 +1,352 @@
+Info: RTI Database Updater initiated on 1/23/2017 @8:34 PM
+
+
+Info: Next Scheduled Run at 01/23/2017 08:34:04 PM (01/24/2017 01:34:04 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: Retrieving data for source USGS-01490200, FARM CREEK NEAR TODDVILLE, MD
+Info: Retrieving data for source USGS-01503000, SUSQUEHANNA RIVER AT CONKLIN NY
+Info: Retrieving data for source USGS-01507000, CHENANGO RIVER AT GREENE NY
+Info: Retrieving data for source USGS-01518700, Tioga River at Tioga Junction, PA
+Info: Retrieving data for source USGS-01573710, Conewago Creek near Falmouth, PA
+Info: Retrieving data for source USGS-01576000, Susquehanna River at Marietta, PA
+Info: Retrieving data for source USGS-015765195, Big Spring Run near Mylin Corners, PA
+Info: Retrieving data for source USGS-01576980, Susquehanna River at Holtwood Dam at Holtwood, PA
+Info: Retrieving data for source USGS-01585075, FOSTER BRANCH NEAR JOPPATOWNE, MD
+Info: Retrieving data for source USGS-01585219, HERRING RUN AT SINCLAIR LANE AT BALTIMORE, MD
+Info: Retrieving data for source USGS-01589290, SCOTTS LEVEL BRANCH AT ROCKDALE, MD
+Info: Retrieving data for source USGS-01595500, NORTH BRANCH POTOMAC RIVER AT KITZMILLER, MD
+Info: Retrieving data for source USGS-01618000, POTOMAC RIVER AT SHEPHERDSTOWN, WV
+Info: Retrieving data for source USGS-01636845, LITTLE CATOCTIN CREEK NEAR ROSEMONT, MD
+Info: Retrieving data for source USGS-01636846, LITTLE CATOCTIN CREEK AT ROSEMONT, MD
+Info: Retrieving data for source USGS-01651730, BEAVERDAM CREEK NEAR CHEVERLY, MD
+Info: Retrieving data for source USGS-0167889257, STORM DRAIN WEST OF GARRETT DRIVE AT HAMPTON, VA
+Info: Retrieving data for source USGS-0167891721, STORM DRAIN AT COLISEUM DRIVE AT HAMPTON, VA
+Info: Retrieving data for source USGS-0204279245, STORM DRAIN AT RIVERS RDG CIR NR NEWPORT NEWS, VA
+Info: Retrieving data for source USGS-0204279294, STORM DRAIN AT LAKEWOOD PK DR NR NEWPORT NEWS, VA
+Info: Retrieving data for source USGS-0204288771, STORM DRAIN AT USAA DRIVE AT NORFOLK, VA
+Info: Retrieving data for source USGS-0204288786, STORM DRAIN AT PROFESSIONAL PL NEAR CHESAPEAKE, VA
+Info: Retrieving data for source USGS-0204289131, STORM DRAIN AT DAISY DRIVE NEAR PORTSMOUTH, VA
+Info: Retrieving data for source USGS-0204289402, STORM DRAIN AT CRANEYBROOK LANE AT EDGEFIELD, VA
+Info: Retrieving data for source USGS-0204289989, STORM DRAIN AT SHEPPARD AVENUE NEAR NORFOLK, VA
+Info: Retrieving data for source USGS-0204295063, STORM DRAIN AT LINDSLEY DR NEAR VIRGINIA BEACH, VA
+Info: Retrieving data for source USGS-0204306533, STORM DRAIN AT LUDLOW DRIVE NEAR KEMPSVILLE, VA
+Info: Retrieving data for source USGS-0205551460, LICK RUN ABOVE PATTON AVENUE AT ROANOKE, VA
+Info: Retrieving data for source USGS-021720508, COOPER RIVER ABOVE GOOSE CREEK,SC
+Info: Retrieving data for source USGS-0217206935, COOPER RVR @ PORTS AUTHORITY PIER K, CHARLESTON SC
+Info: Retrieving data for source USGS-0217206962, WANDO RIVER AT CAINHOY BELOW WANDO,SC
+Info: Retrieving data for source USGS-02231000, ST. MARYS RIVER NEAR MACCLENNY, FL
+Info: Retrieving data for source USGS-02231254, ST MARY'S RIVER AT I-95, NEAR KINGSLAND, GA
+Info: Retrieving data for source USGS-02240000, OCKLAWAHA RIVER NEAR CONNER, FL
+Info: Retrieving data for source USGS-02243000, ORANGE CREEK AT ORANGE SPRINGS, FL
+Info: Retrieving data for source USGS-02243800, DEEP CREEK NR RODMAN, FLA.
+Info: Retrieving data for source USGS-02244005, OCKLAWAHA R AT ST HWY 19,NR SALT SPRINGS, FLA.
+Info: Retrieving data for source USGS-02244450, ST. JOHNS RIVER AT PALATKA, FLA.
+Info: Retrieving data for source USGS-02246200, DURBIN CREEK NR DURBIN, FLA.
+Info: Retrieving data for source USGS-02246300, ORTEGA RIVER AT JACKSONVILLE, FL
+Info: Retrieving data for source USGS-02246459, CEDAR RIVER AT SAN JUAN AVENUE AT JACKSONVILLE, FL
+Info: Retrieving data for source USGS-02246500, ST. JOHNS RIVER AT JACKSONVILLE, FL
+Info: Retrieving data for source USGS-02246518, POTTSBURG CRK AT US90 NR S. JACKSONVILLE, FL
+Info: Retrieving data for source USGS-02246751, BROWARD RIVER BL BISCAYNE BLVD NR JACKSONVILLE, FL
+Info: Retrieving data for source USGS-02246804, DUNN CREEK AT DUNN CREEK RD NR EASTPORT, FL
+Info: Retrieving data for source USGS-02247493, BAYLESS BLVD CANAL AT DAYTONA BCH, FL
+Info: Retrieving data for source USGS-02247498, WALLY HOFFMEYER CANAL AT DAYTONA BCH, FL
+Info: Retrieving data for source USGS-02247499, WILLIAMSON BLVD DITCH AT DAYTONA BEACH, FL
+Info: Retrieving data for source USGS-02247508, ELEVENTH ST CANAL NR HOLLY HILL, FL
+Info: Retrieving data for source USGS-02248000, SPRUCE CREEK NEAR SAMSULA, FL
+Info: Retrieving data for source USGS-02248040, B-19 CANAL AT SR415 AT PORT ORANGE, FL
+Info: Retrieving data for source USGS-02286328, C-8 CANAL AT NE 135 ST AT NORTH MIAMI, FL
+Info: Retrieving data for source USGS-02290709, 10B BLACK CR CANAL AT OLD CUTLER RD NR GOU
+Info: Retrieving data for source USGS-02290829501, MO  -198
+Info: Retrieving data for source USGS-02290829502, MO  -199
+Info: Retrieving data for source USGS-02290947, SWEETWATER STRAND AT LOOP RD. NR MONROE STATION FL
+Info: Retrieving data for source USGS-02299734, CURRY CREEK AT HIGHWAY 41 AT NOKOMIS FL
+Info: Retrieving data for source USGS-02301000, NORTH PRONG ALAFIA RIVER AT KEYSVILLE FL
+Info: Retrieving data for source USGS-02301300, SOUTH PRONG ALAFIA RIVER NEAR LITHIA FL
+Info: Retrieving data for source USGS-02301600, LITHIA SPRINGS NEAR LITHIA FL
+Info: Retrieving data for source USGS-02310000, ANCLOTE RIVER NEAR ELFERS FL
+Info: Retrieving data for source USGS-02310740, SARAGASSA CANAL AT CRYSTAL RIVER FL
+Info: Retrieving data for source USGS-02315626, ALAPAHA RISE ABOVE SW 68TH DRIVE NEAR JASPER, FL
+Info: Retrieving data for source USGS-02317620, ALAPAHA RIVER NEAR JENNINGS FLA
+Info: Retrieving data for source USGS-02319520, FALMOUTH SPRING AT FALMOUTH, FL
+Info: Retrieving data for source USGS-02319950, BLUE SPRINGS NEAR DELL,FL
+Info: Retrieving data for source USGS-02321500, SANTA FE RIVER AT WORTHINGTON SPRINGS, FLA.
+Info: Retrieving data for source USGS-02321958, SANTA FE RIVER AT RIVER RISE NR HIGH SPRINGS, FL
+Info: Retrieving data for source USGS-02322500, SANTA FE RIVER NEAR FORT WHITE, FLA.
+Info: Retrieving data for source USGS-02322800, SANTA FE RIVER NR HILDRETH FLA
+Info: Retrieving data for source USGS-02326526, WACISSA RIVER NR WACISSA FLA
+Info: Retrieving data for source USGS-02326993, FISHER CREEK NEAR HILLIARDVILLE,FL
+Info: Retrieving data for source USGS-02326995, BLACK CREEK NEAR HILLIARDVILLE, FL
+Info: Retrieving data for source USGS-02327031, SPRING CREEK NEAR SPRING CREEK, FL
+Info: Retrieving data for source USGS-02327033, LOST CREEK AT ARRAN FLA
+Info: Retrieving data for source USGS-02335880, CHATT R AT POWERS FY & I-285 NR ATLANTA, GA
+Info: Retrieving data for source USGS-02394682, RICHLAND CREEK AT OLD DALLAS RD, NEAR DALLAS, GA
+Info: Retrieving data for source USGS-02419890, TALLAPOOSA RIVER NEAR MONT.-MONT. WATER WORKS
+Info: Retrieving data for source USGS-02423130, CAHABA RIVER AT TRUSSVILLE, AL.
+Info: Retrieving data for source USGS-02423496, CAHABA RIVER NEAR HOOVER, AL
+Info: Retrieving data for source USGS-02455980, TURKEY CREEK AT SEWAGE PLANT NEAR PINSON AL
+Info: Retrieving data for source USGS-02457595, FIVEMILE CREEK NEAR REPUBLIC, AL
+Info: Retrieving data for source USGS-02458148, VILLAGE CREEK AT 86TH ST NORTH AT ROEBUCK, AL.
+Info: Retrieving data for source USGS-02458450, VILLAGE CREEK AT AVENUE W AT ENSLEY, AL
+Info: Retrieving data for source USGS-02458502, VILLAGE CREEK NEAR PRATT CITY, ALABAMA
+Info: Retrieving data for source USGS-03027500, EB Clarion River at EB Clarion River Dam, PA
+Info: Retrieving data for source USGS-03039041, Allegheny River bl Lock & Dam 5 near Freeport, PA
+Info: Retrieving data for source USGS-03071690, Cheat River at Nilan, PA
+Info: Retrieving data for source USGS-03072655, Monongahela River near Masontown, PA
+Info: Retrieving data for source USGS-03075070, Monongahela River at Elizabeth, PA
+Info: Retrieving data for source USGS-03079000, Casselman River at Markleton, PA
+Info: Retrieving data for source USGS-03082500, Youghiogheny River at Connellsville, PA
+Info: Retrieving data for source USGS-03083500, Youghiogheny River at Sutersville, PA
+Info: Retrieving data for source USGS-03099500, Mahoning River at Lowellville OH
+Info: Retrieving data for source USGS-03119341, McGuire Creek above Leesville Lake OH
+Info: Retrieving data for source USGS-03119971, North Fork McGuire Creek near Carrollton OH
+Info: Retrieving data for source USGS-03119979, Bear Hole Run near Carrollton OH
+Info: Retrieving data for source USGS-03120820, Indian Fork at Dellroy OH
+Info: Retrieving data for source USGS-03120869, Willow Run near Dellroy OH
+Info: Retrieving data for source USGS-03120961, Unnamed Tributary near Dellroy OH
+Info: Retrieving data for source USGS-03125338, Stillwater Creek above Piedmont Lake OH
+Info: Retrieving data for source USGS-03126395, Brushy Fork above Clendening Lake OH
+Info: Retrieving data for source USGS-03127980, Clear Fork above Tappan Lake OH
+Info: Retrieving data for source USGS-03127986, Standingstone Fork above Tappan Lake OH
+Info: Retrieving data for source USGS-03127989, Beaverdam Run above Tappan Lake OH
+Info: Retrieving data for source USGS-03140853, Seneca Fork above Senecaville Lake OH
+Info: Retrieving data for source USGS-03140900, South Fork above Senecaville Lake OH
+Info: Retrieving data for source USGS-03140950, Beaver Creek above Senecaville Lake OH
+Info: Retrieving data for source USGS-03171500, NEW RIVER AT EGGLESTON, VA
+Info: Retrieving data for source USGS-03207500, LEVISA FORK NEAR GRUNDY, VA
+Info: Retrieving data for source USGS-03216070, OHIO RIVER AT IRONTON, OH
+Info: Retrieving data for source USGS-03228039, Scioto River above Shadeville OH
+Info: Retrieving data for source USGS-03255349, Mill Creek at East Sharon Rd at Sharonville OH
+Info: Retrieving data for source USGS-03271510, Great Miami River near Linden Ave at Miamisburg OH
+Info: Retrieving data for source USGS-03288180, CANE RUN CREEK AT CITATION BLVD NR LEXINGTON, KY
+Info: Retrieving data for source USGS-03289200, TOWN BRANCH AT YARNALLTON ROAD AT YARNALLTON, KY
+Info: Retrieving data for source USGS-03292550, S FK BEARGRASS CR AT WINTER AVE AT LOUISVILLE, KY
+Info: Retrieving data for source USGS-03293510, BEARGRASS CREEK AT RIVER ROAD AT LOUISVILLE, KY
+Info: Retrieving data for source USGS-03318010, ROUGH RIVER NEAR FALLS OF ROUGH AT DAM, KY
+Info: Retrieving data for source USGS-03339000, VERMILION RIVER NEAR DANVILLE, IL
+Info: Retrieving data for source USGS-03346500, EMBARRAS RIVER AT LAWRENCEVILLE, IL
+Info: Retrieving data for source USGS-03353420, SCHOOL BRANCH AT CR750N AT BROWNSBURG, IN
+Info: Retrieving data for source USGS-03378900, LITTLE WABASH RIVER AT LOUISVILLE, IL
+Info: Retrieving data for source USGS-03381495, LITTLE WABASH RIVER AT MAIN ST AT CARMI, IL
+Info: Retrieving data for source USGS-03401385, DAVIS BRANCH AT HIGHWAY 988 NEAR MIDDLESBORO, KY
+Info: Retrieving data for source USGS-0343233905, HARPETH RIVER AT MILE 90.5 NEAR FRANKLIN, TN
+Info: Retrieving data for source USGS-034324146, HARPETH RIVER AT MILE 81.33 NR BERRYS CHAPEL, TN
+Info: Retrieving data for source USGS-03432550, WEST HARPETH RIVER AT BOYD MILL RD NR BINGHAM, TN
+Info: Retrieving data for source USGS-03433500, HARPETH RIVER AT BELLEVUE, TN
+Info: Retrieving data for source USGS-03433641, KELLEY CREEK NEAR KINGFIELD, TN
+Info: Retrieving data for source USGS-03434870, CUMBERLAND RIVER AT RIVER MILE 142.9, TN
+Info: Retrieving data for source USGS-03512000, OCONALUFTEE RIVER AT BIRDTOWN, NC
+Info: Retrieving data for source USGS-03524740, CLINCH RIVER AT ROUTE 65 AT DUNGANNON, VA
+Info: Retrieving data for source USGS-03598165, HURRICANE CREEK NEAR ELBETHEL, TN
+Info: Retrieving data for source USGS-0359816545, PARCH CORN CREEK AT MARTIN ROAD NR ELBETHEL, TN
+Info: Retrieving data for source USGS-03598173, FALL CREEK NEAR DEASON, TN
+Info: Retrieving data for source USGS-03598177, FALL CREEK BLW HURRICANE CREEK NR ELBETHEL, TN
+Info: Retrieving data for source USGS-04043097, FALLS RIVER NEAR L'ANSE, MI
+Info: Retrieving data for source USGS-04080798, TOMORROW RIVER NEAR NELSONVILLE, WI
+Info: Retrieving data for source USGS-04144032, THREEMILE CREEK AT PRIOR ROAD NEAR DURAND, MI
+Info: Retrieving data for source USGS-04167150, MIDDLE RIVER ROUGE AT DEARBORN HEIGHTS, MI
+Info: Retrieving data for source USGS-04168400, LOWER RIVER ROUGE AT DEARBORN, MI
+Info: Retrieving data for source USGS-04175120, HURON RIVER AT FORT ROAD AT ROCKWOOD, MI
+Info: Retrieving data for source USGS-04182867, MAUMEE RIVER AT TECUMSEH STREET AT FORT WAYNE, IN
+Info: Retrieving data for source USGS-04183038, BLACK CREEK NEAR HARLAN, IN
+Info: Retrieving data for source USGS-04188496, Eagle Creek above Findlay OH
+Info: Retrieving data for source USGS-04200500, Black River at Elyria OH
+Info: Retrieving data for source USGS-04213500, CATTARAUGUS CREEK AT GOWANDA NY
+Info: Retrieving data for source USGS-04226000, KESHEQUA CR AT CRAIG COLONY AT SONYEA NY
+Info: Retrieving data for source USGS-04249000, OSWEGO RIVER AT LOCK 7, OSWEGO NY
+Info: Retrieving data for source USGS-04294500, LAKE CHAMPLAIN AT BURLINGTON, VT
+Info: Retrieving data for source USGS-05053000, WILD RICE RIVER NR ABERCROMBIE, ND
+Info: Retrieving data for source USGS-05059300, SHEYENNE R AB SHEYENNE R DIVERSION NR HORACE, ND
+Info: Retrieving data for source USGS-05062500, WILD RICE RIVER AT TWIN VALLEY, MN
+Info: Retrieving data for source USGS-05075690, THIEF RIVER INLET TO AGASSIZ NWR, MN (SG140)
+Info: Retrieving data for source USGS-05075694, BR1 OF JD11 AB MUD RI POOL IN AGASSIZ NWR, MN (A1)
+Info: Retrieving data for source USGS-05075697, NW OUTLET OF AGASSIZ POOL IN AGASSIZ NWR, MN (A5)
+Info: Retrieving data for source USGS-05075720, JD11 ABOVE AGASSIZ POOL IN AGASSIZ NWR, MN (A3)
+Info: Retrieving data for source USGS-05075750, JD11 BELOW AGASSIZ POOL IN AGASSIZ NWR, MN (A2)
+Info: Retrieving data for source USGS-05075930, BR200 OF JD11 AB FARMES PL IN AGASSIZ NWR, MN (A4)
+Info: Retrieving data for source USGS-05446500, ROCK RIVER NEAR JOSLIN, IL
+Info: Retrieving data for source USGS-05447500, GREEN RIVER NEAR GENESEO, IL
+Info: Retrieving data for source USGS-05517500, KANKAKEE RIVER AT DUNNS BRIDGE, IN
+Info: Retrieving data for source USGS-05518000, KANKAKEE RIVER AT SHELBY, IN
+Info: Retrieving data for source USGS-05524500, IROQUOIS RIVER NEAR FORESMAN, IN
+Info: Retrieving data for source USGS-05536137, CHICAGO S & S CANAL AT WESTERN AVE AT CHICAGO, IL
+Info: Retrieving data for source USGS-05538010, DES PLAINES RIVER AT ROCKDALE, IL
+Info: Retrieving data for source USGS-05538020, DES PLAINES RIVER IN LOCK CHANNEL AT ROCKDALE, IL
+Info: Retrieving data for source USGS-05550001, FOX RIVER (TAILWATER) AT ALGONQUIN, IL
+Info: Retrieving data for source USGS-05576100, LICK CREEK NEAR WOODSIDE, IL
+Info: Retrieving data for source USGS-05576195, SUGAR CREEK NEAR CHATHAM, IL
+Info: Retrieving data for source USGS-05578100, SALT CREEK NEAR FARMER CITY, IL
+Info: Retrieving data for source USGS-05578250, NORTH FORK SALT CREEK NEAR DE WITT, IL
+Info: Retrieving data for source USGS-05594100, KASKASKIA RIVER NEAR VENEDY STATION, IL
+Info: Retrieving data for source USGS-05595000, KASKASKIA RIVER AT NEW ATHENS, IL
+Info: Retrieving data for source USGS-05599490, BIG MUDDY RIVER AT RTE 127 AT MURPHYSBORO, IL
+Info: Retrieving data for source USGS-06036905, Firehole River near West Yellowstone MT
+Info: Retrieving data for source USGS-06037100, Gibbon River at Madison Jct, YNP
+Info: Retrieving data for source USGS-06330515, BLACKTAIL CREEK NR MARMON,ND
+Info: Retrieving data for source USGS-06331000, LITTLE MUDDY RIVER BL COW CREEK NR WILLISTON, ND
+Info: Retrieving data for source USGS-06465500, Niobrara River near Verdel, Nebr.
+Info: Retrieving data for source USGS-06478522, Bow Creek near Wynot, Nebr.
+Info: Retrieving data for source USGS-06613950, HELL CREEK ABV NF NORTH PLATTE RIVER NR WALDEN, CO
+Info: Retrieving data for source USGS-06670500, LARAMIE RIVER NEAR FORT LARAMIE, WY
+Info: Retrieving data for source USGS-06796500, Platte River near Leshara, Nebr.
+Info: Retrieving data for source USGS-06892518, KANSAS R NR LAKE QUIVIRA, KS
+Info: Retrieving data for source USGS-06893970, Spring Branch Ck at Holke Rd in Independence, MO
+Info: Retrieving data for source USGS-07048495, Town Branch at Armstrong St. at Fayetteville, AR
+Info: Retrieving data for source USGS-07048550, West Fork White River east of Fayetteville, AR
+Info: Retrieving data for source USGS-07048600, White River near Fayetteville, AR
+Info: Retrieving data for source USGS-07049050, War Eagle Creek at War Eagle, AR
+Info: Retrieving data for source USGS-07055814, Big Creek at Carver, AR
+Info: Retrieving data for source USGS-07075250, S Fk Lit Red Riv us of Gulf Mt WMA nr Scotland, AR
+Info: Retrieving data for source USGS-07075270, South Fork of Little Red River near Scotland, AR
+Info: Retrieving data for source USGS-07099970, ARKANSAS RIVER AT MOFFAT STREET AT PUEBLO, CO
+Info: Retrieving data for source USGS-07182250, COTTONWOOD R NR PLYMOUTH, KS
+Info: Retrieving data for source USGS-071948095, Mud Creek near Johnson, AR
+Info: Retrieving data for source USGS-07194880, Osage Creek near Cave Springs, AR
+Info: Retrieving data for source USGS-07257500,  Illinois Bayou near Scottsville, AR
+Info: Retrieving data for source USGS-07311900, Wichita Rv nr Seymour, TX
+Info: Retrieving data for source USGS-07355880, Board Camp Creek nr Nunley, AR
+Info: Retrieving data for source USGS-07364122, Bayou Bartholomew nr Meroney, AR
+Info: Retrieving data for source USGS-07364130, Deep Bayou near Star City, AR
+Info: Retrieving data for source USGS-07364133, Bayou Bartholomew at Garrett Bridge, AR
+Info: Retrieving data for source USGS-073745275, Black Bay nr Stone Island nr Pointe-A-La-Hache, LA
+Info: Retrieving data for source USGS-08057000, Trinity Rv at Dallas, TX
+Info: Retrieving data for source USGS-08057410, Trinity Rv bl Dallas, TX
+Info: Retrieving data for source USGS-08363510, RIO GRANDE BELOW LEASBURG DAM AT FORT SELDEN, NM
+Info: Retrieving data for source USGS-08364000, RIO GRANDE AT EL PASO, TX
+Info: Retrieving data for source USGS-08419000, Pecos Rv at FM 3398 nr Pecos, TX
+Info: Retrieving data for source USGS-092359167282201, R1-1 Well, Roi-Namur Island, Kwajalein Atoll, RMI
+Info: Retrieving data for source USGS-092359167282206, R1-7 Well, Roi-Namur Island, Kwajalein Atoll, RMI
+Info: Retrieving data for source USGS-092403167282001, R8-2 Well, Roi-Namur Island, Kwajalein Atoll, RMI
+Info: Retrieving data for source USGS-092403167282002, R8-7 Well, Roi-Namur Island, Kwajalein Atoll, RMI
+Info: Retrieving data for source USGS-092404167280301, R10-2 Well, Roi-Namur Island, Kwajalein Atoll, RMI
+Info: Retrieving data for source USGS-092404167280302, R10-6 Well, Roi-Namur Island, Kwajalein Atoll, RMI
+Info: Retrieving data for source USGS-09358000, ANIMAS RIVER AT SILVERTON, CO.
+Info: Retrieving data for source USGS-09358550, CEMENT CREEK AT SILVERTON, CO
+Info: Retrieving data for source USGS-09359010, MINERAL CREEK AT SILVERTON, CO
+Info: Retrieving data for source USGS-09361500, ANIMAS RIVER AT DURANGO, CO
+Info: Retrieving data for source USGS-09363500, ANIMAS RIVER NEAR CEDAR HILL, NM
+Info: Retrieving data for source USGS-09364010, ANIMAS RIVER BELOW AZTEC, NM
+Info: Retrieving data for source USGS-09365000, SAN JUAN RIVER AT FARMINGTON, NM
+Info: Retrieving data for source USGS-09368000, SAN JUAN RIVER AT SHIPROCK, NM
+Info: Retrieving data for source USGS-09371010, SAN JUAN RIVER AT FOUR CORNERS, CO
+Info: Retrieving data for source USGS-09429490, COLORADO RIVER ABOVE IMPERIAL DAM, AZ-CA
+Info: Retrieving data for source USGS-09522005, COLORADO RIVER BELOW COOPERS WASTEWAY NEAR YUMA,AZ
+Info: Retrieving data for source USGS-09534000, MAIN DRAIN AT ARIZONA-SONORA BOUNDARY
+Info: Retrieving data for source USGS-09534550, 242 LATERAL ABOVE MAIN DRAIN AT AZ-SONORA BOUNDRY
+Info: Retrieving data for source USGS-10133650, E CANYON CR BL I-80 REST STOP NR PARK CITY, UT
+Info: Retrieving data for source USGS-10301500, WALKER RV NR WABUSKA, NV
+Info: Retrieving data for source USGS-10302002, WALKER RV AT LATERAL 2-A SIPHON NR SCHURZ, NV
+Info: Retrieving data for source USGS-10302025, WALKER RV NR MOUTH AT WALKER LAKE, NV
+Info: Retrieving data for source USGS-12101102, WHITE RIVER AT 24TH ST E AT DIERINGER, WA
+Info: Retrieving data for source USGS-12113375, SPRINGBROOK CREEK AT TUKWILA, WA
+Info: Retrieving data for source USGS-12113390, DUWAMISH RIVER AT GOLF COURSE AT TUKWILA, WA
+Info: Retrieving data for source USGS-12170300, STILLAGUAMISH RIVER NEAR STANWOOD, WA
+Info: Retrieving data for source USGS-14158740, MCKENZIE RIVER BL PAYNE CR, NR BELKNAP SPRINGS, OR
+Info: Retrieving data for source USGS-14158850, MCKENZIE R BLW TRAIL BR DAM NR BELKNAP SPRINGS, OR
+Info: Retrieving data for source USGS-14162500, MCKENZIE RIVER NEAR VIDA, OR
+Info: Retrieving data for source USGS-14203500, TUALATIN RIVER NEAR DILLEY, OR
+Info: Retrieving data for source USGS-15087700, INDIAN R AT SITKA AK
+Info: Retrieving data for source USGS-15236900, WOLVERINE C NR LAWING AK
+Info: Retrieving data for source USGS-194037156012901, Aimakapa Fishpond 2-inch PVC monitoring pipe, HI
+Info: Retrieving data for source USGS-194053156013001, 8-4061-01 KAHO Well 1, HI
+Info: Retrieving data for source USGS-251241080385302, G  -3763
+Info: Retrieving data for source USGS-251457080395802, G  -3777
+Info: Retrieving data for source USGS-253044080555901, MO -211
+Info: Retrieving data for source USGS-253335080213501, G -3967
+Info: Retrieving data for source USGS-255123081321300, FAKA UNION BOUNDARY AT CHANNEL MARKER 6 FL
+Info: Retrieving data for source USGS-255151080371501, WETLAND AT S-152 OUTFLOW NEAR COOPERTOWN, FL
+Info: Retrieving data for source USGS-255154080371300, L-67A CANAL AT S-152 NR COOPERTOWN, FL
+Info: Retrieving data for source USGS-255154080371303, WETLAND BELOW S-152 IN WCA-3 NR COOPERTOWN, FL
+Info: Retrieving data for source USGS-292618099165901, TD-69-38-601 (Seco Creek Well)
+Info: Retrieving data for source USGS-292943098354404, AY-68-36-132 (Z DED)
+Info: Retrieving data for source USGS-292952089453800, CRMS0282-H01-RT
+Info: Retrieving data for source USGS-292952090565300, CRMS0411-H01-RT
+Info: Retrieving data for source USGS-293116098334101, AY-68-28-815 (Turtle Creek 3)
+Info: Retrieving data for source USGS-293229091230800, CRMS0465-H01-RT
+Info: Retrieving data for source USGS-293516098325501, AY-68-28-211 (Shavano Park at Fawn Drive)
+Info: Retrieving data for source USGS-293809092361500, CRMS0609-H01-RT
+Info: Retrieving data for source USGS-294045092492300, CRMS0615-H01-RT
+Info: Retrieving data for source USGS-294300098080001, DX-68-23-301 (Comal 1)
+Info: Retrieving data for source USGS-294643095035200, Lynchburg Res nr CWA Canal Inflow nr Baytown, TX
+Info: Retrieving data for source USGS-294717092250000, CRMS0568-H01-RT
+Info: Retrieving data for source USGS-295231093100100, CRMS2418-H01-RT
+Info: Retrieving data for source USGS-295554095093402, Lk Hou at Jack's Ditch (Site 2) nr Houston, TX
+Info: Retrieving data for source USGS-295744093303800, CRMS0651-H01-RT
+Info: Retrieving data for source USGS-295827090052800, Bayou Saint John Southlake at New Orleans ,LA
+Info: Retrieving data for source USGS-295906090054200, City Park South Lagoon at New Orleans, LA
+Info: Retrieving data for source USGS-300009090051600, City Park East Lagoon at New Orleans, LA
+Info: Retrieving data for source USGS-300026090050800, Bayou Saint John Midlake at New Orleans, LA
+Info: Retrieving data for source USGS-300034090055300, City Park West Lagoon at New Orleans, LA
+Info: Retrieving data for source USGS-300127090045800, Bayou Saint John inside gate at New Orleans, LA
+Info: Retrieving data for source USGS-300128090045800, Bayou Saint John outside gate at New Orleans, LA
+Info: Retrieving data for source USGS-300602090375100, CRMS5373-H01-RT
+Info: Retrieving data for source USGS-300803081354500, JULINGTON CRK AT HOOD LANDING NR BAYARD, FL
+Info: Retrieving data for source USGS-301204081434900, ORTEGA RIVER SALINITY AT JACKSONVILLE, FL
+Info: Retrieving data for source USGS-301324090382400, CRMS0061-H01-RT
+Info: Retrieving data for source USGS-301510081383500, ST JOHNS RVR AT CHRISTOPHER PT NR JACKSONVILLE, FL
+Info: Retrieving data for source USGS-301817081393600, ST JOHNS RIVER BL MARCO LK AT JACKSONVILLE, FL
+Info: Retrieving data for source USGS-302609081453300, TROUT RIVER BL US 1 AT DINSMORE, FL
+Info: Retrieving data for source USGS-302657081312400, CLAPBOARD CRK AB BUCKHORN BLUFF NR JAX, FL
+Info: Retrieving data for source USGS-324955107180901, 17S.05W.13.24
+Info: Retrieving data for source USGS-335054090230200, PARKS BAYOU NEAR SWAN LAKE, MS
+Info: Retrieving data for source USGS-344139077211205, ON-265 HADNOT POINT RS X24s5 (CASTLE HAYNE)
+Info: Retrieving data for source USGS-344139077211206, ON-266 HADNOT POINT RS X24s6 (CASTLE HAYNE)
+Info: Retrieving data for source USGS-344425077272501, ON-035 (NC-52) CAMP GEIGER (CASTLE HAYNE)
+Info: Retrieving data for source USGS-350721106211001, 10N.05E.01.223 SIERRA VISTA
+Info: Retrieving data for source USGS-351113089513401, SH:Q-186
+Info: Retrieving data for source USGS-375327097285402, 25S 01W 07BCCC02  DMW-S10 NR CW36
+Info: Retrieving data for source USGS-375332097284802, 25S 01W 07BCCA02  DMW-S14 NR CW36
+Info: Retrieving data for source USGS-375954097363802, 24S 03W 02AADA02  RB1-MS DEEP
+Info: Retrieving data for source USGS-375955102023701, 24S 43W 04BBC 01  CO-KS STATELINE, 2.1 MI S, ARK R
+Info: Retrieving data for source USGS-380457075122302, WO Ff 12
+Info: Retrieving data for source USGS-380512075125402, WO Ef 37
+Info: Retrieving data for source USGS-381804075063402, WO Cg 103
+Info: Retrieving data for source USGS-381805075063502, WO Cg 101
+Info: Retrieving data for source USGS-381922076043001, DO Fe  44
+Info: Retrieving data for source USGS-381922076043002, DO Fe  45
+Info: Retrieving data for source USGS-384428075355701, Oc15-11
+Info: Retrieving data for source USGS-384526075091601, Ni51-32
+Info: Retrieving data for source USGS-384637075153201, Ng45-02
+Info: Retrieving data for source USGS-385202111121601, MUDDY CREEK BL MILLER CANYON NR EMERY, UTAH
+Info: Retrieving data for source USGS-385443076562802, WE Cb   6
+Info: Retrieving data for source USGS-385504076563802, WE Bb   4
+Info: Retrieving data for source USGS-390054111041701, MOLEN SEEP WASH NEAR FERRON, UT
+Info: Retrieving data for source USGS-390540112370001,  (C-20- 7) 2ccd-S1
+Info: Retrieving data for source USGS-391259097001800, MILFORD LK NR WAKEFIELD, KS
+Info: Retrieving data for source USGS-404930077501501, CE   655
+Info: Retrieving data for source USGS-411214079465802, Little Scrubgrass Creek nr Lisbon, PA
+Info: Retrieving data for source USGS-411955088280601, HANSON GRAVEL PIT AT CULVERT NEAR MORRIS, IL
+Info: Retrieving data for source USGS-420615121533601, KLAMATH RIVER AT SITE 12A, NR ROCK QUARRY-BOTTOM
+Info: Retrieving data for source USGS-420732121501100, NORTH CANAL 0.9 MI BLW KLAMATH RIVER, NR WORDEN,OR
+Info: Retrieving data for source USGS-420853121505501, KLAMATH RIVER AT MILLER ISLAND BOAT RAMP-BOTTOM
+Info: Retrieving data for source USGS-421209121463001, KLAMATH RIVER AT RAILROAD BRIDGE - BOTTOM
+Info: Retrieving data for source USGS-421330121474700, LINK RIVER ABOVE EASTSIDE POWERHOUSE
+Info: Retrieving data for source USGS-422308088195601, 45N8E-17.7h1 (9-MCH-S)
+Info: Retrieving data for source USGS-422559121574403, EAGLE POINT - UPPER   - EPT
+Info: Retrieving data for source USGS-422622122004003, MID-NORTH - UPPER  - MDNU
+Info: Retrieving data for source USGS-422820122032100, FISH BANKS WEST - FBW
+Info: Retrieving data for source USGS-424752070491701, PLUM ISLAND R @ TPK BRIDGE AT PLUM ISLAND, MA
+Info: Retrieving data for source USGS-425311070535801, NH-SGW   65
+Info: Retrieving data for source USGS-425400070545401, NH-SGW   93
+Info: Retrieving data for source USGS-425651070573701, NH-KFW   87
+Info: Retrieving data for source USGS-431037090043401, SK-08/03E/12-0200
+Info: Retrieving data for source USGS-431053090042701, SK-08/04E/07-1933
+Info: Retrieving data for source USGS-431053090042702, SK-08/04E/07-1934
+Info: Retrieving data for source USGS-442725110064001, Middle Creek ab Mammoth Crystal Spgs YNP (SP4)
+Info: Retrieving data for source USGS-452053119323001, WILLOW CREEK RESERVOIR NW CORNER, OR
+Info: Retrieving data for source USGS-453250122494501, BRONSON CREEK ABOVE NW KAISER RD
+Info: Retrieving data for source USGS-453302122491600, BRONSON CR NEAR NW MEISNER DR AND NW HENNINGER LN
+Info: Retrieving data for source USGS-453312122485800, BRONSON CREEK NEAR NW LAKEVIEW DR
+Info: Retrieving data for source USGS-454554119121801, 03.00N/29.00E-05DDA01
+Info: Retrieving data for source USGS-454827119173401, 04N/28E-22DDC01
+Info: Retrieving data for source USGS-455415119314601, 05.00N/26.00E-23BDB01
+Info: Retrieving data for source USGS-455657111283501, Missouri River nr Trident
+Info: Retrieving data for source USGS-460230111253101, Missouri River at Clarkston
+Info: Retrieving data for source USGS-460614111234801, Missouri River above Sixteen Mile Creek nr Lombard
+Info: Retrieving data for source USGS-460709111241001, Missouri River bl Toston Dam nr Toston
+Info: Retrieving data for source USGS-461411111280601, Missouri River ab York Island nr Toston
+Info: Retrieving data for source USGS-462107111312301, Missouri River ab Canyon Ferry nr Townsend
+Info: Retrieving data for source USGS-50048565, QUEBRADA SANTA CATALINA NEAR GUAYNABO, PR
+Info: Retrieving data for source USGS-50048580, UNNAMED CREEK AT FORT BUCHANAN, GUAYNABO, PR
+Info: Retrieving data for source USGS-50231500, LAGUNA BAHIA MOSQUITO NO.1 VIEQUES PR

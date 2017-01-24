@@ -10,7 +10,7 @@ using RTI.DataBase.Objects;
 using RTI.DataBase.Util;
 using RTI.DataBase.Updater.Config;
 
-namespace RTI.Database.UpdaterService.Parse
+namespace RTI.DataBase.UpdaterService.Parse
 {
     public class SourcesFileParser
     {

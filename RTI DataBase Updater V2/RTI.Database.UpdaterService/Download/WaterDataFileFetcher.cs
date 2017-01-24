@@ -11,7 +11,7 @@ using RTI.DataBase.Model;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
 
-namespace RTI.Database.UpdaterService.Download
+namespace RTI.DataBase.UpdaterService.Download
 {
     public class WaterDataFileFetcher : IFileFetcher
     {

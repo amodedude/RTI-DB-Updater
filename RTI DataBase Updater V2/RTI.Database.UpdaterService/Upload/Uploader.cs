@@ -11,7 +11,7 @@ using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Model;
 using RTI.DataBase.Updater.Config;
 
-namespace RTI.Database.UpdaterService.Upload
+namespace RTI.DataBase.UpdaterService.Upload
 {
     /// <summary>
     /// Uploads retrieved data into the RTI database. 

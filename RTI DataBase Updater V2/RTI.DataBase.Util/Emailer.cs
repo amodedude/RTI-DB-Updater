@@ -130,7 +130,7 @@ namespace RTI.DataBase.Util
         /// <summary>
         /// Sends an email alert to the user via the SmtpClient.
         /// </summary>
-        /// <param name="adressList"></param>
+        /// <param name="AddressList"></param>
         /// <param name="subject"></param>
         /// <param name="body"></param>
         private void SendMail(string subject, string body)

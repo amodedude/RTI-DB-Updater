@@ -20,7 +20,7 @@ namespace RTI.DataBase.Objects.Json
         public string DisplayName { get; set; }
 
         [JsonProperty("address")]
-        public Addres Address { get; set; }
+        public Address Address { get; set; }
 
         [JsonProperty("county")]
         public string County { get; set; }
@@ -35,8 +35,19 @@ namespace RTI.DataBase.Objects.Json
         public string[] Name { get; set; }
     }
 
-    public class Addres
+    /// <summary>
+    /// Address details of a GeoLocation.
+    /// </summary>
+    public class Address
     {
+        [JsonProperty("house_number")]
+        public string AddressNumber { get; set; }
+        [JsonProperty("road")]
+        public string Road { get; set; }
+        [JsonProperty("neighbourhood")]
+        public string Neighbourhood { get; set; }
+        [JsonProperty("suburb")]
+        public string Suburb { get; set; }
         [JsonProperty("city")]
         public string City { get; set; }
         [JsonProperty("county")]
@@ -47,5 +58,7 @@ namespace RTI.DataBase.Objects.Json
         public string Country { get; set; }
         [JsonProperty("country_code")]
         public string CountryCode { get; set; }
+        [JsonProperty("postcode")]
+        public string PostCode { get; set; }
     }
 }

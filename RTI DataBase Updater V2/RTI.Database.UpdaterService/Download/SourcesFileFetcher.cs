@@ -4,14 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RTI.Database.UpdaterService.Parse;
+using RTI.DataBase.UpdaterService.Parse;
 using RTI.DataBase.Interfaces.Download;
 using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Model;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
 
-namespace RTI.Database.UpdaterService.Download
+namespace RTI.DataBase.UpdaterService.Download
 {
     public class SourcesFileFetcher : IFileFetcher
     {
@@ -79,11 +79,52 @@ namespace RTI.Database.UpdaterService.Download
                 downladedSources.RemoveAt(0);
             var newSourcesList = new SourceCollection(downladedSources.Where(s => !sourceList.Contains(s)));
 
-            //Append Reverse Geo-code data
+            // Append Reverse Geo-code data
             ReverseGeoCoder geoCoder = new ReverseGeoCoder(LogWriter);
             newSourcesList = new SourceCollection(geoCoder.AppendGeoCodeData(newSourcesList));
 
+            // Add Source Names
+            newSourcesList = AppendSourceNames(downladedSources);
+
             return newSourcesList;
+        }
+
+        /// <summary>
+        /// Extracts water 
+        /// source name (River,Creek, Stream, ext...)
+        /// </summary>
+        /// <param name="newSourcesList"></param>
+        /// <returns></returns>
+        private SourceCollection AppendSourceNames(IList<source> sourcesList)
+        {
+            List<source> resultList = new List<source>();
+            foreach (source source in sourcesList)
+            {
+                string river = source.unique_site_name;
+                int index = -1;
+                List<string> delimList = new List<string>() {" NEAR ", " AT ", "@"," ABOVE "," BELOW "," NR ", "., "} ;
+                foreach (var delim in delimList)
+                {
+                    var result = source.unique_site_name.ToLower().IndexOf(delim.ToLower());
+                    if (result != null && result > 0)
+                    {
+                        index = result;
+                        river = source.unique_site_name.Substring(0, index);
+                        break;
+                    }
+                }
+                source sourceWithRiver = source;
+                sourceWithRiver.river = river;
+                resultList.Add(sourceWithRiver);
+            }
+
+            //DEBUG
+            //foreach (var source in resultList)
+            //{
+            //    Console.WriteLine(source.river);
+            //}
+
+            return  new SourceCollection(resultList);
         }
 
 

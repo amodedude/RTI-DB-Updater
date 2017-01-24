@@ -8,6 +8,5 @@ C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\bin\Debug\MySql.Web.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\bin\Debug\EntityFramework.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\obj\Debug\RTI.DataBase.Model.csprojResolveAssemblyReference.cache
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\obj\Debug\RTI.DataBase.Model.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\obj\Debug\RTI.DataBase.Model.pdb
