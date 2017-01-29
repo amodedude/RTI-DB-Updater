@@ -55,6 +55,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SourceCollection.cs" />
+    <Compile Include="State.cs" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ColumnMappingXref.txt">

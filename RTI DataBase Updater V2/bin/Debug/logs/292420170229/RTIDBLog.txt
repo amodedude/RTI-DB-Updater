@@ -1,0 +1,13 @@
+Info: RTI Database Updater initiated on 1/28/2017 @9:24 PM
+
+
+Info: Next Scheduled Run at 01/28/2017 09:24:30 PM (01/29/2017 02:24:30 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: Retrieving GeoCode data for source USGS-01015010, ST. JOHN RIVER NEAR HAMLIN, MAINE
+Info: Retrieving GeoCode data for source USGS-01017960, Meduxnekeag R above S Br Medux. R nr Houlton, ME
+Info: Retrieving GeoCode data for source USGS-01018000, Meduxnekeag River near Houlton, Maine
+Info: Retrieving GeoCode data for source USGS-01021200, Dennys River at Dennysville, Maine
+Info: Retrieving GeoCode data for source USGS-01049265, Kennebec River at North Sidney, Maine
+Info: Retrieving GeoCode data for source USGS-01056000, GULF ISLAND POND NEAR LEWISTON, ME

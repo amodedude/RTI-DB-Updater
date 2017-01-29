@@ -1,0 +1,9 @@
+Info: RTI Database Updater initiated on 1/28/2017 @11:32 AM
+
+
+Info: Next Scheduled Run at 01/28/2017 11:32:40 AM (01/28/2017 04:32:40 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: Retrieving GeoCode data for source USGS-01015010, ST. JOHN RIVER NEAR HAMLIN, MAINE
+Info: Retrieving GeoCode data for source USGS-01017960, Meduxnekeag R above S Br Medux. R nr Houlton, ME

@@ -19,7 +19,7 @@ namespace RTI.DataBase.UpdaterService.Tests
         {
             ILogger loger = new Logger();
             var coder = new ReverseGeoCoder(loger);
-            double result = coder.CalculateDistanceFromSite("38.898556", "-77.037852", "38.897147", "-77.043934");
+            //double result = coder.CalculateDistanceFromSite("38.898556", "-77.037852", "38.897147", "-77.043934");
         }
     }
 }

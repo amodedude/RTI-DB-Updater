@@ -1,0 +1,97 @@
+Info: RTI Database Updater initiated on 1/28/2017 @9:05 PM
+
+
+Info: Next Scheduled Run at 01/28/2017 09:05:36 PM (01/29/2017 02:05:36 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: Retrieving GeoCode data for source USGS-01015010, ST. JOHN RIVER NEAR HAMLIN, MAINE
+Info: Retrieving GeoCode data for source USGS-01017960, Meduxnekeag R above S Br Medux. R nr Houlton, ME
+Info: Retrieving GeoCode data for source USGS-01018000, Meduxnekeag River near Houlton, Maine
+Info: Retrieving GeoCode data for source USGS-01021200, Dennys River at Dennysville, Maine
+Info: Retrieving GeoCode data for source USGS-01049265, Kennebec River at North Sidney, Maine
+Info: Retrieving GeoCode data for source USGS-01056000, GULF ISLAND POND NEAR LEWISTON, ME
+Info: Retrieving GeoCode data for source USGS-01059010, ANDROSCOGGIN RIVER BL DRESSERS RIPS NR AUBURN, ME
+Info: Retrieving GeoCode data for source USGS-01064140, PRESUMPSCOT RIVER NEAR WEST FALMOUTH, ME
+Info: Retrieving GeoCode data for source USGS-01073389, Pawtuckaway Lake near Nottingham, NH
+Info: Retrieving GeoCode data for source USGS-01080000, LAKE WINNIPESAUKEE AT WEIRS BEACH, NH
+Info: Retrieving GeoCode data for source USGS-01095375, QUINAPOXET RIVER AT CANADA MILLS NEAR HOLDEN, MA
+Info: Retrieving GeoCode data for source USGS-01104410, CAMBRIDGE RES., UNNAMED TRIB 1, NR LEXINGTON, MA
+Info: Retrieving GeoCode data for source USGS-01168250, COLD RIVER AT FLORIDA, MA
+Info: Retrieving GeoCode data for source USGS-01193348, LYMAN BROOK AT MARLBOROUGH, CT
+Info: Retrieving GeoCode data for source USGS-01193463, SALMON RIVER US WOLF BROOK NR N WESTCHESTER CT
+Info: Retrieving GeoCode data for source USGS-01196500, QUINNIPIAC RIVER AT WALLINGFORD, CT
+Info: Retrieving GeoCode data for source USGS-01200600, HOUSATONIC RIVER NEAR NEW MILFORD, CT
+Info: Retrieving GeoCode data for source USGS-01201487, STILL RIVER AT ROUTE 7 AT BROOKFIELD CENTER, CT
+Info: Retrieving GeoCode data for source USGS-01359133, PATROON CR AT NORTHERN BLVD AT ALBANY NY
+Info: Retrieving GeoCode data for source USGS-01379790, Green Pond Brook at Wharton NJ
+Info: Retrieving GeoCode data for source USGS-01458500, Delaware River at Frenchtown NJ
+Info: Retrieving GeoCode data for source USGS-01482320, RED LION CREEK NEAR DELAWARE CITY, DE
+Info: Retrieving GeoCode data for source USGS-01484272, BROADKILL RIVER NEAR MILTON, DE
+Info: Retrieving GeoCode data for source USGS-01490200, FARM CREEK NEAR TODDVILLE, MD
+Info: Retrieving GeoCode data for source USGS-01503000, SUSQUEHANNA RIVER AT CONKLIN NY
+Info: Retrieving GeoCode data for source USGS-01507000, CHENANGO RIVER AT GREENE NY
+Info: Retrieving GeoCode data for source USGS-01518700, Tioga River at Tioga Junction, PA
+Info: Retrieving GeoCode data for source USGS-01573710, Conewago Creek near Falmouth, PA
+Info: Retrieving GeoCode data for source USGS-01576000, Susquehanna River at Marietta, PA
+Info: Retrieving GeoCode data for source USGS-015765195, Big Spring Run near Mylin Corners, PA
+Info: Retrieving GeoCode data for source USGS-01576980, Susquehanna River at Holtwood Dam at Holtwood, PA
+Info: Retrieving GeoCode data for source USGS-01585075, FOSTER BRANCH NEAR JOPPATOWNE, MD
+Info: Retrieving GeoCode data for source USGS-01585219, HERRING RUN AT SINCLAIR LANE AT BALTIMORE, MD
+Info: Retrieving GeoCode data for source USGS-01589290, SCOTTS LEVEL BRANCH AT ROCKDALE, MD
+Info: Retrieving GeoCode data for source USGS-01595500, NORTH BRANCH POTOMAC RIVER AT KITZMILLER, MD
+Info: Retrieving GeoCode data for source USGS-01618000, POTOMAC RIVER AT SHEPHERDSTOWN, WV
+Info: Retrieving GeoCode data for source USGS-01636845, LITTLE CATOCTIN CREEK NEAR ROSEMONT, MD
+Info: Retrieving GeoCode data for source USGS-01636846, LITTLE CATOCTIN CREEK AT ROSEMONT, MD
+Info: Retrieving GeoCode data for source USGS-01651730, BEAVERDAM CREEK NEAR CHEVERLY, MD
+Info: Retrieving GeoCode data for source USGS-0167889257, STORM DRAIN WEST OF GARRETT DRIVE AT HAMPTON, VA
+Info: Retrieving GeoCode data for source USGS-0167891721, STORM DRAIN AT COLISEUM DRIVE AT HAMPTON, VA
+Info: Retrieving GeoCode data for source USGS-0204279245, STORM DRAIN AT RIVERS RDG CIR NR NEWPORT NEWS, VA
+Info: Retrieving GeoCode data for source USGS-0204279294, STORM DRAIN AT LAKEWOOD PK DR NR NEWPORT NEWS, VA
+Info: Retrieving GeoCode data for source USGS-0204288771, STORM DRAIN AT USAA DRIVE AT NORFOLK, VA
+Info: Retrieving GeoCode data for source USGS-0204288786, STORM DRAIN AT PROFESSIONAL PL NEAR CHESAPEAKE, VA
+Info: Retrieving GeoCode data for source USGS-0204289131, STORM DRAIN AT DAISY DRIVE NEAR PORTSMOUTH, VA
+Info: Retrieving GeoCode data for source USGS-0204289402, STORM DRAIN AT CRANEYBROOK LANE AT EDGEFIELD, VA
+Info: Retrieving GeoCode data for source USGS-0204289989, STORM DRAIN AT SHEPPARD AVENUE NEAR NORFOLK, VA
+Info: Retrieving GeoCode data for source USGS-0204295063, STORM DRAIN AT LINDSLEY DR NEAR VIRGINIA BEACH, VA
+Info: Retrieving GeoCode data for source USGS-0204306533, STORM DRAIN AT LUDLOW DRIVE NEAR KEMPSVILLE, VA
+Info: Retrieving GeoCode data for source USGS-0205551460, LICK RUN ABOVE PATTON AVENUE AT ROANOKE, VA
+Info: Retrieving GeoCode data for source USGS-021720508, COOPER RIVER ABOVE GOOSE CREEK,SC
+Info: Retrieving GeoCode data for source USGS-0217206935, COOPER RVR @ PORTS AUTHORITY PIER K, CHARLESTON SC
+Info: Retrieving GeoCode data for source USGS-0217206962, WANDO RIVER AT CAINHOY BELOW WANDO,SC
+Info: Retrieving GeoCode data for source USGS-02231000, ST. MARYS RIVER NEAR MACCLENNY, FL
+Info: Retrieving GeoCode data for source USGS-02231254, ST MARY'S RIVER AT I-95, NEAR KINGSLAND, GA
+Info: Retrieving GeoCode data for source USGS-02240000, OCKLAWAHA RIVER NEAR CONNER, FL
+Info: Retrieving GeoCode data for source USGS-02243000, ORANGE CREEK AT ORANGE SPRINGS, FL
+Info: Retrieving GeoCode data for source USGS-02243800, DEEP CREEK NR RODMAN, FLA.
+Info: Retrieving GeoCode data for source USGS-02244005, OCKLAWAHA R AT ST HWY 19,NR SALT SPRINGS, FLA.
+Info: Retrieving GeoCode data for source USGS-02244450, ST. JOHNS RIVER AT PALATKA, FLA.
+Info: Retrieving GeoCode data for source USGS-022462002, DURBIN CREEK NEAR FRUIT COVE, FL
+Info: Retrieving GeoCode data for source USGS-02246300, ORTEGA RIVER AT JACKSONVILLE, FL
+Info: Retrieving GeoCode data for source USGS-02246459, CEDAR RIVER AT SAN JUAN AVENUE AT JACKSONVILLE, FL
+Info: Retrieving GeoCode data for source USGS-02246500, ST. JOHNS RIVER AT JACKSONVILLE, FL
+Info: Retrieving GeoCode data for source USGS-02246518, POTTSBURG CRK AT US90 NR S. JACKSONVILLE, FL
+Info: Retrieving GeoCode data for source USGS-02246751, BROWARD RIVER BL BISCAYNE BLVD NR JACKSONVILLE, FL
+Info: Retrieving GeoCode data for source USGS-02246804, DUNN CREEK AT DUNN CREEK RD NR EASTPORT, FL
+Info: Retrieving GeoCode data for source USGS-02247493, BAYLESS BLVD CANAL AT DAYTONA BCH, FL
+Info: Retrieving GeoCode data for source USGS-02247498, WALLY HOFFMEYER CANAL AT DAYTONA BCH, FL
+Info: Retrieving GeoCode data for source USGS-02247499, WILLIAMSON BLVD DITCH AT DAYTONA BEACH, FL
+Info: Retrieving GeoCode data for source USGS-02247508, ELEVENTH ST CANAL NR HOLLY HILL, FL
+Info: Retrieving GeoCode data for source USGS-02248000, SPRUCE CREEK NEAR SAMSULA, FL
+Info: Retrieving GeoCode data for source USGS-02248040, B-19 CANAL AT SR415 AT PORT ORANGE, FL
+Info: Retrieving GeoCode data for source USGS-02286328, C-8 CANAL AT NE 135 ST AT NORTH MIAMI, FL
+Info: Retrieving GeoCode data for source USGS-02290709, 10B BLACK CR CANAL AT OLD CUTLER RD NR GOU
+Info: Retrieving GeoCode data for source USGS-02290829501, MO  -198
+Info: Retrieving GeoCode data for source USGS-02290829502, MO  -199
+Info: Retrieving GeoCode data for source USGS-02290947, SWEETWATER STRAND AT LOOP RD. NR MONROE STATION FL
+Info: Retrieving GeoCode data for source USGS-02299734, CURRY CREEK AT HIGHWAY 41 AT NOKOMIS FL
+Info: Retrieving GeoCode data for source USGS-02301000, NORTH PRONG ALAFIA RIVER AT KEYSVILLE FL
+Info: Retrieving GeoCode data for source USGS-02301300, SOUTH PRONG ALAFIA RIVER NEAR LITHIA FL
+Info: Retrieving GeoCode data for source USGS-02301600, LITHIA SPRINGS NEAR LITHIA FL
+Info: Retrieving GeoCode data for source USGS-02310000, ANCLOTE RIVER NEAR ELFERS FL
+Info: Retrieving GeoCode data for source USGS-02310740, SARAGASSA CANAL AT CRYSTAL RIVER FL
+Info: Retrieving GeoCode data for source USGS-02315626, ALAPAHA RISE ABOVE SW 68TH DRIVE NEAR JASPER, FL
+Info: Retrieving GeoCode data for source USGS-02317620, ALAPAHA RIVER NEAR JENNINGS FLA
+Info: Retrieving GeoCode data for source USGS-02319520, FALMOUTH SPRING AT FALMOUTH, FL
+Info: Retrieving GeoCode data for source USGS-02319950, BLUE SPRINGS NEAR DELL,FL
+Info: Retrieving GeoCode data for source USGS-02321500, SANTA FE RIVER AT WORTHINGTON SPRINGS, FLA.

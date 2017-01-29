@@ -62,5 +62,13 @@ namespace RTI.DataBase.Updater.Config
         {
             get { return (bool)this["ColumnMappingXrefHasHeader"]; }
         }
+
+        [ConfigurationProperty("RiverNameDelimiters", IsRequired = true)]
+        private string RiverDelimiters
+        {
+            get { return (string)this["RiverNameDelimiters"]; }
+        }
+
+        public List<string> RiverNameDelimiters { get { return RiverDelimiters.Split(',').Select(r => r.Trim()).ToList(); } }
     }
 }

@@ -1,0 +1,9 @@
+Info: RTI Database Updater initiated on 1/28/2017 @11:54 AM
+
+
+Info: Next Scheduled Run at 01/28/2017 11:54:40 AM (01/28/2017 04:54:40 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: ST. JOHN RIVER
+Info: Meduxnekeag R

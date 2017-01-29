@@ -1,0 +1,8 @@
+Info: RTI Database Updater initiated on 1/28/2017 @12:17 PM
+
+
+Info: Next Scheduled Run at 01/28/2017 12:17:25 PM (01/28/2017 05:17:25 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Info: Retrieving GeoCode data for source USGS-01015010, ST. JOHN RIVER NEAR HAMLIN, MAINE

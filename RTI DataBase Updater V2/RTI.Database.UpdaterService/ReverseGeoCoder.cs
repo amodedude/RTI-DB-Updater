@@ -31,7 +31,7 @@ namespace RTI.DataBase.UpdaterService
             List<source> updatedList = new List<source>();
             foreach (source src in sources)
             {
-                Logger.WriteMessageToLog($"Retrieving data for source {src.agency}-{src.agency_id}, {src.unique_site_name}");
+                Logger.WriteMessageToLog($"Retrieving GeoCode data for source {src.agency}-{src.agency_id}, {src.unique_site_name}");
                 updatedList.Add(AddGeoCode(src));
                 Thread.Sleep(TimeSpan.FromSeconds(GeoCodeApi.Settings.MaxReqRateSeconds)); // Adhere to API usage policy.
             }
@@ -49,16 +49,17 @@ namespace RTI.DataBase.UpdaterService
             string lat = src.exact_lat;
             string lng = src.exact_lng;
 
-            var geoCodeData = GetGeoReverseGeocodeData(lat, lng);
+            var geoCodeData = GetReverseGeocodeData(lat, lng);
 
             if (geoCodeData != null)
             {
                 var Address = geoCodeData.Address;
                 src.city = Address.City;
-                src.state = Address.State;
+                src.state = States.GetAbbreviation(Address.State) ?? "";
+                src.state_name = Address.State;
+                src.region = States.GetRegion(Address.State) ?? "";
                 src.county_name = Address.County;
                 src.country = Address.Country;
-                src.county_number = Address.CountryCode;
                 src.post_code = Address.PostCode;
                 src.street_number = Address.AddressNumber;
                 src.full_site_name = geoCodeData.DisplayName;
@@ -101,7 +102,7 @@ namespace RTI.DataBase.UpdaterService
             }
         }
 
-        private GeoCode GetGeoReverseGeocodeData(string lat, string lng)
+        private GeoCode GetReverseGeocodeData(string lat, string lng)
         {
             JsonRequestDownloader downloader = new JsonRequestDownloader(Logger, Application.Settings.ApiRequestUserAgent);
             GeoCodeURIBuilder builder = new GeoCodeURIBuilder(lat, lng);
