@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,6 +45,12 @@ namespace RTI.DataBase.Model.Repositories
         public IEnumerable<source> GetAllSourcesWithOutData()
         {
             return RtiContext.Sources.Where(s => s.has_data != null && s.has_data == 0).ToList();
+        }
+
+        public new void Remove(source entity)
+        {
+            _entities.Attach(entity);
+            _entities.Remove(entity);
         }
     }
 }

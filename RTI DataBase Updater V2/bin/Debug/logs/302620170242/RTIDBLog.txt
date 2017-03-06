@@ -1,0 +1,13 @@
+Info: RTI Database Updater initiated on 1/29/2017 @9:26 PM
+
+
+Info: Next Scheduled Run at 01/29/2017 09:26:42 PM (01/30/2017 02:26:42 UTC)
+Info: Performing Water Conductivity Data DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Detecting duplicate sources...
+Info: Duplicate value for USGS-9.24E+13: R10-2 Well
+Info: Duplicate value for USGS-9.24E+13: R10-6 Well
+Info: Duplicate value for USGS-9.24E+13: R1-1 Well
+Info: Duplicate value for USGS-9.24E+13: R1-7 Well
+Info: Duplicate value for USGS-9.24E+13: R8-2 Well
+Info: Duplicate value for USGS-442725110063501: Middle Creek

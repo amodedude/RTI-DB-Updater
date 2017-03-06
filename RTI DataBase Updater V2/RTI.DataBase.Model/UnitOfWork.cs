@@ -13,10 +13,13 @@ namespace RTI.DataBase.Model
             _context = context ?? new RtiContext();
             Sources = new SourceRepository(_context);
             WaterData = new WaterDataRepository(_context);
+            CustomerWaters = new CustomerWaterRepository(_context);
         }
 
         public IWaterDataRepository WaterData { get; private set; }
         public ISourceRepository Sources { get; private set; }
+        public ICustomerWaterRepository CustomerWaters { get; private set; }
+
 
         public int Complete()
         {

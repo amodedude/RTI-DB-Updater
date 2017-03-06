@@ -65,25 +65,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\CustomerWaterConfiguration.cs" />
+    <Compile Include="Model\cond_archive.cs" />
     <Compile Include="Configuration\WaterDataConfiguration.cs" />
+    <Compile Include="Model\customer.cs" />
+    <Compile Include="Model\customer_water.cs" />
+    <Compile Include="Model\datum.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CustomerWaterRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\SourceRepository.cs" />
     <Compile Include="Repositories\WaterDataRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ICustomerWaterRepository.cs" />
     <Compile Include="RepositoryInterfaces\IRepository.cs" />
     <Compile Include="RepositoryInterfaces\ISourceRepository.cs" />
     <Compile Include="RepositoryInterfaces\IWaterDataRepository.cs" />
     <Compile Include="Configuration\SourceConfiguration.cs" />
+    <Compile Include="Model\resin_products.cs" />
     <Compile Include="RtiContext.cs" />
     <Compile Include="Model\source.cs" />
+    <Compile Include="Model\test.cs" />
+    <Compile Include="Model\train.cs" />
     <Compile Include="UnitOfWork.cs" />
+    <Compile Include="Model\vessel.cs" />
+    <Compile Include="Model\vessel_historical.cs" />
     <Compile Include="Model\water_data.cs" />
+    <Compile Include="Model\water_data_old.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

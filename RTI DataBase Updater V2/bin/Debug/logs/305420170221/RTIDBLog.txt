@@ -1,0 +1,8 @@
+Info: RTI Database Updater initiated on 1/29/2017 @9:54 PM
+
+
+Info: Next Scheduled Run at 01/29/2017 09:54:21 PM (01/30/2017 02:54:21 UTC)
+Info: Performing Water Conductivity Data DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Detecting duplicate sources...
+Info: Duplicate value for USGS-9.24E+13: R10-2 Well

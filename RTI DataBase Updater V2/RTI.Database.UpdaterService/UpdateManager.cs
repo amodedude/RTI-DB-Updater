@@ -58,7 +58,7 @@ namespace RTI.DataBase.UpdaterService
             }
             finally
             {
-                SentEmails();   
+                SendEmails();   
             }
         }
 
@@ -79,7 +79,7 @@ namespace RTI.DataBase.UpdaterService
             }
         }
 
-        private void SentEmails()
+        private void SendEmails()
         {
             try
             {

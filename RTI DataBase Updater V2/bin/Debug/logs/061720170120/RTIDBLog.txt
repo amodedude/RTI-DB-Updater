@@ -1,0 +1,39 @@
+Info: RTI Database Updater initiated on 3/5/2017 @8:17 PM
+
+
+Info: Next Scheduled Run at 03/05/2017 08:17:20 PM (03/06/2017 01:17:20 UTC)
+Info: Performing Water Conductivity Data DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Detecting duplicate sources...
+Info: Duplicate value for USGS-9.24E+13: R10-2 Well
+Error: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: A Fatal Error has occurred while fetching USGS source files.
+ExceptionMessage: Attaching an entity of type 'RTI.DataBase.Model.source' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.
+StackTrace:    at System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   at System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at RTI.DataBase.Model.Repositories.SourceRepository.Remove(source entity) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\Repositories\SourceRepository.cs:line 56
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.LogAndRemoveDuplicates(IEnumerable`1 sourceList) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 127
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.FetchFiles() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 67
+CallingMember: @Class 'WaterDataFileFetcher.cs', Line Number 102 Method FetchFiles()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Error: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: The Update Process has encountered a fatal error.
+ExceptionMessage: Attaching an entity of type 'RTI.DataBase.Model.source' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.
+StackTrace:    at System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   at System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at RTI.DataBase.Model.Repositories.SourceRepository.Remove(source entity) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Model\Repositories\SourceRepository.cs:line 56
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.LogAndRemoveDuplicates(IEnumerable`1 sourceList) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 127
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.FetchFiles() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 104
+   at RTI.DataBase.UpdaterService.UpdateManager.RunUpdate() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\UpdateManager.cs:line 37
+CallingMember: @Class 'UpdateManager.cs', Line Number 57 Method RunUpdate()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

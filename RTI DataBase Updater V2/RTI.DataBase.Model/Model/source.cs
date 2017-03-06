@@ -5,10 +5,18 @@ namespace RTI.DataBase.Model
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Xml.Serialization;
 
     [Table("rtidev.sources")]
-    public class source
+    public partial class source
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public source()
+        {
+            customer_water = new HashSet<customer_water>();
+            customer_water1 = new HashSet<customer_water>();
+        }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int sources_sourceID { get; set; }
@@ -83,5 +91,13 @@ namespace RTI.DataBase.Model
         public string unique_site_name { get; set; }
 
         public int? has_data { get; set; }
+
+        [XmlIgnore()]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<customer_water> customer_water { get; set; }
+
+        [XmlIgnore()]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<customer_water> customer_water1 { get; set; }
     }
 }

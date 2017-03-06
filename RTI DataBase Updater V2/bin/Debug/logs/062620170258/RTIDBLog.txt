@@ -1,0 +1,7 @@
+Info: RTI Database Updater initiated on 3/5/2017 @9:26 PM
+
+
+Info: Next Scheduled Run at 03/05/2017 09:26:58 PM (03/06/2017 02:26:58 UTC)
+Info: Performing Water Conductivity Data DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Detecting duplicate sources...

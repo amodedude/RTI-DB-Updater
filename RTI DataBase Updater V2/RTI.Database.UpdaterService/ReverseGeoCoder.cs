@@ -96,7 +96,7 @@ namespace RTI.DataBase.UpdaterService
                 double d = 3961 * c;
                 return Math.Round(d,3);
             }
-            catch (Exception ex)
+            catch
             {
                 return -999;
             }

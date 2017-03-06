@@ -11,6 +11,7 @@ using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Model;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
+using RTI.DataBase.Util;
 
 namespace RTI.DataBase.UpdaterService.Download
 {
@@ -100,8 +101,10 @@ namespace RTI.DataBase.UpdaterService.Download
             List<string> delimList = UsgsApi.Settings.RiverNameDelimiters;
             delimList = delimList.Select(r => r.PadLeft(r.Length+1).PadRight(r.Length+2)).ToList();
             List<source> resultList = new List<source>();
+            LogWriter.WriteMessageToLog("Extracting source names...");
             foreach (var source in sourcesList)
             {
+                
                 string sourceName = source.unique_site_name.ToLower();
                 int minIndex = sourceName.Length;
                 foreach (var subString in delimList.Select(r => r.ToLower()).AsEnumerable())
@@ -116,7 +119,7 @@ namespace RTI.DataBase.UpdaterService.Download
                 source.feature_class = GetFeatureClass(river);
                 source sourceWithRiver = source;
                 sourceWithRiver.river = river;
-                Console.WriteLine(river);
+                LogWriter.WriteMessageToLog($"{source.agency}-{source.agency_id}, source name: {source.river}, source type: {source.feature_class}");
                 resultList.Add(sourceWithRiver);
             }
             return new SourceCollection(resultList);

@@ -1,0 +1,38 @@
+Info: RTI Database Updater initiated on 3/5/2017 @9:35 PM
+
+
+Info: Next Scheduled Run at 03/05/2017 09:35:58 PM (03/06/2017 02:35:58 UTC)
+Info: Performing Water Conductivity Data DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Detecting duplicate sources...
+Error: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: A Fatal Error has occurred while fetching USGS source files.
+ExceptionMessage: There was an error reflecting type 'System.Collections.Generic.List`1[RTI.DataBase.Model.source]'.
+InnerExceptionMessage: There was an error reflecting type 'RTI.DataBase.Model.source'.
+StackTrace:    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at RTI.DataBase.Util.XMLSerialization.Serialize(Object obj, String path, Type type) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\XMLSerializer.cs:line 15
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.LogAndRemoveDuplicates(IEnumerable`1 sourceList) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 138
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.FetchFiles() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 67
+CallingMember: @Class 'WaterDataFileFetcher.cs', Line Number 102 Method FetchFiles()
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Error: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ErrorMessage: The Update Process has encountered a fatal error.
+ExceptionMessage: There was an error reflecting type 'System.Collections.Generic.List`1[RTI.DataBase.Model.source]'.
+InnerExceptionMessage: There was an error reflecting type 'RTI.DataBase.Model.source'.
+StackTrace:    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at RTI.DataBase.Util.XMLSerialization.Serialize(Object obj, String path, Type type) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.DataBase.Util\XMLSerializer.cs:line 15
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.LogAndRemoveDuplicates(IEnumerable`1 sourceList) in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 138
+   at RTI.DataBase.UpdaterService.Download.WaterDataFileFetcher.FetchFiles() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\Download\WaterDataFileFetcher.cs:line 103
+   at RTI.DataBase.UpdaterService.UpdateManager.RunUpdate() in C:\Users\John\Desktop\RTI DB Updater\RTI DataBase Updater V2\RTI.Database.UpdaterService\UpdateManager.cs:line 37
+CallingMember: @Class 'UpdateManager.cs', Line Number 57 Method RunUpdate()
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

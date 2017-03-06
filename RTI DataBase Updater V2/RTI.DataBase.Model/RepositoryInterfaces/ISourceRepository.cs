@@ -8,5 +8,6 @@ namespace RTI.DataBase.Interfaces.Repositories
         IEnumerable<source> GetAllSources();
         IEnumerable<source> GetAllSourcesWithData();
         IEnumerable<source> GetAllSourcesWithOutData();
+        void Remove(source src);
     }
 }

@@ -10,6 +10,7 @@ using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Model;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
+using RTI.DataBase.Util;
 
 namespace RTI.DataBase.UpdaterService.Download
 {
@@ -62,6 +63,9 @@ namespace RTI.DataBase.UpdaterService.Download
 
                 if (!Application.Settings.UseLatestCachedFiles)
                 {
+                    // Remove and log Duplicates
+                    sourceList = LogAndRemoveDuplicates(sourceList);
+
                     // Begin Asynchronous downloading from the USGS
                     var loopOptions = new ParallelOptions { MaxDegreeOfParallelism = Application.Settings.MaxDegreeOfParallelism };
                     Parallel.ForEach(sourceList, loopOptions, InitilizeDownload);
@@ -96,9 +100,45 @@ namespace RTI.DataBase.UpdaterService.Download
             catch (Exception ex)
             {
                 LogWriter.WriteErrorToLog(ex, "A Fatal Error has occurred while fetching USGS source files.", true); 
-
                 throw;
             }
+        }
+
+        private List<source> LogAndRemoveDuplicates(IEnumerable<source> sourceList)
+        {
+            LogWriter.WriteMessageToLog("Detecting duplicate sources...");
+            var duplicateKeys = sourceList.GroupBy(x => x.agency_id)
+                        .Where(group => group.Count() > 1)
+                        .Select(group => group.Key);
+
+            var dupes = sourceList.Where(s => duplicateKeys.Contains(s.agency_id)).ToList();
+            var nonDupes = sourceList.Where(s => !duplicateKeys.Contains(s.agency_id)).ToList();
+
+            // Delete all duplicate sources
+            using (UnitOfWork uoa = new UnitOfWork())
+            {
+                var dupeSources = uoa.Sources.GetAllSources().Where(r => duplicateKeys.Contains(r.agency_id)).ToList();
+                foreach (source src in dupeSources)
+                {
+                    var linkedCustomerWaters = uoa.CustomerWaters.GetAllCustomerWatersWithSouce(src);
+                    if(!(linkedCustomerWaters.Count() > 0))
+                    {
+                        LogWriter.WriteMessageToLog($"Duplicate value for {src.agency}-{src.agency_id}: {src.full_site_name}");
+                        uoa.Sources.Remove(src);
+                    }
+                    else
+                    {
+                        LogWriter.WriteErrorToLog(new Exception($"Duplicate value for {src.agency}-{src.agency_id}: {src.full_site_name}, source cannot be removed due to FK constraint."), "Error deleting duplicate source from sources table.",true, Priority.Warning);
+                    }
+                }
+                uoa.Complete();
+            }
+
+            // Write any duplicate water sources to an XML file.
+            XMLSerialization serializer = new XMLSerialization();
+            serializer.Serialize(dupes.ToList(), Application.Settings.XmlOutputFolder+"DuplicateWaterSources.xml");
+
+            return nonDupes.ToList();
         }
 
         /// <summary>
@@ -134,44 +174,48 @@ namespace RTI.DataBase.UpdaterService.Download
         /// <param name="source"></param>
         private void InitilizeDownload(source source)
         {
-            // Return if another thread has already initiated the download.
-            if (_initializedDownloads.Contains(source)|| source == null)
-                return;
+            lock (lockObject)
+            {
+                // Return if another thread has already initiated the download.
+                if (_initializedDownloads.Contains(source) || source == null)
+                    return;
+            }
 
             // Get the USGSID
-            string uri = "";
-            try
-            {
-                var usgsid = source.agency_id;
-                var fileName = usgsid + ".txt";                        
-
-                if (!Directory.Exists(_currentFolder))
-                    Directory.CreateDirectory(_currentFolder);
-
-                var filePath = Path.Combine(_currentFolder, fileName);
-                var builder = new WaterDataURIBuilder();
-                uri = builder.BuildUri(usgsid);
-                LogWriter.WriteMessageToLog("Downloading File from " + uri);
-                Downloader.download_file(uri, filePath, UsgsApi.Settings.GzipCompression); // Fetch the file
-                lock (lockObject)
+                string uri = "";
+                try
                 {
-                    _initializedDownloads.Add(source);
+                    var usgsid = source.agency_id;
+                    var fileName = usgsid + ".txt";
+
+                    if (!Directory.Exists(_currentFolder))
+                        Directory.CreateDirectory(_currentFolder);
+
+                    var filePath = Path.Combine(_currentFolder, fileName);
+                    var builder = new WaterDataURIBuilder();
+                    uri = builder.BuildUri(usgsid);
+                    LogWriter.WriteMessageToLog("Downloading File from " + uri);
+                    Downloader.download_file(uri, filePath, UsgsApi.Settings.GzipCompression); // Fetch the file
+                    lock (lockObject)
+                    {
+                        _initializedDownloads.Add(source);
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                lock (lockObject)
+                catch (Exception ex)
                 {
-                    //System.Diagnostics.Debugger.Break();
-                    string message = $"Unable to download file {_filesDownloaded + 1} of {_numberOfFilesToDownload}.\r\nSite ID = {source.agency_id:N}\r\nName = {source.full_site_name}\r\nURI = {uri}";
-                    LogWriter.WriteErrorToLog(ex, message, true);
-                    _failedDownloads.Add(source);
+                    lock (lockObject)
+                    {
+                        //System.Diagnostics.Debugger.Break();
+                        string message =
+                            $"Unable to download file {_filesDownloaded + 1} of {_numberOfFilesToDownload}.\r\nSite ID = {source.agency_id:N}\r\nName = {source.full_site_name}\r\nURI = {uri}";
+                        LogWriter.WriteErrorToLog(ex, message, true);
+                        _failedDownloads.Add(source);
+                    }
                 }
-            }
-            finally
-            {
-                Interlocked.Increment(ref _filesDownloaded);
-            }
+                finally
+                {
+                    Interlocked.Increment(ref _filesDownloaded);
+                }
         }
     }
 }

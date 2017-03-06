@@ -1,0 +1,61 @@
+Info: RTI Database Updater initiated on 1/29/2017 @9:30 PM
+
+
+Info: Next Scheduled Run at 01/29/2017 09:30:26 PM (01/30/2017 02:30:26 UTC)
+Info: Performing Water Conductivity Data DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Detecting duplicate sources...
+Info: Duplicate value for USGS-9.24E+13: R10-2 Well
+Info: Duplicate value for USGS-9.24E+13: R10-6 Well
+Info: Duplicate value for USGS-9.24E+13: R1-1 Well
+Info: Duplicate value for USGS-9.24E+13: R1-7 Well
+Info: Duplicate value for USGS-9.24E+13: R8-2 Well
+Info: Duplicate value for USGS-9.24E+13: R8-7 Well
+Info: Duplicate value for USGS-442725110063501: Middle Creek
+Info: Duplicate value for USGS-442725110063501: Middle Creek
+Info: Duplicate value for USGS-422622122004000: Mid-North -
+Info: Duplicate value for USGS-422622122004000: Mid-North -
+Info: Duplicate value for USGS-422559121574400: Eagle Point
+Info: Duplicate value for USGS-422559121574400: Eagle Point
+Info: Duplicate value for USGS-421209121463000: Klamath River
+Info: Duplicate value for USGS-421209121463000: Klamath River
+Info: Duplicate value for USGS-420853121505500: Klamath River @ Klamath County, OR
+Info: Duplicate value for USGS-420853121505500: Klamath River @ Klamath County, OR
+Info: Duplicate value for USGS-420615121533600: Klamath River
+Info: Duplicate value for USGS-420615121533600: Klamath River
+Info: Duplicate value for USGS-404930077501401: Ce 655
+Info: Duplicate value for USGS-404930077501401: Ce 664
+Info: Duplicate value for --4.03E+14: -
+Info: Duplicate value for USGS-4.03E+14: Kansas Chute
+Info: Duplicate value for USGS-385504076563801: We Bb @ Washington, DC
+Info: Duplicate value for USGS-385504076563801: We Bb @ Washington, DC
+Info: Duplicate value for USGS-385443076562801: We Cb @ Washington, DC
+Info: Duplicate value for USGS-385443076562801: We Cb @ Washington, DC
+Info: Duplicate value for USGS-375954097363801: 24S 03W @ Harvey County, KS
+Info: Duplicate value for USGS-375954097363801: 24S 03W @ Harvey County, KS
+Info: Duplicate value for USGS-375332097284801: 25S 01W @ Sedgwick County, KS
+Info: Duplicate value for USGS-375332097284801: 25S 01W @ Sedgwick County, KS
+Info: Duplicate value for USGS-375327097285401: 25S 01W @ Sedgwick County, KS
+Info: Duplicate value for USGS-375327097285401: 25S 01W @ Sedgwick County, KS
+Info: Duplicate value for USGS-344139077211204: On-264 Hadnot @ Jacksonville, NC
+Info: Duplicate value for USGS-344139077211204: On-265 Hadnot @ Jacksonville, NC
+Info: Duplicate value for USGS-344139077211204: On-266 Hadnot @ Jacksonville, NC
+Info: Duplicate value for USGS-253044080555900: Mo -211
+Info: Duplicate value for USGS-253044080555900: Eden 3 Everglades National Park
+Info: Duplicate value for USGS-251457080395801: G -3776
+Info: Duplicate value for USGS-251457080395801: G -3777
+Info: Duplicate value for USGS-07099969: Arkansas River @ Pueblo, CO
+Info: Duplicate value for USGS-07099969: Arkansas River @ Pueblo, CO
+Info: Duplicate value for USGS-03433640: Copperas Branch @ Williamson County, TN
+Info: Duplicate value for USGS-03433640: Kelley Creek @ Williamson County, TN
+Info: Duplicate value for USGS-03026250: Little Scrubgrass @ Venango County, PA
+Info: Duplicate value for USGS-03026250: Little Scrubgrass @ Venango County, PA
+Info: Duplicate value for USGS-022908295: Bottle Creek
+Info: Duplicate value for USGS-022908295: Mo -198
+Info: Duplicate value for USGS-022908295: Mo -199
+Info: Duplicate value for USGS-0209270650: Crab Point @ Morehead City, NC
+Info: Duplicate value for USGS-0209270650: On-035 (Nc-52) @ Jacksonville, NC
+Info: Duplicate value for USGS-01304562: Peconic River @ Riverhead, NY
+Info: Duplicate value for USGS-01304562: Green Pond @ Morris County, NJ
+Info: Duplicate value for USGS-01104370: 45N8E-17.7H1 (9-Mch-S) @ McHenry County, IL
+Info: Duplicate value for USGS-01104370: Stony Brook @ Middlesex County, MA

@@ -12,6 +12,12 @@ namespace RTI.DataBase.Updater.Config
             get { return (string)this["DownloadRepository"]; }
         }
 
+        [ConfigurationProperty("XmlOutputFolder", IsRequired = true)]
+        public string XmlOutputFolder
+        {
+            get { return (string)this["XmlOutputFolder"]; }
+        }
+
         [ConfigurationProperty("MaxDegreeOfParallelism", IsRequired = true)]
         public int MaxDegreeOfParallelism
         {

@@ -10,7 +10,7 @@ namespace RTI.DataBase.Model.Repositories
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly DbContext Context;
-        private readonly DbSet<TEntity> _entities;
+        protected readonly DbSet<TEntity> _entities;
 
         public Repository(DbContext context)
         {
@@ -50,11 +50,15 @@ namespace RTI.DataBase.Model.Repositories
 
         public void Remove(TEntity entity)
         {
+            _entities.Attach(entity);
             _entities.Remove(entity);
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
+            foreach(var entity in entities)
+                _entities.Attach(entity);
+
             _entities.RemoveRange(entities);
         }
     }

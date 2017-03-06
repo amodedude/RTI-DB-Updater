@@ -7,7 +7,7 @@ namespace RTI.DataBase.Model
     using System.Data.Entity.Spatial;
 
     [Table("rtidev.water_data")]
-    public class water_data
+    public partial class water_data
     {
         [Key]
         public int dataID { get; set; }
