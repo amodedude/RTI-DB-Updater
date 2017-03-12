@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.Interfaces", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.Database.UpdaterServiceTests", "RTI.Database.UpdaterServiceTests\RTI.Database.UpdaterServiceTests.csproj", "{0BBB2072-32AD-4BF8-BA3C-7DBCD89F9F28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.GeoCoder", "..\RTI.Database.GeoCoder\RTI.DataBase.GeoCoder.csproj", "{6DECBEB6-86A2-470C-A3F2-6AA627DF98E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTI.DataBase.API", "RTI.DataBase.API\RTI.DataBase.API.csproj", "{B19F09DB-6745-4083-BB81-D46F058EDD1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{0BBB2072-32AD-4BF8-BA3C-7DBCD89F9F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BBB2072-32AD-4BF8-BA3C-7DBCD89F9F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BBB2072-32AD-4BF8-BA3C-7DBCD89F9F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DECBEB6-86A2-470C-A3F2-6AA627DF98E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DECBEB6-86A2-470C-A3F2-6AA627DF98E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DECBEB6-86A2-470C-A3F2-6AA627DF98E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DECBEB6-86A2-470C-A3F2-6AA627DF98E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19F09DB-6745-4083-BB81-D46F058EDD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19F09DB-6745-4083-BB81-D46F058EDD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19F09DB-6745-4083-BB81-D46F058EDD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19F09DB-6745-4083-BB81-D46F058EDD1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

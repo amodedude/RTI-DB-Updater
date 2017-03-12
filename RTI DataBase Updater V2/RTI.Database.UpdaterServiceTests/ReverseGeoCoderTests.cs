@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Util;
-
+using RTI.DataBase.GeoCoder;
 
 namespace RTI.DataBase.UpdaterService.Tests
 {

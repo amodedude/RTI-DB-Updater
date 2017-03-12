@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RTI.DataBase.UpdaterService.Parse;
+using RTI.DataBase.API.Parse;
 using RTI.DataBase.Interfaces.Download;
 using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Model;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
-using RTI.DataBase.Util;
+using RTI.DataBase.GeoCoder;
+using RTI.DataBase.API;
 
 namespace RTI.DataBase.UpdaterService.Download
 {
@@ -56,10 +54,11 @@ namespace RTI.DataBase.UpdaterService.Download
         /// conductivity data. 
         /// </summary>
         /// <returns></returns>
-        public SourceCollection FetchFiles(){
-            LogWriter.WriteMessageToLog("Beginning download of all USGS water sources list.");
+        public SourceCollection FetchFiles()
+        {
 
             // Get a list of all current water sources
+            LogWriter.WriteMessageToLog("Beginning download of all USGS water sources list.");
             SourceCollection sourceList;
             using (UnitOfWork uoa = new UnitOfWork())
                 sourceList = new SourceCollection(uoa.Sources.GetAllSources().ToList());
@@ -83,6 +82,9 @@ namespace RTI.DataBase.UpdaterService.Download
             // Append Reverse Geo-code data
             ReverseGeoCoder geoCoder = new ReverseGeoCoder(LogWriter);
             newSourcesList = new SourceCollection(geoCoder.AppendGeoCodeData(newSourcesList));
+
+            // Update the list with ZipCode data
+
 
             // Add Source Names
             newSourcesList = AppendSourceNames(newSourcesList);

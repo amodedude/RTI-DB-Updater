@@ -56,6 +56,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.API\RTI.DataBase.API.csproj">
+      <Project>{b19f09db-6745-4083-bb81-d46f058edd1a}</Project>
+      <Name>RTI.DataBase.API</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.Configuration\RTI.DataBase.Configuration.csproj">
       <Project>{d54ebdc1-79d6-4e4d-bc94-4eb126fddb9c}</Project>
       <Name>RTI.DataBase.Configuration</Name>
@@ -71,6 +75,10 @@
     <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.Util\RTI.DataBase.Util.csproj">
       <Project>{E667F517-0825-4B1A-8079-6E735C00B4C5}</Project>
       <Name>RTI.DataBase.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTI.Database.GeoCoder\RTI.DataBase.GeoCoder.csproj">
+      <Project>{6decbeb6-86a2-470c-a3f2-6aa627df98e8}</Project>
+      <Name>RTI.DataBase.GeoCoder</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

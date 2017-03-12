@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using RTI.DataBase.UpdaterService.Download;
 using RTI.DataBase.Interfaces;
 using RTI.DataBase.Util;
+using RTI.DataBase.API;
 
 namespace RTI.DataBase.UpdaterService.Tests
 {

@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using RTI.DataBase.UpdaterService.Download;
-using RTI.DataBase.UpdaterService.Parse;
+using RTI.DataBase.API.Download;
+using RTI.DataBase.API.Parse;
 using RTI.DataBase.Interfaces;
 using RTI.DataBase.Interfaces.Util;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
+using RTI.DataBase.UpdaterService.Download;
 
 namespace RTI.DataBase.UpdaterService
 {
@@ -31,8 +32,8 @@ namespace RTI.DataBase.UpdaterService
 
                 if (Application.Settings.PerformWaterConductivityUpdate)
                 {
-                    LogWriter.WriteMessageToLog("Performing Water Conductivity Data DB update...");
                     // Download USGS water data
+                    LogWriter.WriteMessageToLog("Performing Water Conductivity Data DB update...");
                     WaterDataFileFetcher fetcher = new WaterDataFileFetcher(LogWriter, downloader);
                     SourceCollection sources = fetcher.FetchFiles();
 

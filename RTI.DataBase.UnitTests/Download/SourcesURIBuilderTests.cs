@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RTI.DataBase.Updater.Config;
+using RTI.DataBase.API;
 
 namespace RTI.DataBase.UpdaterService.Download.Tests
 {

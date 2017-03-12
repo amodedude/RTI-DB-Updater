@@ -18,6 +18,12 @@ namespace RTI.DataBase.Updater.Config
             get { return (string)this["XmlOutputFolder"]; }
         }
 
+        [ConfigurationProperty("ZipCodeTabulationFile", IsRequired = true)]
+        public string ZipCodeTabulationFile
+        {
+            get { return (string)this["ZipCodeTabulationFile"]; }
+        }
+
         [ConfigurationProperty("MaxDegreeOfParallelism", IsRequired = true)]
         public int MaxDegreeOfParallelism
         {

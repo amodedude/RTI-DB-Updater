@@ -55,6 +55,14 @@
     <Compile Include="ReverseGeoCoderTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\RTI.Database.GeoCoder\RTI.DataBase.GeoCoder.csproj">
+      <Project>{6decbeb6-86a2-470c-a3f2-6aa627df98e8}</Project>
+      <Name>RTI.DataBase.GeoCoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTI.DataBase.API\RTI.DataBase.API.csproj">
+      <Project>{b19f09db-6745-4083-bb81-d46f058edd1a}</Project>
+      <Name>RTI.DataBase.API</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RTI.DataBase.Interfaces\RTI.DataBase.Interfaces.csproj">
       <Project>{B2D950B1-7C8B-499A-AF56-0DE32FF873FF}</Project>
       <Name>RTI.DataBase.Interfaces</Name>

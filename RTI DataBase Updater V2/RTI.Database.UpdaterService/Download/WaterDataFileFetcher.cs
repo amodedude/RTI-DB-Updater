@@ -11,6 +11,7 @@ using RTI.DataBase.Model;
 using RTI.DataBase.Objects;
 using RTI.DataBase.Updater.Config;
 using RTI.DataBase.Util;
+using RTI.DataBase.API;
 
 namespace RTI.DataBase.UpdaterService.Download
 {
@@ -70,6 +71,7 @@ namespace RTI.DataBase.UpdaterService.Download
                     var loopOptions = new ParallelOptions { MaxDegreeOfParallelism = Application.Settings.MaxDegreeOfParallelism };
                     Parallel.ForEach(sourceList, loopOptions, InitilizeDownload);
 
+                    // Validate all downloaded files
                     var message = !ValidateDownloadedFiles() ? 
                         $"\r\nFile download(s) complete with 0 errors @{DateTime.Now:dd/MM/yyyy hh:mm:ss tt}" : 
                         $"\r\nFile download(s) complete with {_failedDownloads.Count} error(s) @{DateTime.Now:dd/MM/yyyy hh:mm:ss tt}";
@@ -117,26 +119,33 @@ namespace RTI.DataBase.UpdaterService.Download
             // Delete all duplicate sources
             using (UnitOfWork uoa = new UnitOfWork())
             {
-                var dupeSources = uoa.Sources.GetAllSources().Where(r => duplicateKeys.Contains(r.agency_id)).ToList();
-                foreach (source src in dupeSources)
+                List<source> dupeSources = uoa.Sources.GetAllSources().Where(r => duplicateKeys.Contains(r.agency_id)).ToList();
+                if (dupeSources != null && dupeSources.Count > 0)
                 {
-                    var linkedCustomerWaters = uoa.CustomerWaters.GetAllCustomerWatersWithSouce(src);
-                    if(!(linkedCustomerWaters.Count() > 0))
+                    foreach (source src in dupeSources)
                     {
-                        LogWriter.WriteMessageToLog($"Duplicate value for {src.agency}-{src.agency_id}: {src.full_site_name}");
-                        uoa.Sources.Remove(src);
+                        var linkedCustomerWaters = uoa.CustomerWaters.GetAllCustomerWatersWithSouce(src);
+                        if (!(linkedCustomerWaters.Count() > 0))
+                        {
+                            LogWriter.WriteMessageToLog($"Duplicate value for {src.agency}-{src.agency_id}: {src.full_site_name}");
+                            uoa.Sources.Remove(src);
+                        }
+                        else
+                        {
+                            LogWriter.WriteErrorToLog(new Exception($"Duplicate value for {src.agency}-{src.agency_id}: {src.full_site_name}, source cannot be removed due to FK constraint."), "Error deleting duplicate source from sources table.", true, Priority.Warning);
+                        }
                     }
-                    else
-                    {
-                        LogWriter.WriteErrorToLog(new Exception($"Duplicate value for {src.agency}-{src.agency_id}: {src.full_site_name}, source cannot be removed due to FK constraint."), "Error deleting duplicate source from sources table.",true, Priority.Warning);
-                    }
-                }
-                uoa.Complete();
-            }
+                    uoa.Complete();
 
-            // Write any duplicate water sources to an XML file.
-            XMLSerialization serializer = new XMLSerialization();
-            serializer.Serialize(dupes.ToList(), Application.Settings.XmlOutputFolder+"DuplicateWaterSources.xml");
+                    // Write any duplicate water sources to an XML file.
+                    XMLSerialization serializer = new XMLSerialization();
+                    serializer.Serialize(dupes.ToList(), Application.Settings.XmlOutputFolder + "DuplicateWaterSources.xml");
+                }
+                else
+                {
+                    LogWriter.WriteMessageToLog("No duplicate water sources found.");
+                }
+            }
 
             return nonDupes.ToList();
         }

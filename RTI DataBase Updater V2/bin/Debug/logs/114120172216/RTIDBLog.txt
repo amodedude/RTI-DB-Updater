@@ -1,0 +1,18 @@
+Info: RTI Database Updater initiated on 3/11/2017 @5:41 PM
+
+
+Info: Next Scheduled Run at 03/11/2017 05:41:16 PM (03/11/2017 10:41:16 UTC)
+Info: Performing Water Conductivity Data DB update...
+Info: Fetching the current list of sources from the RTI database.
+Info: Detecting duplicate sources...
+Info: No duplicate water sources found.
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=821150305
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=291136099375801
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=423135093373301
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=421401121480900
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=194122156020501
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=381421095451600
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=321859106503101
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=14139800
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=12170000
+Info: Downloading File from http://nwis.waterdata.usgs.gov/nwis/dv?cd_00095=1&format=rdb&site_no=11325500
