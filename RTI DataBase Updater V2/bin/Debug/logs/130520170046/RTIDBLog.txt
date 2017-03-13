@@ -1,0 +1,19 @@
+Info: RTI Database Updater initiated on 3/12/2017 @8:05 PM
+
+
+Info: Next Scheduled Run at 03/12/2017 08:05:46 PM (03/13/2017 12:05:46 UTC)
+Info: Performing Sources List DB update...
+Info: Beginning download of all USGS water sources list.
+Info: Download completed successfully.
+Error: 
+------------------------------------------------------------------------------------------------------------
+
+ExceptionMessage: Incorrect number of parameters. Unable to convert List to ZipCodeTabulation at row 1.
+CallingMember: @Class 'GeoCodeToZipCodeConverter.cs', Line Number 100 Method ListStringToZipCodeTabulation()
+------------------------------------------------------------------------------------------------------------
+Error: 
+------------------------------------------------------------------------------------------------------------
+
+ExceptionMessage: Incorrect number of parameters. Unable to convert List to ZipCodeTabulation at row 1.
+CallingMember: @Class 'GeoCodeToZipCodeConverter.cs', Line Number 100 Method ListStringToZipCodeTabulation()
+------------------------------------------------------------------------------------------------------------

@@ -17,6 +17,6 @@ C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\bin\Debug\RTI.DataBas
 C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\bin\Debug\RTI.DataBase.Util.pdb
 C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\bin\Debug\Newtonsoft.Json.xml
 C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\bin\Debug\EntityFramework.xml
-C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\obj\Debug\RTI.Database.GeoCoder.csprojResolveAssemblyReference.cache
+C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\obj\Debug\RTI.DataBase.GeoCoder.csprojResolveAssemblyReference.cache
 C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\obj\Debug\RTI.Database.GeoCoder.dll
 C:\Users\John\Desktop\RTI DB Updater\RTI.Database.GeoCoder\obj\Debug\RTI.Database.GeoCoder.pdb

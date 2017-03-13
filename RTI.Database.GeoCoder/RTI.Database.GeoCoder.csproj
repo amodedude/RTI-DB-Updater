@@ -40,9 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="GeoCodeToZipCodeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseGeoCoder.cs" />
+    <Compile Include="Objects\ZipCodeTabulation.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.API\RTI.DataBase.API.csproj">
@@ -64,6 +65,10 @@
     <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.Objects\RTI.DataBase.Objects.csproj">
       <Project>{00a69495-a8e9-4124-b9ce-10ef979a2acc}</Project>
       <Name>RTI.DataBase.Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTI DataBase Updater V2\RTI.DataBase.Util\RTI.DataBase.Util.csproj">
+      <Project>{e667f517-0825-4b1a-8079-6e735c00b4c5}</Project>
+      <Name>RTI.DataBase.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

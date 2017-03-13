@@ -83,11 +83,12 @@ namespace RTI.DataBase.UpdaterService.Download
             ReverseGeoCoder geoCoder = new ReverseGeoCoder(LogWriter);
             newSourcesList = new SourceCollection(geoCoder.AppendGeoCodeData(newSourcesList));
 
-            // Update the list with ZipCode data
-
-
             // Add Source Names
             newSourcesList = AppendSourceNames(newSourcesList);
+
+            // Update the list with ZipCode data
+            GeoCodeToZipCodeConverter converter = new GeoCodeToZipCodeConverter(LogWriter);
+            newSourcesList = converter.AppendZipCodes(newSourcesList);
 
             return newSourcesList;
         }
